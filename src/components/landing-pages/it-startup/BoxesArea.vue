@@ -1,0 +1,56 @@
+<template>
+    <!-- Start Boxes Area -->
+    <section class="boxes-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-box">
+                        <div class="icon">
+                            <feather type="server"></feather>
+                        </div>
+                        <h3>Réseaux informatiques</h3>
+                        <p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-box bg-f78acb">
+                        <div class="icon">
+                            <feather type="code"></feather>
+                        </div>
+                        <h3>Developpement web</h3>
+                        <p>Apprennez les outils necessaires pour developper des sites et des applications web. Devenez full-stack en maitrisant plusieurs languages de programmation et donnez vous les moyens de creer tout types d'applications
+                            pour repondre aux défis du futur. </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-box bg-c679e3">
+                        <div class="icon">
+                            <feather type="users"></feather>
+                        </div>
+                        <h3>Teams</h3>
+                        <p>Integrez un groupe de personne aussi motivé et passioné que vous, et réalisez votre plein potentiel ensemble!</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-box bg-eb6b3d">
+                        <div class="icon">
+                            <feather type="git-branch"></feather>
+                        </div>
+                        <h3>Ameliorez vous</h3>
+                        <p>Terminez les modules un à un, connectez les acquis en cours et réalisez vos objectifs!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Boxes Area -->
+</template>
+
+<script>
+export default {
+    name: 'BoxesArea'
+}
+</script>
