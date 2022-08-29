@@ -5,7 +5,7 @@
             <div class="d-table">
                 <div class="d-table-cell">
                     <div class="container">
-                        <h2>About Us</h2>
+                        <h2>A propos de nous</h2>
                     </div>
                 </div>
 			</div>
