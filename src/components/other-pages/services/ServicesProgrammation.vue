@@ -173,7 +173,7 @@
               />
 
               <div class="content">
-                <h3><a href="#">Java</a></h3>
+                <h3><a href="#">Java </a></h3>
                 <a href="#" class="read-more-btn"
                   ><router-link to="/cours-programmation/java"
                     >Lire plus

@@ -94,7 +94,7 @@ Embarquez dans cette formation et apprenez à creer des applications hors du com
                             </div>
                             
                             <div class="price">
-                                <span><sup>Fdj</sup>7000 <span>/Mois</span></span>
+                                <span><sup>Fdj</sup>10000 <span>/Mois</span></span>
                             </div>
                             
                             <div class="pricing-features">
