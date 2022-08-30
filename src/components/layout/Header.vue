@@ -53,9 +53,9 @@
             </ul>
           </b-collapse>
 
-          <div class="others-option">
+          <!-- <div class="others-option">
             <a href="#" class="btn btn-primary">Login</a>
-          </div>
+          </div> -->
         </nav>
       </div>
     </div>
