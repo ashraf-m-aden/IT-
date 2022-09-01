@@ -21,7 +21,7 @@
               </li>
 
               <li class="nav-item">
-                <router-link to="/about-style-one" class="nav-link"
+                <router-link to="/a-propos" class="nav-link"
                   >A propos de nous</router-link
                 >
               </li>

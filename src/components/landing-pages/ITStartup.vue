@@ -1,10 +1,10 @@
 <template>
-    <div>
-        <Banner></Banner>
-        <BoxesArea></BoxesArea>
-        <Services></Services>
-        <ServicesArea></ServicesArea>
-        <!-- <Features></Features>
+  <div>
+    <Banner></Banner>
+    <BoxesArea></BoxesArea>
+    <ReseauxInformatiques></ReseauxInformatiques>
+    <Programmation></Programmation>
+    <!-- <Features></Features>
         <Team></Team>
         <Funfacts></Funfacts>
         <Works></Works>
@@ -24,14 +24,14 @@
 
         <Partner></Partner> 
         <Blog></Blog>-->
-    </div>
+  </div>
 </template>
 
 <script>
-import Banner from './it-startup/Banner';
-import BoxesArea from './it-startup/BoxesArea';
-import Services from './it-startup/Services';
-import ServicesArea from './it-startup/ServicesArea';
+import Banner from "./it-startup/Banner";
+import BoxesArea from "./it-startup/BoxesArea";
+import ReseauxInformatiques from "./it-startup/ReseauxInformatiques.vue";
+import Programmation from "./it-startup/Programmation.vue";
 // import Features from './it-startup/Features';
 // import Team from './it-startup/Team';
 // import Funfacts from './it-startup/Funfacts';
@@ -41,13 +41,12 @@ import ServicesArea from './it-startup/ServicesArea';
 // import Partner from './it-startup/Partner';
 // import Blog from './it-startup/Blog';
 export default {
-    name: 'ITStartup',
-    components: {
-        Banner,
-        BoxesArea,
-        Services,
-        ServicesArea,
-
-    }
-}
+  name: "ITStartup",
+  components: {
+    Banner,
+    BoxesArea,
+    ReseauxInformatiques,
+    Programmation,
+  },
+};
 </script>

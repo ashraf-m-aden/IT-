@@ -22,11 +22,31 @@
           <div class="single-footer-widget pl-5">
             <h3>Compagnie</h3>
             <ul class="list">
-              <li><a href="#">A propos de nous</a></li>
-              <li><a href="#">Formation en developpement</a></li>
-              <li><a href="#">Formation en réseaux</a></li>
-              <li><a href="#">Nos prix</a></li>
-              <li><a href="#">Contact</a></li>
+              <li>
+                <router-link to="/a-propos" class="nav-link"
+                  >A propos de nous</router-link
+                >
+              </li>
+              <li>
+                <router-link to="/cours-programmation" class="nav-link"
+                  >Formation en developpementr</router-link
+                >
+              </li>
+              <li>
+                <router-link to="/a-propos" class="nav-link"
+                  >Formation en réseaux</router-link
+                >
+              </li>
+              <li>
+                <router-link to="/a-propos" class="nav-link"
+                  >Nos prix</router-link
+                >
+              </li>
+              <li>
+                <router-link to="/contact" class="nav-link"
+                  >Contact</router-link
+                >
+              </li>
             </ul>
           </div>
         </div>
