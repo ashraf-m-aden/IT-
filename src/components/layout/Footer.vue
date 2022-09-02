@@ -33,7 +33,7 @@
                 >
               </li>
               <li>
-                <router-link to="/a-propos" class="nav-link"
+                <router-link to="/cours-reseaux-systemes" class="nav-link"
                   >Formation en réseaux</router-link
                 >
               </li>

@@ -38,7 +38,7 @@
                   </li>
 
                   <li class="nav-item">
-                    <router-link to="/not-found" class="nav-link"
+                    <router-link to="/cours-reseaux-systemes" class="nav-link"
                       >Systemes et réseaux</router-link
                     >
                   </li>

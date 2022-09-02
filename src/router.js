@@ -12,6 +12,17 @@ import Java from './components/other-pages/services/programmation/Java.vue';
 import Node from './components/other-pages/services/programmation/Node.vue';
 import Vue from './components/other-pages/services/programmation/Vue.vue';
 
+
+import ServiceReseauxSystemes from './components/other-pages/services/ServicesReseaux.vue';
+import Linux from './components/other-pages/services/reseaux/Linux.vue';
+import FondamentauxReseaux from './components/other-pages/services/reseaux/FondamentauxReseaux.vue';
+import ReseauxAvances from './components/other-pages/services/reseaux/ReseauxAvances.vue';
+import GNS3 from './components/other-pages/services/reseaux/GNS3.vue';
+import SecuriteInformatique from './components/other-pages/services/reseaux/SecuriteInformatique.vue';
+import InstallationWindows from './components/other-pages/services/reseaux/InstallationWindows.vue';
+import AdminWinServer from './components/other-pages/services/reseaux/AdminWinServer.vue';
+
+
 import Apropo from './components/other-pages/about/Apropos.vue';
 
 import Contact from './components/other-pages/contact/Contact';
@@ -74,6 +85,18 @@ export const router = new VueRouter({
     { path: '/cours-programmation/java', component: Java },
     { path: '/cours-programmation/node', component: Node },
     { path: '/cours-programmation/mysql', component: MySQL },
+
+
+
+    { path: '/cours-reseaux-systemes', component: ServiceReseauxSystemes },
+    { path: '/cours-reseaux-systemes/linux', component: Linux },
+    { path: '/cours-reseaux-systemes/fondamentaux-reseaux', component: FondamentauxReseaux },
+    { path: '/cours-reseaux-systemes/reseaux-avances', component: ReseauxAvances },
+    { path: '/cours-reseaux-systemes/gns3', component: GNS3 },
+    { path: '/cours-reseaux-systemes/securite-informatique', component: SecuriteInformatique },
+    { path: '/cours-reseaux-systemes/installation-windows', component: InstallationWindows },
+    { path: '/cours-reseaux-systemes/admin-serveur', component: AdminWinServer },
+
 
 
     { path: '/not-found', component: NotFound },
