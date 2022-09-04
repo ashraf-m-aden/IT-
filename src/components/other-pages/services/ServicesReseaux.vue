@@ -193,7 +193,7 @@
           <div class="col-lg-4 col-sm-6 col-md-6">
             <div
               class="agency-services-box"
-              @click="goPage('/cours-programmation/java')"
+              @click="goPage('/cours-reseaux-systemes/bureautique')"
             >
               <img
                 src="../../../assets/img/services/Office_logos.jpg"
@@ -203,7 +203,7 @@
               <div class="content">
                 <h3><a href="#">Bureautique</a></h3>
                 <a href="#" class="read-more-btn"
-                  ><router-link to="/cours-programmation/java"
+                  ><router-link to="/cours-reseaux-systemes/bureautique"
                     >Lire plus
                     <feather type="plus-circle"></feather></router-link
                 ></a>

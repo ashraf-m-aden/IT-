@@ -79,6 +79,51 @@
           </div>
         </div>
       </div>
+
+      <div class="container">
+        <div class="about-inner-area">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="about-text">
+                <h3>Qui sommes nous?</h3>
+                <p>
+                  Une équipe experte composée des enseignants hautement
+                  certifiés et qualifiés possédant une grande expérience dans
+                  l'accompagnement des étudiants. Nous favorisons un plan de
+                  formation continu adapté à l’évolution du marché IT et aux
+                  besoins de nos étudiants.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="about-text">
+                <h3>Notre mission</h3>
+                <p>
+                  Nous réalisons des formations 100 % pratiques en programmation
+                  et Réseaux Informatiques. Nous avons choisi une structure
+                  simple et unifiée pour assurer une bonne communication et une
+                  meilleure pédagogie.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3"
+            >
+              <div class="about-text">
+                <h3>Notre expertise</h3>
+                <p>
+                  Nos procès rigoureux, l’accompagnement privilégié de nos
+                  étudiants et l’implication d’une structure jeune et dynamique
+                  nous permettent de concevoir des cours toujours plus
+                  innovantes avec une haute qualité de service
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- End About Area -->
 

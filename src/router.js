@@ -21,6 +21,7 @@ import GNS3 from './components/other-pages/services/reseaux/GNS3.vue';
 import SecuriteInformatique from './components/other-pages/services/reseaux/SecuriteInformatique.vue';
 import InstallationWindows from './components/other-pages/services/reseaux/InstallationWindows.vue';
 import AdminWinServer from './components/other-pages/services/reseaux/AdminWinServer.vue';
+import Bureautique from './components/other-pages/services/reseaux/Bureautique.vue';
 
 
 import Apropo from './components/other-pages/about/Apropos.vue';
@@ -96,6 +97,7 @@ export const router = new VueRouter({
     { path: '/cours-reseaux-systemes/securite-informatique', component: SecuriteInformatique },
     { path: '/cours-reseaux-systemes/installation-windows', component: InstallationWindows },
     { path: '/cours-reseaux-systemes/admin-serveur', component: AdminWinServer },
+    { path: '/cours-reseaux-systemes/bureautique', component: Bureautique },
 
 
 

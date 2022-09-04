@@ -5,7 +5,7 @@
 			<div class="d-table">
 				<div class="d-table-cell">
 					<div class="container">
-						<h2>Linux</h2>
+						<h2>Administration Système Linux</h2>
 					</div>
 				</div>
 			</div>
@@ -27,20 +27,23 @@
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details">
 						<div class="services-details-desc">
-							<h3>Le framework progressiste de Google</h3>
-							<p>Angular est un framework de conception d'applications qui permet de créer des applications d'une seule page efficaces et sophistiquées. Classé parmi les meilleurs framework de conception web
-								il vous est possible de creer toute type d'application avec Angular, eh oui tout type! Application web, mobile, et Windows! <br>
-							Crée par Google, il jouit d'une tres grande communauté et trés demandé dans les postes pour developpeur web. </p>
-							<p>
-
-Cette formations vous apprendra à utiliser le framework Angular et à creer des applications complexes pour entreprise.</p>
+							<h3>Linux Institue Professionnel</h3>
+							<p>LIP (Linux Institue Professionnel) est une organisation à but non lucratif créé dans le but d’offrir à 
+ceux qui le désirent des compétences en GNU/Linux. La LPIC est aujourd’hui la certification la 
+plus demandée dans le monde de l’Open Source. Indépendante de toute distribution Linux, la 
+certification LPI est devenue dans la pratique une certification incontournable pour qui veut évaluer 
+ses compétences dans l’administration Linux.</p><p>
+Cette formation est un cursus qui permet d’évaluer les aptitudes en gestion de système Linux.
+L’objectif de l’équipe IT+ est de vous procurer des compétences professionnelles plus approfondies, 
+qui vous permettra de valider les connaissances exigées par la certification Comptia Linux+ et ainsi 
+la réussir</p>
 
 							
 						</div>
 					</div>
 
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/services/angular-2.jpg" class="wow fadeInUp" v-wow
+						<img src="../../../../assets/img/services/linux1.jpeg" class="wow fadeInUp" v-wow
 							alt="image">
 					</div>
 				</div>
@@ -49,7 +52,7 @@ Cette formations vous apprendra à utiliser le framework Angular et à creer des
 
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/services/original.jpg" class="wow fadeInUp" v-wow
+						<img src="../../../../assets/img/services/centos.jpeg" class="wow fadeInUp" v-wow
 							alt="image">
 					</div>
 
@@ -57,19 +60,20 @@ Cette formations vous apprendra à utiliser le framework Angular et à creer des
 						<div class="services-details-desc">
 							<p>À la fin de ce cours, vous serez capable de :
 							<ul>
-								<li>creer une application Angular ;</li>
+								<li>d'nstaller et configurer l’interface graphique sous Linux ;</li>
 								<li>
-									comprendre et construire des components Angular ;</li>
+									d'installer et désinstaller les programmes sur les distributions des familles RedHat ou 
+Debian, et gérer les bibliothèques partagées ;</li>
 								<li>
-									utiliser les directives ;</li>
+									Gérer des systèmes de bases de Linux ;</li>
 								<li>
-									utiliser des services ;</li>
+									Connaître les bases de la ligne de commande (Bash, vi) ;</li>
 								<li>
-									gerer le routing;</li>
-								<li>comprendre et exploiter les data bindings;</li>
-								<li>consommer des APIs ;</li>
-								<li>injecter des dependences ;</li>
-								<li>et bien plus encore ;</li>
+									Installer et paramétrer des applications sous Linux;</li>
+								<li>Sauvegarder le système d'exploitation ;</li>
+								<li>Administratrer de système de réseaux Linux ;</li>
+								<li>Gérer les disques, partitions et systèmes de fichiers courants (y compris les quotas) ;</li>
+								<li>Gérer des fichiers : permissions et propriétés, recherche et liens ;</li>
 							</ul>
 							</p>
 							<!-- 
@@ -91,17 +95,17 @@ Cette formations vous apprendra à utiliser le framework Angular et à creer des
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="pricing-table active-plan">
                             <div class="pricing-header">
-                                <h3>Angular</h3>
+                                <h3>Administration Système Linux</h3>
                             </div>
                             
                             <div class="price">
-                                <span><sup>Fdj</sup>10000 <span>/Mois</span></span>
+                                <span><sup>Fdj</sup>15000 <span>/Mois</span></span>
                             </div>
                             
                             <div class="pricing-features">
                                 <ul>
                                     <li class="active">Durée de la formation : 3 mois</li>
-                                    <li class="active">Matériels requis: PC i5 8GB ram</li>
+                                    <li class="active">Matériels requis: Laptop core i3, 8GB RAM, 1TB Hard Disk</li>
                                                            
                                 </ul>
 							
@@ -110,9 +114,9 @@ Cette formations vous apprendra à utiliser le framework Angular et à creer des
 <div class="pricing-features">
 
 									<ul>
-										<li class="active">HTML</li>
-										<li class="active">CSS</li>
-										<li class="active">Javascript ou Typescript</li>
+										<li class="active">Avoir une bonne expérience du système d’exploitation 
+Microsoft Windows et des principes fondamentaux des réseaux</li>
+										
 									</ul>
 							</div>
                             
