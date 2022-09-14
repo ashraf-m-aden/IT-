@@ -5,7 +5,7 @@
 			<div class="d-table">
 				<div class="d-table-cell">
 					<div class="container">
-						<h2>Sécurité informatique</h2>
+						<h2>Html et CSS</h2>
 					</div>
 				</div>
 			</div>
@@ -27,28 +27,17 @@
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details">
 						<div class="services-details-desc">
-							<h3>Sécurisez vos infrastructures</h3>
-							<p>Vous souhaitez améliorer vos connaissances en Sécurité informatique ? L’équipe IT+ vous propose
-cette formation qui facilitera votre embauche ou votre évolution professionnelle dans le domaine 
-Sécurité. </p><p>
-La sécurité informatique désigne l’ensemble des techniques mises en œuvre pour minimiser ou 
-empêcher le détournement des systèmes d’information : piratage, virus, vol de données… Une 
-personne compétente dans le domaine de la sécurité informatique sera en mesure de protéger les 
-ordinateurs, serveurs et autres réseaux des attaques informatiques. Ce savoir-faire englobe des 
-connaissances approfondies en informatique et en outils bureautiques afin d’avoir toutes les cartes 
-en main pour lutter contre les piratages et dysfonctionnements éventuels.  </p><p>La sécurité informatique 
-exige ainsi des compétences en chiffrage, en protection et sauvegarde des données, antivirus, 
-pare-feu ou encore en connexion sécurisée VPN. Outre des capacités d’analyse et de résolution des 
-conflits, il pourra être demandé à la personne en charge de la sécurité informatique un certain sens 
-de la pédagogie afin d’être apte à communiquer à ses collaborateurs les bonnes pratiques à mettre 
-en place de façon à écarter les risques de piratage.</p>
+							<h3>La base des sites et applications web</h3>
+							<p>Ce cours est destiné aux débutants qui ne connaissent rien à la création
+								de sites web et qui n'attendent qu'une chose : comprendre comment creer des pages web, pratiquer et surtout poser des bases solides pour la suite de l'apprentissage!</p>
 
-							
+							<p>Vous apprendrez comment concevoir des pages web simple et statiques avec le language
+								HTML, inserer des textes et des images et styliser le tout avec CSS. </p>
 						</div>
 					</div>
 
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/services/reseau.jpeg" class="wow fadeInUp" v-wow
+						<img src="../../../../assets/img/courses/pc.jpg" class="wow fadeInUp" v-wow
 							alt="image">
 					</div>
 				</div>
@@ -57,7 +46,7 @@ en place de façon à écarter les risques de piratage.</p>
 
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/services/lock.jpeg" class="wow fadeInUp" v-wow
+						<img src="../../../../assets/img/courses/code.jpeg" class="wow fadeInUp" v-wow
 							alt="image">
 					</div>
 
@@ -65,19 +54,19 @@ en place de façon à écarter les risques de piratage.</p>
 						<div class="services-details-desc">
 							<p>À la fin de ce cours, vous serez capable de :
 							<ul>
-								<li>Déjouer les cyberattaques ;</li>
+								<li>utiliser du code HTML ;</li>
 								<li>
-									Acquérir de solides connaissances en matière de sécurité informatiquer ;</li>
+									structurer une page web en HTML ;</li>
 								<li>
-									Savoir repérer la fragilité et les failles systèmes d’un réseau, services et supports de 
-communication ;</li>
+									utiliser du code CSS ;</li>
 								<li>
-									Pouvoir concevoir et définir la politique de sécurisation des données de l’entreprise ;</li>
+									mettre en forme une page web en CSS ;</li>
 								<li>
-									Maîtriser les aspects « sécurité » et « qualité » des réseaux et des systèmes de 
-communication;</li>
-								<li>Maîtriser les protocoles de réseaux dédiés;</li>
-								
+									organiser les éléments d’une page web grâce au CSS ;</li>
+								<li>naviguer de page en page ;</li>
+								<li>inserer des contenues multimedia ;</li>
+								<li>creer des pages pour les petits écrans ;</li>
+								<li>mettre votre site web en ligne ;</li>
 							</ul>
 							</p>
 							<!-- 
@@ -99,29 +88,21 @@ communication;</li>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="pricing-table active-plan">
                             <div class="pricing-header">
-                                <h3>Maîtriser la sécurité informatique</h3>
+                                <h3>HTML et CSS</h3>
                             </div>
                             
                             <div class="price">
-                                <span><sup>Fdj</sup>15000 <span>/Mois</span></span>
+                                <span><sup>Fdj</sup>10000 <span>/Mois</span></span>
                             </div>
                             
                             <div class="pricing-features">
                                 <ul>
-                                    <li class="active">Durée de la formation : 2 mois</li>
-                                    <li class="active">Matériels requis: Laptop Core i3, 8GB RAM, 1TB Hard Disk</li>
-                                                           
+                                    <li class="active">Durée de la formation : 3 mois</li>
+                                    <li class="active">Matériels requis: PC dualcore 4GB ram</li>
+                                    <li class="active">Prérequis: Aucun</li>
+                        
                                 </ul>
-							
                             </div>
-							<h6>Prérequis: </h6>
-<div class="pricing-features">
-
-									<ul>
-										<li class="active">Avoir des connaissances de base en réseaux</li>
-										
-									</ul>
-							</div>
                             
                             <div class="pricing-footer">
                                 <a href="#" class="btn btn-primary">M'inscrire à ce cours</a>

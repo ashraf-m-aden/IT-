@@ -5,7 +5,7 @@
 			<div class="d-table">
 				<div class="d-table-cell">
 					<div class="container">
-						<h2>Angular</h2>
+						<h2>Sécurité informatique</h2>
 					</div>
 				</div>
 			</div>
@@ -27,20 +27,28 @@
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details">
 						<div class="services-details-desc">
-							<h3>Le framework progressiste de Google</h3>
-							<p>Angular est un framework de conception d'applications qui permet de créer des applications d'une seule page efficaces et sophistiquées. Classé parmi les meilleurs framework de conception web
-								il vous est possible de creer toute type d'application avec Angular, eh oui tout type! Application web, mobile, et Windows! <br>
-							Crée par Google, il jouit d'une tres grande communauté et trés demandé dans les postes pour developpeur web. </p>
-							<p>
-
-Cette formations vous apprendra à utiliser le framework Angular et à creer des applications complexes pour entreprise.</p>
+							<h3>Sécurisez vos infrastructures</h3>
+							<p>Vous souhaitez améliorer vos connaissances en Sécurité informatique ? L’équipe IT+ vous propose
+cette formation qui facilitera votre embauche ou votre évolution professionnelle dans le domaine 
+Sécurité. </p><p>
+La sécurité informatique désigne l’ensemble des techniques mises en œuvre pour minimiser ou 
+empêcher le détournement des systèmes d’information : piratage, virus, vol de données… Une 
+personne compétente dans le domaine de la sécurité informatique sera en mesure de protéger les 
+ordinateurs, serveurs et autres réseaux des attaques informatiques. Ce savoir-faire englobe des 
+connaissances approfondies en informatique et en outils bureautiques afin d’avoir toutes les cartes 
+en main pour lutter contre les piratages et dysfonctionnements éventuels.  </p><p>La sécurité informatique 
+exige ainsi des compétences en chiffrage, en protection et sauvegarde des données, antivirus, 
+pare-feu ou encore en connexion sécurisée VPN. Outre des capacités d’analyse et de résolution des 
+conflits, il pourra être demandé à la personne en charge de la sécurité informatique un certain sens 
+de la pédagogie afin d’être apte à communiquer à ses collaborateurs les bonnes pratiques à mettre 
+en place de façon à écarter les risques de piratage.</p>
 
 							
 						</div>
 					</div>
 
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/services/angular-2.jpg" class="wow fadeInUp" v-wow
+						<img src="../../../../assets/img/courses/reseau.jpeg" class="wow fadeInUp" v-wow
 							alt="image">
 					</div>
 				</div>
@@ -49,7 +57,7 @@ Cette formations vous apprendra à utiliser le framework Angular et à creer des
 
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/services/original.jpg" class="wow fadeInUp" v-wow
+						<img src="../../../../assets/img/courses/lock.jpeg" class="wow fadeInUp" v-wow
 							alt="image">
 					</div>
 
@@ -57,19 +65,19 @@ Cette formations vous apprendra à utiliser le framework Angular et à creer des
 						<div class="services-details-desc">
 							<p>À la fin de ce cours, vous serez capable de :
 							<ul>
-								<li>creer une application Angular ;</li>
+								<li>Déjouer les cyberattaques ;</li>
 								<li>
-									comprendre et construire des components Angular ;</li>
+									Acquérir de solides connaissances en matière de sécurité informatiquer ;</li>
 								<li>
-									utiliser les directives ;</li>
+									Savoir repérer la fragilité et les failles systèmes d’un réseau, services et supports de 
+communication ;</li>
 								<li>
-									utiliser des services ;</li>
+									Pouvoir concevoir et définir la politique de sécurisation des données de l’entreprise ;</li>
 								<li>
-									gerer le routing;</li>
-								<li>comprendre et exploiter les data bindings;</li>
-								<li>consommer des APIs ;</li>
-								<li>injecter des dependences ;</li>
-								<li>et bien plus encore ;</li>
+									Maîtriser les aspects « sécurité » et « qualité » des réseaux et des systèmes de 
+communication;</li>
+								<li>Maîtriser les protocoles de réseaux dédiés;</li>
+								
 							</ul>
 							</p>
 							<!-- 
@@ -91,17 +99,17 @@ Cette formations vous apprendra à utiliser le framework Angular et à creer des
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="pricing-table active-plan">
                             <div class="pricing-header">
-                                <h3>Angular</h3>
+                                <h3>Maîtriser la sécurité informatique</h3>
                             </div>
                             
                             <div class="price">
-                                <span><sup>Fdj</sup>10000 <span>/Mois</span></span>
+                                <span><sup>Fdj</sup>15000 <span>/Mois</span></span>
                             </div>
                             
                             <div class="pricing-features">
                                 <ul>
-                                    <li class="active">Durée de la formation : 3 mois</li>
-                                    <li class="active">Matériels requis: PC i5 8GB ram</li>
+                                    <li class="active">Durée de la formation : 2 mois</li>
+                                    <li class="active">Matériels requis: Laptop Core i3, 8GB RAM, 1TB Hard Disk</li>
                                                            
                                 </ul>
 							
@@ -110,9 +118,8 @@ Cette formations vous apprendra à utiliser le framework Angular et à creer des
 <div class="pricing-features">
 
 									<ul>
-										<li class="active">HTML</li>
-										<li class="active">CSS</li>
-										<li class="active">Javascript ou Typescript</li>
+										<li class="active">Avoir des connaissances de base en réseaux</li>
+										
 									</ul>
 							</div>
                             

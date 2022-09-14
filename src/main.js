@@ -9,8 +9,11 @@ import App from './App.vue'
 import './assets/style/custom.scss';
 import { router } from './router';
 import store from './store';
-
-Vue.config.productionTip = false
+import firebase from 'firebase';
+import 'firebase/firestore';
+Vue.config.productionTip = false;
+import config from '../config.json';
+firebase.initializeApp(config.firebase)
 
 Vue.use(BootstrapVue);
 Vue.use(VueFeather);

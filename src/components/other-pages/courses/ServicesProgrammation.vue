@@ -5,7 +5,7 @@
       <div class="d-table">
         <div class="d-table-cell">
           <div class="container">
-            <h2>Cours de systemes et réseaux informatiques</h2>
+            <h2>Cours de programmation informatique</h2>
           </div>
         </div>
       </div>
@@ -44,18 +44,17 @@
           <div class="col-lg-4 col-sm-6 col-md-6">
             <div
               class="agency-services-box"
-              @click="goPage('/cours-reseaux-systemes/fondamentaux-reseaux')"
+              @click="goPage('/cours-programmation/html-css')"
             >
               <img
-                src="../../../assets/img/services/fondamentaux.jpeg"
+                src="../../../assets/img/courses/logo-html5-css3.png"
                 alt="image"
               />
 
               <div class="content">
-                <h3><a href="#">Les fondamentaux des réseaux</a></h3>
+                <h3><a href="#">HTML et CSS</a></h3>
                 <a href="#" class="read-more-btn"
-                  ><router-link
-                    to="/cours-reseaux-systemes/fondamentaux-reseaux"
+                  ><router-link to="/cours-programmation/html-css"
                     >Lire plus
                     <feather type="plus-circle"></feather></router-link
                 ></a>
@@ -66,53 +65,17 @@
           <div class="col-lg-4 col-sm-6 col-md-6">
             <div
               class="agency-services-box"
-              @click="goPage('/cours-reseaux-systemes/reseaux-avances')"
-            >
-              <img src="../../../assets/img/services/ccna.jpeg" alt="image" />
-
-              <div class="content">
-                <h3><a href="#">Réseaux avancés</a></h3>
-                <a href="#" class="read-more-btn"
-                  ><router-link to="/cours-reseaux-systemes/reseaux-avances"
-                    >Lire plus
-                    <feather type="plus-circle"></feather></router-link
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-6 col-md-6">
-            <div
-              class="agency-services-box"
-              @click="goPage('/cours-reseaux-systemes/gns3')"
-            >
-              <img src="../../../assets/img/services/gns3.jpeg" alt="image" />
-
-              <div class="content">
-                <h3><a href="#">Maitriser l'émulation des réseaux</a></h3>
-                <a href="#" class="read-more-btn"
-                  ><router-link to="/cours-reseaux-systemes/gns3"
-                    >Lire plus
-                    <feather type="plus-circle"></feather></router-link
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 col-md-6">
-            <div
-              class="agency-services-box"
-              @click="goPage('/cours-reseaux-systemes/securite-informatique')"
+              @click="goPage('/cours-programmation/javascript')"
             >
               <img
-                src="../../../assets/img/services/security.jpeg"
+                src="../../../assets/img/courses/JavaScript-Logo.png"
                 alt="image"
               />
 
               <div class="content">
-                <h3><a href="#">Securité informatique</a></h3>
+                <h3><a href="#">Javascript</a></h3>
                 <a href="#" class="read-more-btn"
-                  ><router-link
-                    to="/cours-reseaux-systemes/securite-informatique"
+                  ><router-link to="/cours-programmation/javascript"
                     >Lire plus
                     <feather type="plus-circle"></feather></router-link
                 ></a>
@@ -123,22 +86,55 @@
           <div class="col-lg-4 col-sm-6 col-md-6">
             <div
               class="agency-services-box"
-              @click="goPage('/cours-reseaux-systemes/installation-windows')"
+              @click="goPage('/cours-programmation/mysql')"
+            >
+              <img src="../../../assets/img/courses/mysql.jpg" alt="image" />
+
+              <div class="content">
+                <h3><a href="#">MySQL</a></h3>
+                <a href="#" class="read-more-btn"
+                  ><router-link to="/cours-programmation/mysql"
+                    >Lire plus
+                    <feather type="plus-circle"></feather></router-link
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-md-6">
+            <div
+              class="agency-services-box"
+              @click="goPage('/cours-programmation/vue')"
             >
               <img
-                src="../../../assets/img/services/windows.jpeg"
+                src="../../../assets/img/courses/Logo-Vuejs.png"
                 alt="image"
               />
 
               <div class="content">
-                <h3>
-                  <a href="#"
-                    >Installation et configuration de windows 7, 8, 10 et 11</a
-                  >
-                </h3>
+                <h3><a href="#">Vue.js</a></h3>
+                <a href="#" class="read-more-btn"
+                  ><router-link to="/cours-programmation/vue"
+                    >Lire plus
+                    <feather type="plus-circle"></feather></router-link
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 col-md-6">
+            <div
+              class="agency-services-box"
+              @click="goPage('/cours-programmation/angular')"
+            >
+              <img
+                src="../../../assets/img/courses/2048px-Angular_full_color_logo.svg.png"
+                alt="image"
+              />
+
+              <div class="content">
+                <h3><a href="#">Angular</a></h3>
                 <a href="" class="read-more-btn"
-                  ><router-link
-                    to="/cours-reseaux-systemes/installation-windows"
+                  ><router-link to="/cours-programmation/angular"
                     >Lire plus
                     <feather type="plus-circle"></feather></router-link
                 ></a>
@@ -149,39 +145,35 @@
           <div class="col-lg-4 col-sm-6 col-md-6">
             <div
               class="agency-services-box"
-              @click="goPage('cours-reseaux-systemes/admin-serveur')"
+              @click="goPage('/cours-programmation/node')"
             >
               <img
-                src="../../../assets/img/services/winserverr.jpeg"
+                src="../../../assets/img/courses/1200px-Node.js_logo.svg.png"
                 alt="image"
               />
 
               <div class="content">
-                <h3>
-                  <a href="#"
-                    >Administration systeme windows server (2008, 2012, 2016)</a
-                  >
-                </h3>
+                <h3><a href="#">Node.js</a></h3>
                 <a href="#" class="read-more-btn"
-                  ><router-link to="cours-reseaux-systemes/admin-serveur"
+                  ><router-link to="/cours-programmation/node"
                     >Lire plus
                     <feather type="plus-circle"></feather></router-link
                 ></a>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 col-md-6">
+          <!-- <div class="col-lg-4 col-sm-6 col-md-6">
             <div
               class="agency-services-box"
-              @click="goPage('/cours-reseaux-systemes/linux')"
+              @click="goPage('/cours-programmation/java')"
             >
               <img
-                src="../../../assets/img/services/LINUX-LOGO.png"
+                src="../../../assets/img/courses/1200px-Java_Logo.svg.png"
                 alt="image"
               />
 
               <div class="content">
-                <h3><a href="#">Administration systeme Linux </a></h3>
+                <h3><a href="#">Java </a></h3>
                 <a href="#" class="read-more-btn"
                   ><router-link to="/cours-programmation/java"
                     >Lire plus
@@ -189,27 +181,7 @@
                 ></a>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 col-md-6">
-            <div
-              class="agency-services-box"
-              @click="goPage('/cours-reseaux-systemes/bureautique')"
-            >
-              <img
-                src="../../../assets/img/services/Office_logos.jpg"
-                alt="image"
-              />
-
-              <div class="content">
-                <h3><a href="#">Bureautique</a></h3>
-                <a href="#" class="read-more-btn"
-                  ><router-link to="/cours-reseaux-systemes/bureautique"
-                    >Lire plus
-                    <feather type="plus-circle"></feather></router-link
-                ></a>
-              </div>
-            </div>
-          </div>
+          </div> -->
         </div>
       </div>
 

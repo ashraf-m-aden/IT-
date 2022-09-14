@@ -5,7 +5,7 @@
 			<div class="d-table">
 				<div class="d-table-cell">
 					<div class="container">
-						<h2>Les fondamentaux des réseaux</h2>
+						<h2>Angular</h2>
 					</div>
 				</div>
 			</div>
@@ -27,24 +27,20 @@
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details">
 						<div class="services-details-desc">
-							<h3>Initier vous au réseaux!</h3>
-							<p>La formation Réseau de base est la première étape pour s'initier à la technologie d'un acteur 
-incontournable de l'industrie des réseaux informatiques. Elle est le point de départ pour tous les 
-professionnels amenés à travailler en environnement Cisco.</p><p>
-Cette formation permet d’acquérir les connaissances et compétences nécessaires pour installer, faire 
-fonctionner, configurer et vérifier les réseaux IPv4 et IPv6, y compris la configuration des 
-commutateurs LAN, la connexion aux réseaux WAN et l'identification des menaces pour la sécurité 
-de base. Elle a pour objectif d'acquérir les aptitudes nécessaires pour la mise en place, l'exploitation 
-et le dépannage de réseaux d'entreprises.</p><p>
-La formation couvre tous les aspects techniques pour la gestion optimale d'un réseau : de la 
-configuration des switch et routeurs à l'élaboration de la stratégie sécuritaire adéquate.</p>
+							<h3>Le framework progressiste de Google</h3>
+							<p>Angular est un framework de conception d'applications qui permet de créer des applications d'une seule page efficaces et sophistiquées. Classé parmi les meilleurs framework de conception web
+								il vous est possible de creer toute type d'application avec Angular, eh oui tout type! Application web, mobile, et Windows! <br>
+							Crée par Google, il jouit d'une tres grande communauté et trés demandé dans les postes pour developpeur web. </p>
+							<p>
+
+Cette formations vous apprendra à utiliser le framework Angular et à creer des applications complexes pour entreprise.</p>
 
 							
 						</div>
 					</div>
 
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/services/network2.jpeg" class="wow fadeInUp" v-wow
+						<img src="../../../../assets/img/courses/angular-2.jpg" class="wow fadeInUp" v-wow
 							alt="image">
 					</div>
 				</div>
@@ -53,7 +49,7 @@ configuration des switch et routeurs à l'élaboration de la stratégie sécurit
 
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/services/network.jpeg" class="wow fadeInUp" v-wow
+						<img src="../../../../assets/img/courses/original.jpg" class="wow fadeInUp" v-wow
 							alt="image">
 					</div>
 
@@ -61,17 +57,19 @@ configuration des switch et routeurs à l'élaboration de la stratégie sécurit
 						<div class="services-details-desc">
 							<p>À la fin de ce cours, vous serez capable de :
 							<ul>
-								<li>Comprendre les mécanismes intervenant dans les communications réseau ;</li>
+								<li>creer une application Angular ;</li>
 								<li>
-									Construire des réseaux LANs simples ;</li>
+									comprendre et construire des components Angular ;</li>
 								<li>
-									Établir la connectivité Internet ;</li>
+									utiliser les directives ;</li>
 								<li>
-									Configurer les commutateurs Cisco pour une mise en place d'un réseau LAN ;</li>
+									utiliser des services ;</li>
 								<li>
-									Étendre les réseaux de petite et moyenne taille avec une connectivité vers WAN ;</li>
-								<li>Configurer, gérer et surveiller les périphériques Cisco ;</li>
-								
+									gerer le routing;</li>
+								<li>comprendre et exploiter les data bindings;</li>
+								<li>consommer des APIs ;</li>
+								<li>injecter des dependences ;</li>
+								<li>et bien plus encore ;</li>
 							</ul>
 							</p>
 							<!-- 
@@ -93,17 +91,17 @@ configuration des switch et routeurs à l'élaboration de la stratégie sécurit
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="pricing-table active-plan">
                             <div class="pricing-header">
-                                <h3>Les fondamentaux des réseaux</h3>
+                                <h3>Angular</h3>
                             </div>
                             
                             <div class="price">
-                                <span><sup>Fdj</sup>12000 <span>/Mois</span></span>
+                                <span><sup>Fdj</sup>10000 <span>/Mois</span></span>
                             </div>
                             
                             <div class="pricing-features">
                                 <ul>
-                                    <li class="active">Durée de la formation : 2 mois</li>
-                                    <li class="active">Matériels requis: Laptop Dual core, 4GB RAM, 500GB Hard Disk</li>
+                                    <li class="active">Durée de la formation : 3 mois</li>
+                                    <li class="active">Matériels requis: PC i5 8GB ram</li>
                                                            
                                 </ul>
 							
@@ -112,9 +110,9 @@ configuration des switch et routeurs à l'élaboration de la stratégie sécurit
 <div class="pricing-features">
 
 									<ul>
-										<li class="active"> Avoir des compétences de base sur les PCs, sur la navigation 
-dans le système d’exploitation, sur l’utilisation d’Internet et sur la gestion 
-des adresses IP</li>
+										<li class="active">HTML</li>
+										<li class="active">CSS</li>
+										<li class="active">Javascript ou Typescript</li>
 									</ul>
 							</div>
                             

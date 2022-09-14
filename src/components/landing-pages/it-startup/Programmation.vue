@@ -101,10 +101,10 @@
             <div class="col-lg-6 col-md-6 col-sm-6">
               <div class="box"><feather type="code"></feather> Javascript</div>
             </div>
-
+            <!-- 
             <div class="col-lg-6 col-md-6 col-sm-6">
               <div class="box"><feather type="code"></feather> Java</div>
-            </div>
+            </div> -->
 
             <div class="col-lg-6 col-md-6 col-sm-6">
               <div class="box">

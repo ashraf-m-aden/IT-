@@ -1,27 +1,29 @@
 import VueRouter from 'vue-router';
 // Pages
 
+import Login from './components/other-pages/authentication/login.vue';
+import Register from './components/other-pages/authentication/registration.vue';
 
 
-import ServicesProgrammation from './components/other-pages/services/ServicesProgrammation';
-import Angular from './components/other-pages/services/programmation/Angular.vue';
-import Html from './components/other-pages/services/programmation/HtmlCss.vue';
-import Javascript from './components/other-pages/services/programmation/Javascript.vue';
-import MySQL from './components/other-pages/services/programmation/MySQL.vue';
-import Java from './components/other-pages/services/programmation/Java.vue';
-import Node from './components/other-pages/services/programmation/Node.vue';
-import Vue from './components/other-pages/services/programmation/Vue.vue';
+import ServicesProgrammation from './components/other-pages/courses/ServicesProgrammation';
+import Angular from './components/other-pages/courses/programmation/Angular.vue';
+import Html from './components/other-pages/courses/programmation/HtmlCss.vue';
+import Javascript from './components/other-pages/courses/programmation/Javascript.vue';
+import MySQL from './components/other-pages/courses/programmation/MySQL.vue';
+import Java from './components/other-pages/courses/programmation/Java.vue';
+import Node from './components/other-pages/courses/programmation/Node.vue';
+import Vue from './components/other-pages/courses/programmation/Vue.vue';
 
 
-import ServiceReseauxSystemes from './components/other-pages/services/ServicesReseaux.vue';
-import Linux from './components/other-pages/services/reseaux/Linux.vue';
-import FondamentauxReseaux from './components/other-pages/services/reseaux/FondamentauxReseaux.vue';
-import ReseauxAvances from './components/other-pages/services/reseaux/ReseauxAvances.vue';
-import GNS3 from './components/other-pages/services/reseaux/GNS3.vue';
-import SecuriteInformatique from './components/other-pages/services/reseaux/SecuriteInformatique.vue';
-import InstallationWindows from './components/other-pages/services/reseaux/InstallationWindows.vue';
-import AdminWinServer from './components/other-pages/services/reseaux/AdminWinServer.vue';
-import Bureautique from './components/other-pages/services/reseaux/Bureautique.vue';
+import ServiceReseauxSystemes from './components/other-pages/courses/ServicesReseaux.vue';
+import Linux from './components/other-pages/courses/reseaux/Linux.vue';
+import FondamentauxReseaux from './components/other-pages/courses/reseaux/FondamentauxReseaux.vue';
+import ReseauxAvances from './components/other-pages/courses/reseaux/ReseauxAvances.vue';
+import GNS3 from './components/other-pages/courses/reseaux/GNS3.vue';
+import SecuriteInformatique from './components/other-pages/courses/reseaux/SecuriteInformatique.vue';
+import InstallationWindows from './components/other-pages/courses/reseaux/InstallationWindows.vue';
+import AdminWinServer from './components/other-pages/courses/reseaux/AdminWinServer.vue';
+import Bureautique from './components/other-pages/courses/reseaux/Bureautique.vue';
 
 
 import Apropo from './components/other-pages/about/Apropos.vue';
@@ -99,6 +101,8 @@ export const router = new VueRouter({
     { path: '/cours-reseaux-systemes/admin-serveur', component: AdminWinServer },
     { path: '/cours-reseaux-systemes/bureautique', component: Bureautique },
 
+    { path: '/login', component: Login },
+    { path: '/register', component: Register },
 
 
     { path: '/not-found', component: NotFound },

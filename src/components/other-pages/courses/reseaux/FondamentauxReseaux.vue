@@ -5,7 +5,7 @@
 			<div class="d-table">
 				<div class="d-table-cell">
 					<div class="container">
-						<h2> GNS3 : Maîtriser l'émulation de réseaux</h2>
+						<h2>Les fondamentaux des réseaux</h2>
 					</div>
 				</div>
 			</div>
@@ -27,27 +27,24 @@
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details">
 						<div class="services-details-desc">
-							<p>GNS3 est un programme qui permet de simuler des réseaux de routeur et de commutateur qui 
-tournent sous IOS (le système d’exploitation des routeurs et switch Cisco). Cette formation GNS3 
-vous permettra de simuler vos équipements Cisco, Juniper et Huawei avec une grande facilité et 
-maîtrise. Avec cette formation GNS3, vous allez pouvoir préparer vos maquettes ou se préparer à 
-des examens de certifications sans devoir débloquer un budget lourd pour s'acheter les équipements 
-réseaux.</p><p>
-A travers cette formation GNS3 détaillée et complète, vous allez découvrir l'outil GNS3 d'une 
-manière simple, pratique et surtout pédagogique, avec des études de cas avancés sous Windows et 
-Linux : Frame Relay point-to-point/multipoint, ATM, Juniper, Huawei, IOU, Etherchannel, VTP, 
-Cisco ASA, VoIP et Kali. Évidemment vous allez apprendre aussi comment installer GNS3 sur 
-Linux et Windows, configurer les images IOS, découvrir l'interface, gérer les préférences. La 
-maîtrise de GNS3 est obligatoire si vous souhaitez devenir un expert des réseaux. Donc venez 
-profitez bien de cette formation GNS3 avec l’équipe IT+.
-</p>
+							<h3>Initier vous au réseaux!</h3>
+							<p>La formation Réseau de base est la première étape pour s'initier à la technologie d'un acteur 
+incontournable de l'industrie des réseaux informatiques. Elle est le point de départ pour tous les 
+professionnels amenés à travailler en environnement Cisco.</p><p>
+Cette formation permet d’acquérir les connaissances et compétences nécessaires pour installer, faire 
+fonctionner, configurer et vérifier les réseaux IPv4 et IPv6, y compris la configuration des 
+commutateurs LAN, la connexion aux réseaux WAN et l'identification des menaces pour la sécurité 
+de base. Elle a pour objectif d'acquérir les aptitudes nécessaires pour la mise en place, l'exploitation 
+et le dépannage de réseaux d'entreprises.</p><p>
+La formation couvre tous les aspects techniques pour la gestion optimale d'un réseau : de la 
+configuration des switch et routeurs à l'élaboration de la stratégie sécuritaire adéquate.</p>
 
 							
 						</div>
 					</div>
 
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/services/gns3.jpeg" class="wow fadeInUp" v-wow
+						<img src="../../../../assets/img/courses/network2.jpeg" class="wow fadeInUp" v-wow
 							alt="image">
 					</div>
 				</div>
@@ -56,7 +53,7 @@ profitez bien de cette formation GNS3 avec l’équipe IT+.
 
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/services/ciscogns3.jpeg" class="wow fadeInUp" v-wow
+						<img src="../../../../assets/img/courses/network.jpeg" class="wow fadeInUp" v-wow
 							alt="image">
 					</div>
 
@@ -64,15 +61,16 @@ profitez bien de cette formation GNS3 avec l’équipe IT+.
 						<div class="services-details-desc">
 							<p>À la fin de ce cours, vous serez capable de :
 							<ul>
-								<li> Installer et configurer GNS3 sur Windows et Linux ;</li>
+								<li>Comprendre les mécanismes intervenant dans les communications réseau ;</li>
 								<li>
-									Construire une topologie complète sous GNS3 ;</li>
+									Construire des réseaux LANs simples ;</li>
 								<li>
-									Intégrer GNS3 avec l'environnement extérieur : VirtualBox, VMware, Wireshark, QEMU, 
-ENSP, Juniper, IOS ;</li>
+									Établir la connectivité Internet ;</li>
 								<li>
-									Comprendre et implémenter des études de cas avancés : Frame Relay point-to-point,
-multipoint, ATM, Juniper, Huawei, IOU, Etherchannel, VTP, Cisco ASA, VoIP et Kali ;</li>
+									Configurer les commutateurs Cisco pour une mise en place d'un réseau LAN ;</li>
+								<li>
+									Étendre les réseaux de petite et moyenne taille avec une connectivité vers WAN ;</li>
+								<li>Configurer, gérer et surveiller les périphériques Cisco ;</li>
 								
 							</ul>
 							</p>
@@ -95,17 +93,17 @@ multipoint, ATM, Juniper, Huawei, IOU, Etherchannel, VTP, Cisco ASA, VoIP et Kal
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="pricing-table active-plan">
                             <div class="pricing-header">
-                                <h3>GNS3 : Maîtriser l'émulation de réseaux</h3>
+                                <h3>Les fondamentaux des réseaux</h3>
                             </div>
                             
                             <div class="price">
-                                <span><sup>Fdj</sup>10000 <span>/Mois</span></span>
+                                <span><sup>Fdj</sup>12000 <span>/Mois</span></span>
                             </div>
                             
                             <div class="pricing-features">
                                 <ul>
-                                    <li class="active">Durée de la formation : 1 mois</li>
-                                    <li class="active">Matériels requis: Laptop Core i3, 8GB RAM, 1TB Hard Disk</li>
+                                    <li class="active">Durée de la formation : 2 mois</li>
+                                    <li class="active">Matériels requis: Laptop Dual core, 4GB RAM, 500GB Hard Disk</li>
                                                            
                                 </ul>
 							
@@ -114,8 +112,9 @@ multipoint, ATM, Juniper, Huawei, IOU, Etherchannel, VTP, Cisco ASA, VoIP et Kal
 <div class="pricing-features">
 
 									<ul>
-										<li class="active">GNS3 : Maîtriser l'émulation de réseaux</li>
-										
+										<li class="active"> Avoir des compétences de base sur les PCs, sur la navigation 
+dans le système d’exploitation, sur l’utilisation d’Internet et sur la gestion 
+des adresses IP</li>
 									</ul>
 							</div>
                             

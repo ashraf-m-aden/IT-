@@ -45,7 +45,7 @@
 					</div>
 
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/services/mysql.jpg" class="wow fadeInUp" v-wow alt="image">
+						<img src="../../../../assets/img/courses/mysql.jpg" class="wow fadeInUp" v-wow alt="image">
 					</div>
 				</div>
 
@@ -53,7 +53,7 @@
 
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/services/mysql 2.jpg"
+						<img src="../../../../assets/img/courses/mysql 2.jpg"
 							class="wow fadeInUp" v-wow alt="image">
 					</div>
 
@@ -95,7 +95,7 @@
 						</div>
 
 						<div class="price">
-							<span><sup>Fdj</sup>5000 <span>/Mois</span></span>
+							<span><sup>Fdj</sup>10000 <span>/Mois</span></span>
 						</div>
 
 						<div class="pricing-features">

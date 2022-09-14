@@ -5,7 +5,7 @@
 			<div class="d-table">
 				<div class="d-table-cell">
 					<div class="container">
-						<h2>Installation et configuration de Windows 7, 8, 10 et 11	</h2>
+						<h2>Vue.js</h2>
 					</div>
 				</div>
 			</div>
@@ -27,18 +27,19 @@
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details">
 						<div class="services-details-desc">
-							<h3>Installer toutes les dernieres versions des systemes d'operations windows</h3>
-							<p>L’installation de Windows est l’une des tâches les plus importantes lors de la mise à niveau de ton 
-ordinateur ou d’une réinstallaton à l’état d’usine. C’est une tâche assez simple, mais il y a quelques 
-étapes importantes à suivre. Durant cette formation, vous allez apprendre les notions à suivre pour
-installer une machine. </p>
+							<h3>Puissance et legereté</h3>
+							<p>Vue.js est l'un des framework les plus populaires dans le developpement frontend, capable de creer des applications legeres tres rapidement, mais aussi
+								sans en un temps records. Grace à son architecture de composants modulaires, il devient tres facile de creer des composants réutilisables. </p>
+							<p>
+
+Embarquez dans cette formation et apprenez à creer des applications hors du commun!</p>
 
 							
 						</div>
 					</div>
 
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/services/win11.jpeg" class="wow fadeInUp" v-wow
+						<img src="../../../../assets/img/courses/vue.jpg" class="wow fadeInUp" v-wow
 							alt="image">
 					</div>
 				</div>
@@ -47,7 +48,7 @@ installer une machine. </p>
 
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/services/win.jpeg" class="wow fadeInUp" v-wow
+						<img src="../../../../assets/img/courses/vue2.jpg" class="wow fadeInUp" v-wow
 							alt="image">
 					</div>
 
@@ -55,12 +56,19 @@ installer une machine. </p>
 						<div class="services-details-desc">
 							<p>À la fin de ce cours, vous serez capable de :
 							<ul>
-								<li>Découvrir les nouveautés et les fonctionnalités des systèmes Windows ;</li>
+								<li>creer une application Vue ;</li>
 								<li>
-									Comprendre la migration vers le système Windows ;</li>
+									creer des composants réutilisables ;</li>
 								<li>
-									Maîtriser les systèmes d’exploitation Windows ;</li>
-							
+									utiliser les directives ;</li>
+								<li>
+									utiliser des services ;</li>
+								<li>
+									gerer le routing;</li>
+								<li>comprendre et exploiter les data bindings;</li>
+								<li>consommer des APIs ;</li>
+								<li>gerer les etats des données;</li>
+								<li>et bien plus encore ;</li>
 							</ul>
 							</p>
 							<!-- 
@@ -82,17 +90,17 @@ installer une machine. </p>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="pricing-table active-plan">
                             <div class="pricing-header">
-                                <h3>Installation et configuration de Windows 7, 8, 10 et 11</h3>
+                                <h3>Vue.js</h3>
                             </div>
                             
                             <div class="price">
-                                <span><sup>Fdj</sup>10000 <span>/Mois</span></span>
+                                <span><sup>Fdj</sup>15000 <span>/Mois</span></span>
                             </div>
                             
                             <div class="pricing-features">
                                 <ul>
-                                    <li class="active">Durée de la formation : 1 mois</li>
-                                    <li class="active">Matériels requis: Laptop Dual core, 4GB RAM, 500GB Hard Disk</li>
+                                    <li class="active">Durée de la formation : 3 mois</li>
+                                    <li class="active">Matériels requis: PC i5 8GB ram</li>
                                                            
                                 </ul>
 							
@@ -101,8 +109,9 @@ installer une machine. </p>
 <div class="pricing-features">
 
 									<ul>
-										<li class="active">Aucun</li>
-										
+										<li class="active">HTML</li>
+										<li class="active">CSS</li>
+										<li class="active">Javascript</li>
 									</ul>
 							</div>
                             

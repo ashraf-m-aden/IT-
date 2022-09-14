@@ -5,7 +5,7 @@
 			<div class="d-table">
 				<div class="d-table-cell">
 					<div class="container">
-						<h2>JavaScript</h2>
+						<h2>Installation et configuration de Windows 7, 8, 10 et 11	</h2>
 					</div>
 				</div>
 			</div>
@@ -27,22 +27,19 @@
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details">
 						<div class="services-details-desc">
-							<h3>JavaScript</h3>
-							<p>JavaScript est un langage de programmation de scripts principalement employé dans les
-								pages web interactives et à ce titre est une partie essentielle des applications web.
-								Avec les langages HTML et CSS, JavaScript est au cœur des langages utilisés par les
-								développeurs web.
-								Une grande majorité des sites web l'utilisent, et la majorité des navigateurs web
-								disposent d'un moteur JavaScript pour l'interpréter. </p>
-							<p>Nous allons apprendre à coder avec JavaScript, à resoudre des algorithmes puis à
-								dynamiser nos sites!</p>
+							<h3>Installer toutes les dernieres versions des systemes d'operations windows</h3>
+							<p>L’installation de Windows est l’une des tâches les plus importantes lors de la mise à niveau de ton 
+ordinateur ou d’une réinstallaton à l’état d’usine. C’est une tâche assez simple, mais il y a quelques 
+étapes importantes à suivre. Durant cette formation, vous allez apprendre les notions à suivre pour
+installer une machine. </p>
 
-
+							
 						</div>
 					</div>
 
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/services/js.png" class="wow fadeInUp" v-wow alt="image">
+						<img src="../../../../assets/img/courses/win11.jpeg" class="wow fadeInUp" v-wow
+							alt="image">
 					</div>
 				</div>
 
@@ -50,22 +47,20 @@
 
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/services/JavaScript-Tutorials-for-Beginners-881x441.jpg"
-							class="wow fadeInUp" v-wow alt="image">
+						<img src="../../../../assets/img/courses/win.jpeg" class="wow fadeInUp" v-wow
+							alt="image">
 					</div>
 
 					<div class="col-lg-6 services-details">
 						<div class="services-details-desc">
 							<p>À la fin de ce cours, vous serez capable de :
 							<ul>
-								<li>d'utiliser les variables, boucles et fonctions en JavaScript ;</li>
+								<li>Découvrir les nouveautés et les fonctionnalités des systèmes Windows ;</li>
 								<li>
-									creer des objets JavaScript (POO) ;</li>
+									Comprendre la migration vers le système Windows ;</li>
 								<li>
-									manipuler les pages web ;</li>
-								<li>
-									creer et réagir à des évenements ;</li>
-
+									Maîtriser les systèmes d’exploitation Windows ;</li>
+							
 							</ul>
 							</p>
 							<!-- 
@@ -80,43 +75,44 @@
 		<!-- End Services Details Area -->
 
 		<div class="container">
+			
+		<div class="row  justify-content-center ">
+                    
 
-			<div class="row  justify-content-center ">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="pricing-table active-plan">
+                            <div class="pricing-header">
+                                <h3>Installation et configuration de Windows 7, 8, 10 et 11</h3>
+                            </div>
+                            
+                            <div class="price">
+                                <span><sup>Fdj</sup>10000 <span>/Mois</span></span>
+                            </div>
+                            
+                            <div class="pricing-features">
+                                <ul>
+                                    <li class="active">Durée de la formation : 1 mois</li>
+                                    <li class="active">Matériels requis: Laptop Dual core, 4GB RAM, 500GB Hard Disk</li>
+                                                           
+                                </ul>
+							
+                            </div>
+							<h6>Prérequis: </h6>
+<div class="pricing-features">
 
-
-				<div class="col-lg-4 col-md-6 col-sm-6">
-					<div class="pricing-table active-plan">
-						<div class="pricing-header">
-							<h3>JavaScript</h3>
-						</div>
-
-						<div class="price">
-							<span><sup>Fdj</sup>7000 <span>/Mois</span></span>
-						</div>
-
-						<div class="pricing-features">
-							<ul>
-								<li class="active">Durée de la formation : 2 mois</li>
-								<li class="active">Matériels requis: PC dualcore 4GB ram</li>
-
-							</ul>
-
-						</div>
-						<h6>Prérequis: </h6>
-						<div class="pricing-features">
-
-							<ul>
-								<li class="active">HTML</li>
-							</ul>
-						</div>
-
-						<div class="pricing-footer">
-							<a href="#" class="btn btn-primary">M'inscrire à ce cours</a>
-						</div>
-					</div>
+									<ul>
+										<li class="active">Aucun</li>
+										
+									</ul>
+							</div>
+                            
+                            <div class="pricing-footer">
+                                <a href="#" class="btn btn-primary">M'inscrire à ce cours</a>
+                            </div>
+                        </div>
+                    </div>
+                   
 				</div>
-
-			</div>
 		</div>
 	</div>
 </template>

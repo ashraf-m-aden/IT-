@@ -53,9 +53,11 @@
             </ul>
           </b-collapse>
 
-          <!-- <div class="others-option">
-            <a href="#" class="btn btn-primary">Login</a>
-          </div> -->
+          <div class="others-option">
+            <router-link to="/login">
+              <a class="btn btn-primary">Se connecter</a></router-link
+            >
+          </div>
         </nav>
       </div>
     </div>

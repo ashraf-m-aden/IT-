@@ -5,7 +5,7 @@
 			<div class="d-table">
 				<div class="d-table-cell">
 					<div class="container">
-						<h2>Réseaux Avancés</h2>
+						<h2>Administration Système Linux</h2>
 					</div>
 				</div>
 			</div>
@@ -27,23 +27,23 @@
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details">
 						<div class="services-details-desc">
-							<h3>Le niveau superieur</h3>
-							<p>La formation Réseaux avancées apporte des connaissances et compétences additionnelles à celles que 
-vous auriez pu découvrir lors de la formation les fondamentaux de réseau. En effet, cette formation
-permet aux participants d'acquérir les compétences et connaissances nécessaires pour installer, 
-utiliser et dépanner un réseau d'entreprise de taille moyenne, notamment à partir de la configuration 
-de divers switches et routeurs et de la mise en œuvre de la sécurité.</p><P>
-Au niveau du LAN, les participants sauront avec cette formation mettre en œuvre un réseau 
-commuté utilisant des VLANs, pourront utiliser au mieux l'adressage IP par les techniques VLSM.
-Les technologies WAN et la sécurité sont aussi largement évoquées lors de cette formation, 
-notamment avec les protocoles PPP, Frame-Relay, le NAT, les listes de contrôle d'accès (ACL)...</p>
+							<h3>Linux Institue Professionnel</h3>
+							<p>LIP (Linux Institue Professionnel) est une organisation à but non lucratif créé dans le but d’offrir à 
+ceux qui le désirent des compétences en GNU/Linux. La LPIC est aujourd’hui la certification la 
+plus demandée dans le monde de l’Open Source. Indépendante de toute distribution Linux, la 
+certification LPI est devenue dans la pratique une certification incontournable pour qui veut évaluer 
+ses compétences dans l’administration Linux.</p><p>
+Cette formation est un cursus qui permet d’évaluer les aptitudes en gestion de système Linux.
+L’objectif de l’équipe IT+ est de vous procurer des compétences professionnelles plus approfondies, 
+qui vous permettra de valider les connaissances exigées par la certification Comptia Linux+ et ainsi 
+la réussir</p>
 
 							
 						</div>
 					</div>
 
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/services/switch.jpeg" class="wow fadeInUp" v-wow
+						<img src="../../../../assets/img/courses/linux1.jpeg" class="wow fadeInUp" v-wow
 							alt="image">
 					</div>
 				</div>
@@ -52,7 +52,7 @@ notamment avec les protocoles PPP, Frame-Relay, le NAT, les listes de contrôle 
 
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/services/server.jpeg" class="wow fadeInUp" v-wow
+						<img src="../../../../assets/img/courses/centos.jpeg" class="wow fadeInUp" v-wow
 							alt="image">
 					</div>
 
@@ -60,19 +60,20 @@ notamment avec les protocoles PPP, Frame-Relay, le NAT, les listes de contrôle 
 						<div class="services-details-desc">
 							<p>À la fin de ce cours, vous serez capable de :
 							<ul>
-								<li> D’exploiter un réseau de taille moyenne avec de multiples commutateurs, contenant VLANs, 
-Trunks et spanning tree ;</li>
+								<li>d'nstaller et configurer l’interface graphique sous Linux ;</li>
 								<li>
-									Dépanner les problèmes de connectivité IP ;</li>
+									d'installer et désinstaller les programmes sur les distributions des familles RedHat ou 
+Debian, et gérer les bibliothèques partagées ;</li>
 								<li>
-									Configurer et dépanner EIGRP dans un environnement IPv4 ;</li>
+									Gérer des systèmes de bases de Linux ;</li>
 								<li>
-									Configurer et dépanner OSPF dans un environnement IPv4 ;</li>
+									Connaître les bases de la ligne de commande (Bash, vi) ;</li>
 								<li>
-									Définir les caractéristiques, les fonctions et les composants d’un WAN ;</li>
-								<li>Décrire SNMP, syslog, and NetFlow, et gérer des configurations de périphériques Cisco, 
-Cisco IOS, images et licences;</li>
-								
+									Installer et paramétrer des applications sous Linux;</li>
+								<li>Sauvegarder le système d'exploitation ;</li>
+								<li>Administratrer de système de réseaux Linux ;</li>
+								<li>Gérer les disques, partitions et systèmes de fichiers courants (y compris les quotas) ;</li>
+								<li>Gérer des fichiers : permissions et propriétés, recherche et liens ;</li>
 							</ul>
 							</p>
 							<!-- 
@@ -94,7 +95,7 @@ Cisco IOS, images et licences;</li>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="pricing-table active-plan">
                             <div class="pricing-header">
-                                <h3>Réseaux Avancées</h3>
+                                <h3>Administration Système Linux</h3>
                             </div>
                             
                             <div class="price">
@@ -104,7 +105,7 @@ Cisco IOS, images et licences;</li>
                             <div class="pricing-features">
                                 <ul>
                                     <li class="active">Durée de la formation : 3 mois</li>
-                                    <li class="active">Matériels requis: : Laptop Core i3, 8GB RAM, 500GB Hard Disk</li>
+                                    <li class="active">Matériels requis: Laptop core i3, 8GB RAM, 1TB Hard Disk</li>
                                                            
                                 </ul>
 							
@@ -113,8 +114,8 @@ Cisco IOS, images et licences;</li>
 <div class="pricing-features">
 
 									<ul>
-										<li class="active">Avoir des connaissances de base sur le réseau, etre capable 
-d'installer, de configurer et de dépanner un petit réseau LAN</li>
+										<li class="active">Avoir une bonne expérience du système d’exploitation 
+Microsoft Windows et des principes fondamentaux des réseaux</li>
 										
 									</ul>
 							</div>

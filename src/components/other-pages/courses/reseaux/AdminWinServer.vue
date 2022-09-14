@@ -5,7 +5,7 @@
 			<div class="d-table">
 				<div class="d-table-cell">
 					<div class="container">
-						<h2>Html et CSS</h2>
+						<h2>Administration Système Windows Server (2008, 2012, 2016)</h2>
 					</div>
 				</div>
 			</div>
@@ -27,17 +27,23 @@
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details">
 						<div class="services-details-desc">
-							<h3>La base des sites et applications web</h3>
-							<p>Ce cours est destiné aux débutants qui ne connaissent rien à la création
-								de sites web et qui n'attendent qu'une chose : comprendre comment creer des pages web, pratiquer et surtout poser des bases solides pour la suite de l'apprentissage!</p>
+							<h3>Prenez le controle des serveurs windows</h3>
+							<p>Windows Serveur est un système d’exploitation très déployé dans les infrastructures 
+professionnelles. Cette formation Installation et configuration de Windows Server vous permettra 
+d’être très opérationnel sous Windows Serveur tels que les versions 2008, 2012 ou 2016. </p><p>
+Pendant cette formation Windows Server, vous allez tout d’accord voir comment installer et 
+configurer un serveur Windows de base avant de commencer à implémenter les différents services : 
+services de domaines Active Directory, serveur DHCP, serveur DNS, serveur de fichiers et 
+d’impression. Aussi durant cette formation Windows Server, vous allez comprendre et implémenter 
+l’adressage IPv4 et IPv6 sous Windows, et aussi apprendre comment automatiser des tâches avec 
+PowerShell.</p>
 
-							<p>Vous apprendrez comment concevoir des pages web simple et statiques avec le language
-								HTML, inserer des textes et des images et styliser le tout avec CSS. </p>
+							
 						</div>
 					</div>
 
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/services/pc.jpg" class="wow fadeInUp" v-wow
+						<img src="../../../../assets/img/courses/winserver.jpeg" class="wow fadeInUp" v-wow
 							alt="image">
 					</div>
 				</div>
@@ -46,7 +52,7 @@
 
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/services/code.jpeg" class="wow fadeInUp" v-wow
+						<img src="../../../../assets/img/courses/win server.jpeg" class="wow fadeInUp" v-wow
 							alt="image">
 					</div>
 
@@ -54,19 +60,22 @@
 						<div class="services-details-desc">
 							<p>À la fin de ce cours, vous serez capable de :
 							<ul>
-								<li>utiliser du code HTML ;</li>
+								<li>Installer et configurer Microsoft Windows Server (2008, 2012 ou 2016)
+ ;</li>
 								<li>
-									structurer une page web en HTML ;</li>
+									Comprendre et gérer les services de domaines Active Directory ;</li>
 								<li>
-									utiliser du code CSS ;</li>
+									Gérer comptes utilisateurs et ordinateurs sous Active Directory ;</li>
 								<li>
-									mettre en forme une page web en CSS ;</li>
+									Déléguer l’administration des services de domaine Active Directory
+ ;</li>
 								<li>
-									organiser les éléments d’une page web grâce au CSS ;</li>
-								<li>naviguer de page en page ;</li>
-								<li>inserer des contenues multimedia ;</li>
-								<li>creer des pages pour les petits écrans ;</li>
-								<li>mettre votre site web en ligne ;</li>
+									Automatiser des tâches Active Directory en ligne de commande et avec des scripts 
+PowerShell;</li>
+								<li>Comprendre et mettre en place IP v4 et IPv6 sous Windows serveur;</li>
+								<li>Installer et gérer le serveur DHCP sous Windows serveur ;</li>
+								<li>Comprendre et administrer le service DNS sous Windows serveur ;</li>
+								<li>Gérer le stockage local, les services de fichiers et imprimantes sous Windows serveur ;</li>
 							</ul>
 							</p>
 							<!-- 
@@ -88,21 +97,31 @@
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="pricing-table active-plan">
                             <div class="pricing-header">
-                                <h3>HTML et CSS</h3>
+                                <h3>Angular</h3>
                             </div>
                             
                             <div class="price">
-                                <span><sup>Fdj</sup>5000 <span>/Mois</span></span>
+                                <span><sup>Fdj</sup>15000 <span>/Mois</span></span>
                             </div>
                             
                             <div class="pricing-features">
                                 <ul>
                                     <li class="active">Durée de la formation : 3 mois</li>
-                                    <li class="active">Matériels requis: PC dualcore 4GB ram</li>
-                                    <li class="active">Prérequis: Aucun</li>
-                        
+                                    <li class="active">Matériels requis: Laptop core i5, 8GB RAM, 1TB Hard Disk</li>
+                                                           
                                 </ul>
+							
                             </div>
+							<h6>Prérequis: </h6>
+<div class="pricing-features">
+
+									<ul>
+										<li class="active">Avoir une bonne expérience du système d’exploitation 
+Microsoft Windows et des principes fondamentaux des réseaux, Connaitre 
+les clients Windows 7, Windows 8 ou Windows 10 serait un atout.</li>
+										
+									</ul>
+							</div>
                             
                             <div class="pricing-footer">
                                 <a href="#" class="btn btn-primary">M'inscrire à ce cours</a>

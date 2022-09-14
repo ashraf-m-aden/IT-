@@ -5,7 +5,7 @@
 			<div class="d-table">
 				<div class="d-table-cell">
 					<div class="container">
-						<h2>Administration Système Windows Server (2008, 2012, 2016)</h2>
+						<h2>Bureautique</h2>
 					</div>
 				</div>
 			</div>
@@ -27,23 +27,23 @@
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details">
 						<div class="services-details-desc">
-							<h3>Prenez le controle des serveurs windows</h3>
-							<p>Windows Serveur est un système d’exploitation très déployé dans les infrastructures 
-professionnelles. Cette formation Installation et configuration de Windows Server vous permettra 
-d’être très opérationnel sous Windows Serveur tels que les versions 2008, 2012 ou 2016. </p><p>
-Pendant cette formation Windows Server, vous allez tout d’accord voir comment installer et 
-configurer un serveur Windows de base avant de commencer à implémenter les différents services : 
-services de domaines Active Directory, serveur DHCP, serveur DNS, serveur de fichiers et 
-d’impression. Aussi durant cette formation Windows Server, vous allez comprendre et implémenter 
-l’adressage IPv4 et IPv6 sous Windows, et aussi apprendre comment automatiser des tâches avec 
-PowerShell.</p>
+							<h3>Le framework progressiste de Google</h3>
+							<p>La bureautique est un terme qui regroupe les logiciels qui aident l'entreprise dans la rédaction de 
+documents. Microsoft Office est une suite bureautique permettant entre autres d'écrire des lettres, 
+rédiger des CV (avec Word), créer des présentations (avec PowerPoint), créer des tableaux de calcul 
+et des graphiques (avec Excel).</p><p>
+Cette formation vous permettra d'acquérir des notions de base d’initiation au traitement des 
+documents avec les différents logiciels (Word, Excel, Powerpoint etc…), en vous familiarisant avec 
+l’interface, l’affichage des menus, la gestion des objets et documents et la mise en page des 
+caractères et paragraphes. Cette formation Microsoft office sera constituée d'exercices pratiques où 
+vous allez pratiquer tous vos acquis lors de la formation.</p>
 
 							
 						</div>
 					</div>
 
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/services/winserver.jpeg" class="wow fadeInUp" v-wow
+						<img src="../../../../assets/img/courses/office1.jpeg" class="wow fadeInUp" v-wow
 							alt="image">
 					</div>
 				</div>
@@ -52,7 +52,7 @@ PowerShell.</p>
 
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/services/win server.jpeg" class="wow fadeInUp" v-wow
+						<img src="../../../../assets/img/courses/office2.jpeg" class="wow fadeInUp" v-wow
 							alt="image">
 					</div>
 
@@ -60,22 +60,17 @@ PowerShell.</p>
 						<div class="services-details-desc">
 							<p>À la fin de ce cours, vous serez capable de :
 							<ul>
-								<li>Installer et configurer Microsoft Windows Server (2008, 2012 ou 2016)
+								<li>Maîtriser les notions de base de Microsoft Office (Word, Excel, Powerpoint etc…) ;</li>
+								<li>
+									Vous familiariser avec les différentes interfaces de Microsoft Office (Word, Excel, 
+Powerpoint etc…) ;</li>
+								<li>
+									Maîtriser la gestion des documents et des objets sous Microsoft Office (Word, Excel, 
+Powerpoint etc…) ;</li>
+								<li>
+									Faire la mise en page des caractères et des paragraphes
  ;</li>
-								<li>
-									Comprendre et gérer les services de domaines Active Directory ;</li>
-								<li>
-									Gérer comptes utilisateurs et ordinateurs sous Active Directory ;</li>
-								<li>
-									Déléguer l’administration des services de domaine Active Directory
- ;</li>
-								<li>
-									Automatiser des tâches Active Directory en ligne de commande et avec des scripts 
-PowerShell;</li>
-								<li>Comprendre et mettre en place IP v4 et IPv6 sous Windows serveur;</li>
-								<li>Installer et gérer le serveur DHCP sous Windows serveur ;</li>
-								<li>Comprendre et administrer le service DNS sous Windows serveur ;</li>
-								<li>Gérer le stockage local, les services de fichiers et imprimantes sous Windows serveur ;</li>
+								
 							</ul>
 							</p>
 							<!-- 
@@ -97,17 +92,17 @@ PowerShell;</li>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="pricing-table active-plan">
                             <div class="pricing-header">
-                                <h3>Angular</h3>
+                                <h3>Bureautique (Word, Excel, Access, PowerPoint etc.…) </h3>
                             </div>
                             
                             <div class="price">
-                                <span><sup>Fdj</sup>15000 <span>/Mois</span></span>
+                                <span><sup>Fdj</sup>12000 <span>/Mois</span></span>
                             </div>
                             
                             <div class="pricing-features">
                                 <ul>
                                     <li class="active">Durée de la formation : 3 mois</li>
-                                    <li class="active">Matériels requis: Laptop core i5, 8GB RAM, 1TB Hard Disk</li>
+                                    <li class="active">Matériels requis:  Laptop Dual core , 4GB RAM, 500GB Hard Disk</li>
                                                            
                                 </ul>
 							
@@ -116,9 +111,7 @@ PowerShell;</li>
 <div class="pricing-features">
 
 									<ul>
-										<li class="active">Avoir une bonne expérience du système d’exploitation 
-Microsoft Windows et des principes fondamentaux des réseaux, Connaitre 
-les clients Windows 7, Windows 8 ou Windows 10 serait un atout.</li>
+										<li class="active">Aucun</li>
 										
 									</ul>
 							</div>
