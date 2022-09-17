@@ -95,7 +95,7 @@ Cette formations vous apprendra à utiliser le framework Angular et à creer des
                             </div>
                             
                             <div class="price">
-                                <span><sup>Fdj</sup>10000 <span>/Mois</span></span>
+                                <span><sup>Fdj</sup>15000 <span>/Mois</span></span>
                             </div>
                             
                             <div class="pricing-features">

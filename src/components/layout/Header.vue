@@ -54,8 +54,13 @@
           </b-collapse>
 
           <div class="others-option">
-            <router-link to="/login">
+            <router-link to="/login" v-show="!isAuthenticated">
               <a class="btn btn-primary">Se connecter</a></router-link
+            >
+            <router-link to="/" v-show="isAuthenticated">
+              <a class="btn btn-outline-danger" @click="logout()"
+                >Deconnection</a
+              ></router-link
             >
           </div>
         </nav>
@@ -66,6 +71,7 @@
 </template>
 
 <script>
+import auth from "../../services/auth/index";
 export default {
   name: "Header",
   data() {
@@ -88,8 +94,26 @@ export default {
   },
 
   computed: {
-    shoppingCart() {
-      return this.$store.state.cart;
+    isAuthenticated() {
+      return this.$store.getters.getAuthentication;
+    },
+  },
+  methods: {
+    logout() {
+      auth
+        .Logout()
+        .then(async () => {
+          await this.$store.dispatch("setAuthentication", false);
+
+          localStorage.removeItem("userinfo");
+          localStorage.removeItem("isLoggedIn");
+          this.$router.push("/login");
+        })
+        .catch(() => {
+          localStorage.removeItem("userinfo");
+          localStorage.removeItem("isLoggedIn");
+          this.$router.push("/login");
+        });
     },
   },
 };

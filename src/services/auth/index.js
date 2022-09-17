@@ -1,44 +1,50 @@
 import EventEmitter from 'events';
-const userlogin = 'islogged';
-const loginExpiryKey = 'tokenExpiry';
+const isloggedIn = 'isLoggedIn';
 const Userinfo = 'userinfo';
-const localStorageKey = 'loggedIn';
-
+import firebase from 'firebase';
 class Auth extends EventEmitter {
     authToken = null
     userProfile = null
     tokenExpiry = null
-        // Login With Firebase
-    localLogin(authResult) {
-        this.tokenExpiry = new Date();
-        localStorage.setItem(loginExpiryKey, this.tokenExpiry);
-        localStorage.setItem(userlogin, 'true');
-        localStorage.setItem(localStorageKey, 'true');
-        localStorage.setItem(Userinfo, JSON.stringify({
-            displayName: authResult.user.displayName,
-            email: authResult.user.email,
-            photoURL: authResult.user.photoURL,
-        }));
-    }
-    Logout() {
-        localStorage.removeItem(loginExpiryKey);
-        localStorage.removeItem(userlogin);
-        localStorage.removeItem(Userinfo);
-        localStorage.removeItem(localStorageKey);
+    // Login With Firebase
+    async login(email, password) {
+
+
+        await firebase.auth().signInWithEmailAndPassword(email, password).then(async (authResult) => {
+            // this.tokenExpiry = new Date();
+            // localStorage.setItem(loginExpiryKey, this.tokenExpiry);
+
+            localStorage.setItem(isloggedIn, 'true');
+            localStorage.setItem(Userinfo, JSON.stringify({
+                displayName: authResult.user.displayName,
+                email: authResult.user.email,
+                id: authResult.user.uid,
+                photoURL: authResult.user.photoURL,
+            }))
+        })
 
     }
 
-    isAuthenticated() {
-        return (
-            new Date(Date.now()) != new Date(localStorage.getItem(loginExpiryKey)) &&
-            localStorage.getItem(userlogin) === 'true'
-        );
+    async signUp(email, password) {
+
+
+        await firebase.auth().createUserWithEmailAndPassword(email, password).then(async (authResult) => {
+            // this.tokenExpiry = new Date();
+            // localStorage.setItem(loginExpiryKey, this.tokenExpiry);
+
+            localStorage.setItem(isloggedIn, 'true');
+            localStorage.setItem(Userinfo, JSON.stringify({
+                displayName: authResult.user.displayName,
+                email: authResult.user.email,
+                id: authResult.user.uid,
+                photoURL: authResult.user.photoURL,
+            }))
+        })
+
     }
-    isAuthenticatedUser() {
-        return (
-            new Date(Date.now()) < new Date(localStorage.getItem(loginExpiryKey)) &&
-            localStorage.getItem(localStorageKey) === 'true'
-        );
+
+    async Logout() {
+        await firebase.auth().signOut()
     }
 
 }
