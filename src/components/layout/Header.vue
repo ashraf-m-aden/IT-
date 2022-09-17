@@ -50,6 +50,28 @@
                   >Contact</router-link
                 >
               </li>
+              <li class="nav-item" v-show="isAuthenticated">
+                <router-link to="/mes-cours" class="nav-link"
+                  >Mes cours</router-link
+                >
+              </li>
+              <li class="nav-item" v-show="isAuthenticated">
+                <router-link to="/mes-certifications" class="nav-link"
+                  >Mes certifications</router-link
+                >
+              </li>
+              <li class="nav-item">
+                <router-link to="/login" v-show="!isAuthenticated && isMobile">
+                  <a class="btn btn-primary">Se connecter</a></router-link
+                >
+              </li>
+              <li class="nav-item">
+                <router-link to="/" v-show="isAuthenticated && isMobile">
+                  <a class="btn btn-outline-danger" @click="logout()"
+                    >Deconnection</a
+                  ></router-link
+                >
+              </li>
             </ul>
           </b-collapse>
 
@@ -77,6 +99,7 @@ export default {
   data() {
     return {
       isSticky: false,
+      isMobile: false,
     };
   },
 
@@ -91,6 +114,8 @@ export default {
         that.isSticky = false;
       }
     });
+    window.addEventListener("resize", this.handleResize);
+    this.handleResize();
   },
 
   computed: {
@@ -115,6 +140,14 @@ export default {
           this.$router.push("/login");
         });
     },
+
+    handleResize() {
+      if (window.innerWidth < 992) {
+        this.isMobile = true;
+      } else this.isMobile = false;
+    },
   },
 };
 </script>
+
+<style lang="scss" scoped></style>

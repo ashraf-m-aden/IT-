@@ -110,9 +110,14 @@ export default {
         );
       } else {
         await AuthService.login(this.email, this.password)
-          .then(() => {
+          .then(async (authResult) => {
             this.$store.dispatch("setAuthentication", true);
 
+            // this.tokenExpiry = new Date();
+            // localStorage.setItem(loginExpiryKey, this.tokenExpiry);
+
+            localStorage.setItem("isLoggedIn", "true");
+            await this.$store.dispatch("setUserData", authResult.user);
             this.$toasted.show("Connection établit", {
               theme: "bubble",
               position: "top-right",

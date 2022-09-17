@@ -1,6 +1,7 @@
 import Vuex from 'vuex';
 import Vue from 'vue';
 import user from './user.js'
+import courses from './courses.js'
 Vue.use(Vuex);
 
 export default new Vuex.Store({
@@ -49,7 +50,8 @@ export default new Vuex.Store({
     },
 
     modules: {
-        user
+        user,
+        courses
     }
 });
 

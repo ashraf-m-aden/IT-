@@ -142,21 +142,7 @@ export default {
 	},
 	data() {
 		return {
-			text: `Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute.`,
-			myItems: [
-				{
-					title: 'How many time zones are there in all?',
-					value: 'Given a 24-hour day and 360 degrees of longitude around the Earth'
-				},
-				{
-					title: 'How long is a day and year on Venus?',
-					value: 'Venus takes 224.7 Earth days to complete one orbit around the Sun.'
-				},
-				{
-					title: 'What animal smells like popcorn?',
-					value: 'Binturongs smell like popcorn.'
-				}
-			]
+		
 		}
 	}
 }

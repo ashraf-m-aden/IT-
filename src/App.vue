@@ -38,6 +38,7 @@ export default {
     return {
       isLoading: true,
       currentUrl: "",
+      emailVerified: false,
     };
   },
 
@@ -53,6 +54,7 @@ export default {
 
   mounted() {
     this.$store.dispatch("checkAuth");
+
     this.currentUrl = window.location.pathname;
     setTimeout(() => {
       this.isLoading = false;

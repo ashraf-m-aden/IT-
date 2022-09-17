@@ -29,7 +29,8 @@
 						<div class="services-details-desc">
 							<h3>La base des sites et applications web</h3>
 							<p>Ce cours est destiné aux débutants qui ne connaissent rien à la création
-								de sites web et qui n'attendent qu'une chose : comprendre comment creer des pages web, pratiquer et surtout poser des bases solides pour la suite de l'apprentissage!</p>
+								de sites web et qui n'attendent qu'une chose : comprendre comment creer des pages web,
+								pratiquer et surtout poser des bases solides pour la suite de l'apprentissage!</p>
 
 							<p>Vous apprendrez comment concevoir des pages web simple et statiques avec le language
 								HTML, inserer des textes et des images et styliser le tout avec CSS. </p>
@@ -37,8 +38,7 @@
 					</div>
 
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/pc.jpg" class="wow fadeInUp" v-wow
-							alt="image">
+						<img src="../../../../assets/img/courses/pc.jpg" class="wow fadeInUp" v-wow alt="image">
 					</div>
 				</div>
 
@@ -46,8 +46,7 @@
 
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/code.jpeg" class="wow fadeInUp" v-wow
-							alt="image">
+						<img src="../../../../assets/img/courses/code.jpeg" class="wow fadeInUp" v-wow alt="image">
 					</div>
 
 					<div class="col-lg-6 services-details">
@@ -81,36 +80,36 @@
 		<!-- End Services Details Area -->
 
 		<div class="container">
-			
-		<div class="row  justify-content-center ">
-                    
 
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="pricing-table active-plan">
-                            <div class="pricing-header">
-                                <h3>HTML et CSS</h3>
-                            </div>
-                            
-                            <div class="price">
-                                <span><sup>Fdj</sup>10000 <span>/Mois</span></span>
-                            </div>
-                            
-                            <div class="pricing-features">
-                                <ul>
-                                    <li class="active">Durée de la formation : 3 mois</li>
-                                    <li class="active">Matériels requis: PC dualcore 4GB ram</li>
-                                    <li class="active">Prérequis: Aucun</li>
-                        
-                                </ul>
-                            </div>
-                            
-                            <div class="pricing-footer">
-                                <a href="#" class="btn btn-primary">M'inscrire à ce cours</a>
-                            </div>
-                        </div>
-                    </div>
-                   
+			<div class="row  justify-content-center ">
+
+
+				<div class="col-lg-4 col-md-6 col-sm-6">
+					<div class="pricing-table active-plan">
+						<div class="pricing-header">
+							<h3>HTML et CSS</h3>
+						</div>
+
+						<div class="price">
+							<span><sup>Fdj</sup>10000 <span>/Mois</span></span>
+						</div>
+
+						<div class="pricing-features">
+							<ul>
+								<li class="active">Durée de la formation : 3 mois</li>
+								<li class="active">Matériels requis: PC dualcore 4GB ram</li>
+								<li class="active">Prérequis: Aucun</li>
+
+							</ul>
+						</div>
+
+						<div class="pricing-footer">
+							<a class="btn btn-primary" @click="inscription()">M'inscrire à ce cours</a>
+						</div>
+					</div>
 				</div>
+
+			</div>
 		</div>
 	</div>
 </template>
@@ -123,22 +122,33 @@ export default {
 	},
 	data() {
 		return {
-			text: `Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute.`,
-			myItems: [
-				{
-					title: 'How many time zones are there in all?',
-					value: 'Given a 24-hour day and 360 degrees of longitude around the Earth'
-				},
-				{
-					title: 'How long is a day and year on Venus?',
-					value: 'Venus takes 224.7 Earth days to complete one orbit around the Sun.'
-				},
-				{
-					title: 'What animal smells like popcorn?',
-					value: 'Binturongs smell like popcorn.'
-				}
-			]
+			user: this.$store.getters.getUserData
+
 		}
 	}
+	,
+	methods: {
+		inscription() {
+
+			if (this.user) {
+				if (this.user.emailVerified) {
+					return
+				} else {
+					this.$toasted.show("Veuillez verifié votre email: connectez vous sur votre boite mail et cliqué sur le lien qui vous a été envoyé.", {
+						theme: "bubble",
+						position: "top-right",
+						type: "info",
+						duration: 10000,
+						action: () => {
+							// eslint-disable-next-line no-console
+							console.log('ok');
+						}
+					});
+				}
+			} else {
+				this.$router.push('/login')
+			}
+		}
+	},
 }
 </script>

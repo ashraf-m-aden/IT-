@@ -1,4 +1,5 @@
 import VueRouter from 'vue-router';
+
 // Pages
 
 import Login from './components/other-pages/authentication/login.vue';
@@ -24,6 +25,9 @@ import SecuriteInformatique from './components/other-pages/courses/reseaux/Secur
 import InstallationWindows from './components/other-pages/courses/reseaux/InstallationWindows.vue';
 import AdminWinServer from './components/other-pages/courses/reseaux/AdminWinServer.vue';
 import Bureautique from './components/other-pages/courses/reseaux/Bureautique.vue';
+
+
+import MyCourses from './components/other-pages/user-folder/Courses.vue';
 
 
 import Apropo from './components/other-pages/about/Apropos.vue';
@@ -52,11 +56,8 @@ export const router = new VueRouter({
     // { path: '/about-style-three', component: AboutStyleThree },
     // { path: '/features', component: Features },
     // { path: '/feature-details', component: FeatureDetails },
-    // { path: '/service-style-one', component: ServicesOne },
-    // { path: '/service-style-two', component: ServicesTwo },
     // { path: '/service-style-three', component: ServicesThree },
     // { path: '/service-style-four', component: ServicesFour },
-    // { path: '/service-details', component: ServiceDetails },
     // { path: '/project-style-one', component: ProjectStyleOne },
     // { path: '/project-style-two', component: ProjectStyleTwo },
     // { path: '/project-details', component: ProjectDetails },
@@ -101,6 +102,11 @@ export const router = new VueRouter({
     { path: '/cours-reseaux-systemes/admin-serveur', component: AdminWinServer },
     { path: '/cours-reseaux-systemes/bureautique', component: Bureautique },
 
+
+    { path: '/mes-cours', component: MyCourses },
+
+
+
     { path: '/login', component: Login },
     { path: '/register', component: Register },
 
@@ -115,4 +121,12 @@ export const router = new VueRouter({
 
 
   ]
+});
+
+router.beforeEach((to, from, next) => {
+
+  if ((to.path === "/login" || to.path === "/login#") && localStorage.getItem('isLoggedIn')) {
+    return next('/');
+  }
+  next()
 });

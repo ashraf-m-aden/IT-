@@ -1,6 +1,6 @@
 import Vuex from 'vuex';
 import Vue from 'vue';
-
+import firebase from 'firebase'
 Vue.use(Vuex);
 
 
@@ -28,7 +28,13 @@ export const mutations = {
 
 
     SET_AUTH(state, isLoggedIn) {
+        localStorage.setItem('isLoggedIn', isLoggedIn)
         state.isLoggedIn = isLoggedIn;
+
+    }
+    ,
+    SET_USER(state, user) {
+        state.userData = user;
     }
 }
 // actions are effectively the functions that get called by your components in order to trigger a mutation.
@@ -38,13 +44,22 @@ export const actions = {
         commit('SET_AUTH', isLoggedIn)
     },
 
-    checkAuth({ commit }) {
-        if (localStorage.getItem('isLoggedIn')) {
-            commit('SET_AUTH', true)
-        } else {
-            commit('SET_AUTH', false)
+    setUserData({ commit }, user) {
+        commit('SET_USER', user)
+    },
 
-        }
+    async checkAuth({ commit, dispatch }) {
+        firebase.auth().onAuthStateChanged(user => {
+            if (user) {
+                commit('SET_AUTH', true)
+                dispatch('setUserData', user)
+            } else {
+                commit('SET_AUTH', false)
+                dispatch('setUserData', null)
+
+            }
+        })
+
     }
 }
 
