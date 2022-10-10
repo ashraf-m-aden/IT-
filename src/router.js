@@ -27,7 +27,8 @@ import AdminWinServer from './components/other-pages/courses/reseaux/AdminWinSer
 import Bureautique from './components/other-pages/courses/reseaux/Bureautique.vue';
 
 
-import MyCourses from './components/other-pages/user-folder/Courses.vue';
+import Formations from './components/other-pages/user-folder/Formations.vue';
+import Disponibles from './components/other-pages/user-folder/FormationDisponible.vue';
 
 
 import Apropo from './components/other-pages/about/Apropos.vue';
@@ -103,8 +104,9 @@ export const router = new VueRouter({
     { path: '/cours-reseaux-systemes/bureautique', component: Bureautique },
 
 
-    { path: '/mes-cours', component: MyCourses },
+    { path: '/mes-formations', component: Formations },
 
+    { path: '/formations-disponibles', component: Disponibles },
 
 
     { path: '/login', component: Login },
@@ -125,7 +127,7 @@ export const router = new VueRouter({
 
 router.beforeEach((to, from, next) => {
 
-  if ((to.path === "/login" || to.path === "/login#") && localStorage.getItem('isLoggedIn')) {
+  if ((to.path === "/login" || to.path === "/login#") && localStorage.getItem('isLoggedIn') == true) {
     return next('/');
   }
   next()

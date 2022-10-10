@@ -39,21 +39,10 @@
       <div class="container">
         <form class="form-horizontal auth-form" @submit.prevent="handleSubmit">
           <div class="form-group">
-            <input
-              v-model="email"
-              name="login[username]"
-              type="email"
-              class="form-control"
-              id="exampleInputEmail1"
-            />
+            <input v-model="email" name="login[username]" type="email" class="form-control" id="exampleInputEmail1" />
           </div>
           <div class="form-group">
-            <input
-              :type="type"
-              v-model="password"
-              name="login[password]"
-              class="form-control"
-            />
+            <input :type="type" v-model="password" name="login[password]" class="form-control" />
           </div>
 
           <div class="form-button">
@@ -63,11 +52,9 @@
           </div>
           <div class="form-terms">
             <div class="custom-control custom-checkbox mr-sm-2">
-              <a href="#" class="mt-4"
-                ><router-link to="/register"
-                  >Pas encore enregistré? Enregistrez vous!</router-link
-                ></a
-              >
+              <a href="#" class="mt-4">
+                <router-link to="/register">Pas encore enregistré? Enregistrez vous!</router-link>
+              </a>
             </div>
           </div>
         </form>
@@ -77,7 +64,7 @@
 </template>
 
 <script>
-import AuthService from "../../../services/auth/index";
+import AuthService from "../../../services/auth";
 export default {
   components: {},
   data() {
@@ -112,6 +99,7 @@ export default {
         await AuthService.login(this.email, this.password)
           .then(async (authResult) => {
             this.$store.dispatch("setAuthentication", true);
+            this.$store.dispatch("setCourses");
 
             // this.tokenExpiry = new Date();
             // localStorage.setItem(loginExpiryKey, this.tokenExpiry);
@@ -144,15 +132,18 @@ export default {
 <style lang="scss" scoped>
 .container {
   max-width: 900px;
+
   .bg-primary {
     padding: 50px;
     background-image: url("../../../assets/img/logo.png");
     background-position: center;
     box-shadow: 1px 5px 24px 0 rgba(255, 128, 132, 0.8);
   }
+
   .form-group {
     margin-bottom: 1.5rem;
   }
+
   .svg-icon {
     padding: 24px;
     margin: 0 auto;
@@ -161,16 +152,19 @@ export default {
     height: 130px;
     width: 130px;
     margin-bottom: 40px;
+
     svg {
       height: 80px;
     }
   }
+
   p {
     color: rgba(#ffffff, 0.9);
     font-size: 15px;
     line-height: 2;
     text-align: center;
   }
+
   h3 {
     color: #ffffff;
     font-weight: 600;

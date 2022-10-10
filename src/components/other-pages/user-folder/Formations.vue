@@ -6,7 +6,7 @@
         <div class="d-table">
           <div class="d-table-cell">
             <div class="container">
-              <h2>Mes cours</h2>
+              <h2>Mes formations</h2>
             </div>
           </div>
         </div>
@@ -39,27 +39,51 @@
       <!-- End Page Title -->
 
       <!-- Start ML Services Area -->
-      <section class="ml-services-area ptb-80" v-if="myCourses.length > 0">
+      <section class="ml-services-area ptb-80" v-if="formations.length > 0">
         <div class="container">
           <div class="row">
-            <div
-              class="col-lg-4 col-sm-6 col-md-6"
-              v-for="(cours, index) in myCourses"
-              :key="index"
-            >
-              <div class="single-ml-services-box">
-                <div class="image">
-                  <img
-                    src="../../../assets/img/services-image/1.png"
-                    alt="image"
-                  />
-                </div>
-                <h3>
-                  <a href="#">{{ cours.name }}</a>
-                </h3>
-                <p>Date de début: {{ cours.startDate }}</p>
-                <p>Instructeur: {{ cours.profName }}</p>
-              </div>
+            <div class="col">
+              <table class="table bg-white">
+                <thead class="table-head">
+                  <tr>
+                    <td>
+                      #
+                    </td>
+                    <td>
+                      Nom de la formation
+                    </td>
+                    <td>
+                      Début de la formation
+                    </td>
+                    <td>
+                      Statut
+                    </td>
+                    <td>Instructeur</td>
+                  </tr>
+
+                </thead>
+                <tbody>
+                  <tr v-for="(formation, index) in formations" :key="index" class="formation">
+                    <td>
+                      {{index+ 1}}
+                    </td>
+                    <td>
+                      {{formation.courseName}}
+                    </td>
+                    <td>
+                      {{formation.startDate}}
+                    </td>
+                    <td>
+                      <span v-show="formation.inscription">Non débuté</span>
+                      <span v-show="formation.started">En cours</span>
+                      <span v-show="formation.finished">Terminé</span>
+                    </td>
+                    <td>
+                      {{formation.professeurName}}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
@@ -92,29 +116,22 @@
           <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
               <div class="agency-banner-content">
-                <span class="sub-title">Vous n'êtes inscris à aucun cours</span>
+                <span class="sub-title">Vous n'êtes inscris à aucune formation</span>
                 <h1>Prenez votre avenir en main!</h1>
                 <p>
                   Il est grand temps de vous lancer dans cette superbe aventure
                   qu'est la science des systemes d'informations.
                 </p>
-                <router-link to="/cours-programmation"
-                  ><a class="btn btn-secondary">Programmation</a></router-link
-                >
+                <router-link to="/cours-programmation"><a class="btn btn-secondary">Programmation</a></router-link>
                 <router-link to="/cours-reseaux-systemes">
-                  <a class="btn btn-secondary"
-                    >Réseaux et Systemes</a
-                  ></router-link
-                >
+                  <a class="btn btn-secondary">Réseaux et Systemes</a>
+                </router-link>
               </div>
             </div>
 
             <div class="col-lg-6 col-md-12">
               <div class="agency-banner-image">
-                <img
-                  src="../../../assets/img/courses/courses.jpeg"
-                  alt="image"
-                />
+                <img src="../../../assets/img/courses/courses.jpeg" alt="image" />
               </div>
             </div>
           </div>
@@ -135,17 +152,45 @@
         </div>
       </div>
     </div>
+
+
   </div>
 </template>
 
 <script>
 export default {
-  name: "cours",
+  name: "formations",
 
   data() {
     return {
-      myCourses: this.$store.getters.getMyCourses,
+      formations: this.$store.getters.getMyFormations,
+      showModal: false
+
     };
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.table {
+
+
+  &-head {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(7, 56, 152, 1) 22%, rgba(0, 212, 255, 1) 100%);
+    color: white;
+    font-size: 17px;
+  }
+
+}
+
+.formation {
+
+  &:hover {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    color: white;
+    cursor: pointer;
+  }
+}
+</style>

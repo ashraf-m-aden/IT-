@@ -1,6 +1,7 @@
 import Vuex from 'vuex';
 import Vue from 'vue';
 import firebase from 'firebase'
+import AuthService from '../services/auth';
 Vue.use(Vuex);
 
 
@@ -49,10 +50,18 @@ export const actions = {
     },
 
     async checkAuth({ commit, dispatch }) {
-        firebase.auth().onAuthStateChanged(user => {
+        firebase.auth().onAuthStateChanged(async user => {
             if (user) {
-                commit('SET_AUTH', true)
-                dispatch('setUserData', user)
+                await AuthService.getUserData(user.uid).then(async (res) => {
+                    await commit('SET_AUTH', true)
+                    await dispatch('setUserData', res.data())
+                    // // eslint-disable-next-line no-console
+                    // console.log(res.data());
+                }).catch(() => {
+                    commit('SET_AUTH', false)
+                    dispatch('setUserData', null)
+                })
+
             } else {
                 commit('SET_AUTH', false)
                 dispatch('setUserData', null)

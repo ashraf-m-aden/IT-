@@ -3,9 +3,10 @@ import firebase from 'firebase/app'
 import 'firebase/firestore'
 import config from './config.json'
 // Get a Firestore instance
-export const db = firebase
-    .initializeApp(config.firebase)
-    .firestore()
+export const fb = firebase.initializeApp(config.firebase)
+export const db = fb.firestore()
+
+
 
 // Export types that exists in Firestore
 // This is not always necessary, but it's used in other examples

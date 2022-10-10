@@ -3,15 +3,11 @@
     <HeaderTwo v-if="currentUrl == '/web-hosting'"></HeaderTwo>
     <HeaderThree v-else-if="currentUrl == '/machine-learning'"></HeaderThree>
     <HeaderFour v-else-if="currentUrl == '/digital-agency'"></HeaderFour>
-    <div
-      v-else-if="currentUrl == '/not-found' || currentUrl == '/coming-soon'"
-    ></div>
+    <div v-else-if="currentUrl == '/not-found' || currentUrl == '/coming-soon'"></div>
     <Header v-else></Header>
     <PreLoader v-if="isLoading" />
     <router-view></router-view>
-    <div
-      v-if="currentUrl == '/not-found' || currentUrl == '/coming-soon'"
-    ></div>
+    <div v-if="currentUrl == '/not-found' || currentUrl == '/coming-soon'"></div>
     <Footer v-else></Footer>
   </div>
 </template>
@@ -54,6 +50,7 @@ export default {
 
   mounted() {
     this.$store.dispatch("checkAuth");
+    this.$store.dispatch("setCourses");
 
     this.currentUrl = window.location.pathname;
     setTimeout(() => {

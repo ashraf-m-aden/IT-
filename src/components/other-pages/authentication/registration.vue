@@ -39,40 +39,24 @@
       <div class="container">
         <div class="form-horizontal auth-form">
           <div class="form-group">
-            <input
-              v-model="email"
-              name="email"
-              type="email"
-              class="form-control"
-              placeholder="Email"
-              id="exampleInputEmail12"
-            />
+            <input v-model="email" name="email" type="email" class="form-control" placeholder="Email"
+              id="exampleInputEmail12" />
             <!-- <span
                 class="block text-danger text-xs absolute bottom-0 left-0"
                 >{{ errors[0] }}</span
               > -->
           </div>
           <div class="form-group">
-            <input
-              v-model="password"
-              name="login[password]"
-              type="password"
-              class="form-control"
-              placeholder="Mot de passe"
-            />
+            <input v-model="password" name="login[password]" type="password" class="form-control"
+              placeholder="Mot de passe" />
             <!-- <span
                 class="block text-danger text-xs absolute bottom-0 left-0"
                 >{{ errors[0] }}</span
               > -->
           </div>
           <div class="form-group">
-            <input
-              name="login[password]"
-              type="password"
-              v-model="confirmPassword"
-              class="form-control"
-              placeholder="Confirmer le mot de passe"
-            />
+            <input name="login[password]" type="password" v-model="confirmPassword" class="form-control"
+              placeholder="Confirmer le mot de passe" />
             <!-- <span
                 class="block text-danger text-xs absolute bottom-0 left-0"
                 >{{ errors[0] }}</span
@@ -86,11 +70,9 @@
           </div>
           <div class="form-terms">
             <div class="mt-4">
-              <span
-                ><router-link to="/login"
-                  >Déja enregistré? Connectez vous ici!</router-link
-                ></span
-              >
+              <span>
+                <router-link to="/login">Déja enregistré? Connectez vous ici!</router-link>
+              </span>
             </div>
           </div>
         </div>
@@ -101,7 +83,7 @@
 
 <script>
 // import firebase from "firebase";
-import AuthService from "../../../services/auth/index";
+import AuthService from "../../../services/auth";
 export default {
   components: {},
   data() {
@@ -150,6 +132,7 @@ export default {
               type: "success",
               duration: 2000,
             });
+            this.$store.dispatch("setCourses");
             this.$router.push("/");
           })
           .catch((error) => {
@@ -170,15 +153,18 @@ export default {
 <style lang="scss" scoped>
 .container {
   max-width: 900px;
+
   .bg-primary {
     padding: 50px;
     background-image: url("../../../assets/img/logo.png");
     background-position: center;
     box-shadow: 1px 5px 24px 0 rgba(255, 128, 132, 0.8);
   }
+
   .form-group {
     margin-bottom: 1.5rem;
   }
+
   .svg-icon {
     padding: 24px;
     margin: 0 auto;
@@ -187,16 +173,19 @@ export default {
     height: 130px;
     width: 130px;
     margin-bottom: 40px;
+
     svg {
       height: 80px;
     }
   }
+
   p {
     color: rgba(#ffffff, 0.9);
     font-size: 15px;
     line-height: 2;
     text-align: center;
   }
+
   h3 {
     color: #ffffff;
     font-weight: 600;

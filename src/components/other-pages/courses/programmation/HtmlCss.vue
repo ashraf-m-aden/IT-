@@ -96,7 +96,7 @@
 
 						<div class="pricing-features">
 							<ul>
-								<li class="active">Durée de la formation : 3 mois</li>
+								<li class="active">Durée de la formation : 2 mois</li>
 								<li class="active">Matériels requis: PC dualcore 4GB ram</li>
 								<li class="active">Prérequis: Aucun</li>
 
@@ -111,6 +111,35 @@
 
 			</div>
 		</div>
+
+		<transition name="modal">
+			<div class="modal-mask" v-if="showModal">
+				<div class="modal-wrapper">
+					<div class="modal-container ">
+
+						<div class="row">
+							<div class="pricing-table active-plan confirmation">
+								<div class="pricing-header">
+									<h3>Confirmation</h3>
+								</div>
+
+
+								<div class="pricing-features">
+									<p>Vous êtes sur le point de vous inscrire à ce cours. Etes vous prêts?</p>
+									<br>
+								</div>
+
+								<div class=" d-flex">
+									<button class="btn btn-primary" @click="confirmation()">M'inscrire</button>
+									<button class="btn btn-primary" @click="showModal = false">Annuler</button>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</transition>
 	</div>
 </template>
 
@@ -122,33 +151,117 @@ export default {
 	},
 	data() {
 		return {
-			user: this.$store.getters.getUserData
+			showModal: false
 
 		}
 	}
 	,
 	methods: {
 		inscription() {
+			const user = this.$store.getters.getUserData;
 
-			if (this.user) {
-				if (this.user.emailVerified) {
-					return
+			if (user) {
+				if (user.emailVerified) {
+					this.showModal = true;
 				} else {
-					this.$toasted.show("Veuillez verifié votre email: connectez vous sur votre boite mail et cliqué sur le lien qui vous a été envoyé.", {
+					this.$toasted.show("Veuillez verifié votre email: connectez vous sur votre boite mail et cliqué sur le lien qui vous a été envoyé. (VERIFIEZ VOS SPAMS)", {
 						theme: "bubble",
 						position: "top-right",
 						type: "info",
 						duration: 10000,
-						action: () => {
-							// eslint-disable-next-line no-console
-							console.log('ok');
-						}
+
 					});
 				}
 			} else {
-				this.$router.push('/login')
+
+				this.$toasted.show("Veuillez vous connectez pour vous inscrire", {
+					theme: "bubble",
+					position: "top-right",
+					type: "info",
+					duration: 5000,
+
+				});
+
+
 			}
 		}
 	},
 }
 </script>
+<style lang="scss" scoped>
+@import '../../../../assets/style/mixins.scss';
+
+.modal-mask {
+	position: fixed;
+	z-index: 9998;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: table;
+	transition: opacity 0.3s ease;
+}
+
+.modal-wrapper {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.modal-container {
+	width: 500px;
+	margin: 0px auto;
+	padding: 20px 30px;
+	border-radius: 2px;
+	transition: all 0.3s ease;
+	font-family: Helvetica, Arial, sans-serif;
+
+	@include respond(desk) {
+		width: 300px;
+	}
+}
+
+.confirmation {
+	width: 500px;
+
+	@include respond(tablet) {
+		width: 300px;
+	}
+}
+
+.modal-header h3 {
+	margin-top: 0;
+	color: #42b983;
+}
+
+.modal-body {
+	margin: 20px 0;
+}
+
+.modal-default-button {
+	float: right;
+}
+
+/*
+ * The following styles are auto-applied to elements with
+ * transition="modal" when their visibility is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the modal transition by editing
+ * these styles.
+ */
+
+.modal-enter {
+	opacity: 0;
+}
+
+.modal-leave-active {
+	opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+</style>
