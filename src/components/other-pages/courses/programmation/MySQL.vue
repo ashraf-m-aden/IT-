@@ -38,7 +38,7 @@
 								MySQL peut donc s'utiliser seul, mais est la plupart du temps combiné à un autre langage
 								de programmation.
 							</p>
-							
+
 
 
 						</div>
@@ -53,8 +53,7 @@
 
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/mysql 2.jpg"
-							class="wow fadeInUp" v-wow alt="image">
+						<img src="../../../../assets/img/courses/mysql 2.jpg" class="wow fadeInUp" v-wow alt="image">
 					</div>
 
 					<div class="col-lg-6 services-details">
@@ -68,7 +67,7 @@
 									selectionner des données selon de nombreux criteres ;</li>
 								<li>
 									manipuler des données ;</li>
-									<li>Utiliser des triggers pour automatiser certaines actions ;</li>
+								<li>Utiliser des triggers pour automatiser certaines actions ;</li>
 
 							</ul>
 							</p>
@@ -126,15 +125,84 @@
 </template>
 
 <script>
+import FormationService from '../../../../services/formation.js'
 export default {
-	name: 'ServiceDetails',
 	components: {
 
 	},
 	data() {
 		return {
-		
+			formation: {},
+			dejaInscrit: false
 		}
-	}
+	},
+	async beforeCreate() {
+		const formations = this.$store.getters.formations;
+		if (formations.length == []) {
+
+			const filtered = formations.filter(f => f.courseId === "1");
+			this.formation = filtered[0];
+
+			if (this.formation) {
+				this.checkInscription()
+			}
+		}
+
+		else {
+			await this.$store.dispatch("setCoursesDisponibles");
+
+
+			const filtered = formations.filter(f => f.courseId === "1");
+			this.formation = filtered[0];
+
+			if (this.formation) {
+				this.checkInscription()
+			}
+		}
+
+	},
+	methods: {
+		checkInscription() {
+			const user = this.$store.getters.getUserData;
+			if (user) {
+				const reserved = this.formation.reserved.includes(user.id);
+				const contain = this.formation.students.includes(user.id);
+				if ((reserved || contain)) {
+					this.dejaInscrit = true;
+				}
+			}
+
+		},
+		inscription() {
+			const user = this.$store.getters.getUserData;
+
+			if (user) {
+				if (user.emailVerified) {
+					FormationService.registerFormation(this.formation)
+				} else {
+					this.$toasted.show("Veuillez verifié votre email: connectez vous sur votre boite mail et cliqué sur le lien qui vous a été envoyé. (VERIFIEZ VOS SPAMS)", {
+						theme: "bubble",
+						position: "top-right",
+						type: "info",
+						duration: 10000,
+
+					});
+				}
+			} else {
+
+				this.$toasted.show("Veuillez vous connectez ou vous enregistrer sur le site pour vous inscrire, puis verifiez votre email pour et cliquez sur le lien de verification", {
+					theme: "bubble",
+					position: "top-right",
+					type: "info",
+					duration: 7000,
+
+				});
+
+
+			}
+
+		}
+	},
+
 }
 </script>

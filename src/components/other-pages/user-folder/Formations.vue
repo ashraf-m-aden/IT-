@@ -163,11 +163,20 @@ export default {
 
   data() {
     return {
-      formations: this.$store.getters.getMyFormations,
       showModal: false
 
     };
   },
+  async mounted() {
+    // await this.$store.dispatch("checkAuth");
+    await this.$store.dispatch("setMyCourses");
+  },
+  computed: {
+    formations() {
+      // eslint-disable-next-line no-console
+      return this.$store.getters.getMyFormations
+    }
+  }
 };
 </script>
 

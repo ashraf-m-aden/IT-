@@ -1,7 +1,7 @@
 import EventEmitter from 'events';
 const isloggedIn = 'isLoggedIn';
 import { db, fb } from '../../db';
-
+import firebase from 'firebase'
 class Auth extends EventEmitter {
     authToken = null
     userProfile = null
@@ -46,7 +46,10 @@ class Auth extends EventEmitter {
     getUserData(userId) {
         return db.collection('users').doc(userId).get();
     }
+    async anonymous() {
 
+        await firebase.auth().signInAnonymously()
+    }
 
 
 }

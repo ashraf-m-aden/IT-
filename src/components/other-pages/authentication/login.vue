@@ -98,14 +98,9 @@ export default {
       } else {
         await AuthService.login(this.email, this.password)
           .then(async (authResult) => {
-            this.$store.dispatch("setAuthentication", true);
-            this.$store.dispatch("setCourses");
+            await this.$store.dispatch("afterLogin", authResult.user.uid);
 
-            // this.tokenExpiry = new Date();
-            // localStorage.setItem(loginExpiryKey, this.tokenExpiry);
 
-            localStorage.setItem("isLoggedIn", "true");
-            await this.$store.dispatch("setUserData", authResult.user);
             this.$toasted.show("Connection établit", {
               theme: "bubble",
               position: "top-right",
@@ -116,7 +111,6 @@ export default {
           })
           .catch((error) => {
             // eslint-disable-next-line no-console
-            console.log(error);
             this.$toasted.show(error, {
               theme: "bubble",
               position: "top-right",

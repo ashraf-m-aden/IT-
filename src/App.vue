@@ -19,6 +19,7 @@ import HeaderThree from "./components/layout/HeaderThree";
 import HeaderFour from "./components/layout/HeaderFour";
 import Footer from "./components/layout/Footer";
 import PreLoader from "./components/layout/PreLoader";
+import auth from "./services/auth";
 export default {
   name: "app",
   components: {
@@ -47,11 +48,18 @@ export default {
       }, 1500);
     },
   },
+  async mounted() {
+    const id = localStorage.getItem('idUser');
+    if (id != null || undefined) {
+      await this.$store.dispatch("afterLogin", id);
+      await this.$store.dispatch("setCoursesDisponibles");
+      await this.$store.dispatch("setMyCourses");
 
-  mounted() {
-    this.$store.dispatch("checkAuth");
-    this.$store.dispatch("setCourses");
+    } else {
+      await auth.anonymous();
+      await this.$store.dispatch("setCoursesDisponibles");
 
+    }
     this.currentUrl = window.location.pathname;
     setTimeout(() => {
       this.isLoading = false;

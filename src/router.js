@@ -2,8 +2,8 @@ import VueRouter from 'vue-router';
 
 // Pages
 
-import Login from './components/other-pages/authentication/login.vue';
-import Register from './components/other-pages/authentication/registration.vue';
+// import Login from './components/other-pages/authentication/login.vue';
+// import Register from './components/other-pages/authentication/registration.vue';
 
 
 import ServicesProgrammation from './components/other-pages/courses/ServicesProgrammation';
@@ -109,8 +109,8 @@ export const router = new VueRouter({
     { path: '/formations-disponibles', component: Disponibles },
 
 
-    { path: '/login', component: Login },
-    { path: '/register', component: Register },
+    // { path: '/login', component: Login },
+    // { path: '/register', component: Register },
 
 
     { path: '/not-found', component: NotFound },
@@ -127,7 +127,7 @@ export const router = new VueRouter({
 
 router.beforeEach((to, from, next) => {
 
-  if ((to.path === "/login" || to.path === "/login#") && localStorage.getItem('isLoggedIn') == true) {
+  if ((to.path === "/login" || to.path === "/login#") && localStorage.getItem('isLoggedIn') == 'true') {
     return next('/');
   }
   next()

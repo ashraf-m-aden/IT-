@@ -132,12 +132,11 @@ export default {
               type: "success",
               duration: 2000,
             });
-            this.$store.dispatch("setCourses");
+            this.$store.dispatch("setMyCourses");
             this.$router.push("/");
           })
           .catch((error) => {
-            // eslint-disable-next-line no-console
-            console.log(error);
+
             this.$toasted.show(error.message, {
               theme: "bubble",
               position: "top-right",

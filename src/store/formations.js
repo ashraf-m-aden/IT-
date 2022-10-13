@@ -7,6 +7,7 @@ Vue.use(Vuex);
 // state is the same as what would typically go inside of the data object when using Vue without Vuex.
 export const state = () => ({
     formations: [],
+    myFormations: [],
 })
 
 // getters are Vuex's equivalent to computed properties in Vue.
@@ -14,6 +15,10 @@ export const state = () => ({
 export const getters = {
 
     getMyFormations(state) {
+        return state.myFormations
+    },
+    formations(state) {
+        // eslint-disable-next-line no-console
         return state.formations
     },
 
@@ -26,19 +31,29 @@ export const mutations = {
 
     SET_COURSES(state, formations) {
         state.formations = formations;
+    },
+    SET_MYCOURSES(state, formations) {
+        state.myFormations = formations;
     }
 }
 // actions are effectively the functions that get called by your components in order to trigger a mutation.
 export const actions = {
 
-    setCourses({ commit }) {
-        const formation = FormationService.getTraining();
-        // eslint-disable-next-line no-console
-        formation.then(data => {
+    async setCoursesDisponibles({ commit }) {
+        await FormationService.getTraining().then(data => {
+
 
             commit('SET_COURSES', data)
 
-        })
+        });
+
+
+    },
+
+    async setMyCourses({ commit }) {
+        const myFormations = await FormationService.getMyTraining();
+        commit('SET_MYCOURSES', myFormations)
+
 
     },
 

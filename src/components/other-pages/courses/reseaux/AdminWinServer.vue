@@ -28,23 +28,29 @@
 					<div class="col-lg-6 services-details">
 						<div class="services-details-desc">
 							<h3>Prenez le controle des serveurs windows</h3>
-							<p>Windows Serveur est un système d’exploitation très déployé dans les infrastructures 
-professionnelles. Cette formation Installation et configuration de Windows Server vous permettra 
-d’être très opérationnel sous Windows Serveur tels que les versions 2008, 2012 ou 2016. </p><p>
-Pendant cette formation Windows Server, vous allez tout d’accord voir comment installer et 
-configurer un serveur Windows de base avant de commencer à implémenter les différents services : 
-services de domaines Active Directory, serveur DHCP, serveur DNS, serveur de fichiers et 
-d’impression. Aussi durant cette formation Windows Server, vous allez comprendre et implémenter 
-l’adressage IPv4 et IPv6 sous Windows, et aussi apprendre comment automatiser des tâches avec 
-PowerShell.</p>
+							<p>Windows Serveur est un système d’exploitation très déployé dans les infrastructures
+								professionnelles. Cette formation Installation et configuration de Windows Server vous
+								permettra
+								d’être très opérationnel sous Windows Serveur tels que les versions 2008, 2012 ou 2016.
+							</p>
+							<p>
+								Pendant cette formation Windows Server, vous allez tout d’accord voir comment installer
+								et
+								configurer un serveur Windows de base avant de commencer à implémenter les différents
+								services :
+								services de domaines Active Directory, serveur DHCP, serveur DNS, serveur de fichiers et
+								d’impression. Aussi durant cette formation Windows Server, vous allez comprendre et
+								implémenter
+								l’adressage IPv4 et IPv6 sous Windows, et aussi apprendre comment automatiser des tâches
+								avec
+								PowerShell.</p>
 
-							
+
 						</div>
 					</div>
 
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/winserver.jpeg" class="wow fadeInUp" v-wow
-							alt="image">
+						<img src="../../../../assets/img/courses/winserver.jpeg" class="wow fadeInUp" v-wow alt="image">
 					</div>
 				</div>
 
@@ -61,21 +67,22 @@ PowerShell.</p>
 							<p>À la fin de ce cours, vous serez capable de :
 							<ul>
 								<li>Installer et configurer Microsoft Windows Server (2008, 2012 ou 2016)
- ;</li>
+									;</li>
 								<li>
 									Comprendre et gérer les services de domaines Active Directory ;</li>
 								<li>
 									Gérer comptes utilisateurs et ordinateurs sous Active Directory ;</li>
 								<li>
 									Déléguer l’administration des services de domaine Active Directory
- ;</li>
+									;</li>
 								<li>
-									Automatiser des tâches Active Directory en ligne de commande et avec des scripts 
-PowerShell;</li>
+									Automatiser des tâches Active Directory en ligne de commande et avec des scripts
+									PowerShell;</li>
 								<li>Comprendre et mettre en place IP v4 et IPv6 sous Windows serveur;</li>
 								<li>Installer et gérer le serveur DHCP sous Windows serveur ;</li>
 								<li>Comprendre et administrer le service DNS sous Windows serveur ;</li>
-								<li>Gérer le stockage local, les services de fichiers et imprimantes sous Windows serveur ;</li>
+								<li>Gérer le stockage local, les services de fichiers et imprimantes sous Windows
+									serveur ;</li>
 							</ul>
 							</p>
 							<!-- 
@@ -90,60 +97,128 @@ PowerShell;</li>
 		<!-- End Services Details Area -->
 
 		<div class="container">
-			
-		<div class="row  justify-content-center ">
-                    
 
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="pricing-table active-plan">
-                            <div class="pricing-header">
-                                <h3>Angular</h3>
-                            </div>
-                            
-                            <div class="price">
-                                <span><sup>Fdj</sup>15000 <span>/Mois</span></span>
-                            </div>
-                            
-                            <div class="pricing-features">
-                                <ul>
-                                    <li class="active">Durée de la formation : 3 mois</li>
-                                    <li class="active">Matériels requis: Laptop core i5, 8GB RAM, 1TB Hard Disk</li>
-                                                           
-                                </ul>
-							
-                            </div>
-							<h6>Prérequis: </h6>
-<div class="pricing-features">
+			<div class="row  justify-content-center ">
 
-									<ul>
-										<li class="active">Avoir une bonne expérience du système d’exploitation 
-Microsoft Windows et des principes fondamentaux des réseaux, Connaitre 
-les clients Windows 7, Windows 8 ou Windows 10 serait un atout.</li>
-										
-									</ul>
-							</div>
-                            
-                            <div class="pricing-footer">
-                                <a href="#" class="btn btn-primary">M'inscrire à ce cours</a>
-                            </div>
-                        </div>
-                    </div>
-                   
+
+				<div class="col-lg-4 col-md-6 col-sm-6">
+					<div class="pricing-table active-plan">
+						<div class="pricing-header">
+							<h3>Angular</h3>
+						</div>
+
+						<div class="price">
+							<span><sup>Fdj</sup>15000 <span>/Mois</span></span>
+						</div>
+
+						<div class="pricing-features">
+							<ul>
+								<li class="active">Durée de la formation : 3 mois</li>
+								<li class="active">Matériels requis: Laptop core i5, 8GB RAM, 1TB Hard Disk</li>
+
+							</ul>
+
+						</div>
+						<h6>Prérequis: </h6>
+						<div class="pricing-features">
+
+							<ul>
+								<li class="active">Avoir une bonne expérience du système d’exploitation
+									Microsoft Windows et des principes fondamentaux des réseaux, Connaitre
+									les clients Windows 7, Windows 8 ou Windows 10 serait un atout.</li>
+
+							</ul>
+						</div>
+
+						<div class="pricing-footer">
+							<a href="#" class="btn btn-primary">M'inscrire à ce cours</a>
+						</div>
+					</div>
 				</div>
+
+			</div>
 		</div>
 	</div>
 </template>
-
 <script>
+import FormationService from '../../../../services/formation.js'
 export default {
-	name: 'ServiceDetails',
 	components: {
 
 	},
 	data() {
 		return {
-		
+			formation: {},
+			dejaInscrit: false
 		}
-	}
+	},
+	async beforeCreate() {
+		const formations = this.$store.getters.formations;
+		if (formations.length == []) {
+
+			const filtered = formations.filter(f => f.courseId === "1");
+			this.formation = filtered[0];
+
+			if (this.formation) {
+				this.checkInscription()
+			}
+		}
+
+		else {
+			await this.$store.dispatch("setCoursesDisponibles");
+
+
+			const filtered = formations.filter(f => f.courseId === "1");
+			this.formation = filtered[0];
+
+			if (this.formation) {
+				this.checkInscription()
+			}
+		}
+
+	},
+	methods: {
+		checkInscription() {
+			const user = this.$store.getters.getUserData;
+			if (user) {
+				const reserved = this.formation.reserved.includes(user.id);
+				const contain = this.formation.students.includes(user.id);
+				if ((reserved || contain)) {
+					this.dejaInscrit = true;
+				}
+			}
+
+		},
+		inscription() {
+			const user = this.$store.getters.getUserData;
+
+			if (user) {
+				if (user.emailVerified) {
+					FormationService.registerFormation(this.formation)
+				} else {
+					this.$toasted.show("Veuillez verifié votre email: connectez vous sur votre boite mail et cliqué sur le lien qui vous a été envoyé. (VERIFIEZ VOS SPAMS)", {
+						theme: "bubble",
+						position: "top-right",
+						type: "info",
+						duration: 10000,
+
+					});
+				}
+			} else {
+
+				this.$toasted.show("Veuillez vous connectez ou vous enregistrer sur le site pour vous inscrire, puis verifiez votre email pour et cliquez sur le lien de verification", {
+					theme: "bubble",
+					position: "top-right",
+					type: "info",
+					duration: 7000,
+
+				});
+
+
+			}
+
+		}
+	},
+
 }
 </script>

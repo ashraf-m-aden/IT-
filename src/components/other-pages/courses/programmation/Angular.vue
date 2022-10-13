@@ -120,10 +120,10 @@
 						</div>
 
 						<div class="pricing-footer" v-if="formation && dejaInscrit == false" @click="inscription()">
-							<a href="#" class="btn btn-primary">M'inscrire à ce cours</a>
+							<button class="btn btn-primary">M'inscrire à ce cours</button>
 						</div>
 						<div class="pricing-footer" v-if="formation && dejaInscrit == true">
-							<a href="#" class="btn btn-warning disabled">Déja inscrit pour la session en cours</a>
+							<button class="btn btn-warning disabled">Déja inscrit pour la session en cours</button>
 						</div>
 					</div>
 				</div>
@@ -145,29 +145,71 @@ export default {
 			dejaInscrit: false
 		}
 	},
-	mounted() {
-		const formations = this.$store.getters.getMyFormations;
+	async beforeCreate() {
+		const formations = this.$store.getters.formations;
+		if (formations.length == []) {
 
-		const filtered = formations.filter(f => f.courseId === "1");
+			const filtered = formations.filter(f => f.courseId === "1");
+			this.formation = filtered[0];
 
-		this.formation = filtered[0];
-		if (this.formation) {
-			this.checkInscription()
+			if (this.formation) {
+				this.checkInscription()
+			}
+		}
+
+		else {
+			await this.$store.dispatch("setCoursesDisponibles");
+
+
+			const filtered = formations.filter(f => f.courseId === "1");
+			this.formation = filtered[0];
+
+			if (this.formation) {
+				this.checkInscription()
+			}
 		}
 
 	},
 	methods: {
 		checkInscription() {
 			const user = this.$store.getters.getUserData;
-			const reserved = this.formation.reserved.includes(user.id);
-			const contain = this.formation.students.includes(user.id);
-
-			if (reserved || contain) {
-				this.dejaInscrit = true;
+			if (user) {
+				const reserved = this.formation.reserved.includes(user.id);
+				const contain = this.formation.students.includes(user.id);
+				if ((reserved || contain)) {
+					this.dejaInscrit = true;
+				}
 			}
+
 		},
 		inscription() {
-			FormationService.registerFormation(this.formation)
+			const user = this.$store.getters.getUserData;
+
+			if (user) {
+				if (user.emailVerified) {
+					FormationService.registerFormation(this.formation)
+				} else {
+					this.$toasted.show("Veuillez verifié votre email: connectez vous sur votre boite mail et cliqué sur le lien qui vous a été envoyé. (VERIFIEZ VOS SPAMS)", {
+						theme: "bubble",
+						position: "top-right",
+						type: "info",
+						duration: 10000,
+
+					});
+				}
+			} else {
+
+				this.$toasted.show("Veuillez vous connectez ou vous enregistrer sur le site pour vous inscrire, puis verifiez votre email pour et cliquez sur le lien de verification", {
+					theme: "bubble",
+					position: "top-right",
+					type: "info",
+					duration: 7000,
+
+				});
+
+
+			}
+
 		}
 	},
 

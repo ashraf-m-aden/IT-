@@ -126,12 +126,12 @@ export default {
         };
     },
     mounted() {
-        this.$store.dispatch("setCourses");
+        this.$store.dispatch("setCoursesDisponibles");
 
     },
     computed: {
         formations() {
-            const datas = this.$store.getters.getMyFormations;
+            const datas = this.$store.getters.formations;
 
             return datas;
         }

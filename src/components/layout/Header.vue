@@ -39,7 +39,7 @@
               <li class="nav-item">
                 <router-link to="/formations-disponibles" class="nav-link">Formations disponibles</router-link>
               </li>
-              <li class="nav-item" v-show="isAuthenticated">
+              <!-- <li class="nav-item" v-show="isAuthenticated">
                 <router-link to="/mes-formations" class="nav-link">Mes formations</router-link>
               </li>
 
@@ -52,7 +52,7 @@
                 <router-link to="/" v-show="isAuthenticated ">
                   <a class=" conn" style="color='red'" @click="logout()">Deconnection</a>
                 </router-link>
-              </li>
+              </li> -->
             </ul>
           </b-collapse>
           <!-- 
@@ -107,15 +107,11 @@ export default {
       auth
         .Logout()
         .then(async () => {
-          await this.$store.dispatch("setAuthentication", false);
-
-          localStorage.removeItem("userinfo");
-          localStorage.removeItem("isLoggedIn");
+          await this.$store.dispatch("afterLogout");
           this.$router.push("/login");
         })
-        .catch(() => {
-          localStorage.removeItem("userinfo");
-          localStorage.removeItem("isLoggedIn");
+        .catch(async () => {
+          await this.$store.dispatch("afterLogout");
           this.$router.push("/login");
         });
     },
