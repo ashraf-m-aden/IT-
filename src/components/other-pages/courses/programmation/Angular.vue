@@ -119,12 +119,7 @@
 							</ul>
 						</div>
 
-						<div class="pricing-footer" v-if="formation && dejaInscrit == false" @click="inscription()">
-							<button class="btn btn-primary">M'inscrire à ce cours</button>
-						</div>
-						<div class="pricing-footer" v-if="formation && dejaInscrit == true">
-							<button class="btn btn-warning disabled">Déja inscrit pour la session en cours</button>
-						</div>
+
 					</div>
 				</div>
 

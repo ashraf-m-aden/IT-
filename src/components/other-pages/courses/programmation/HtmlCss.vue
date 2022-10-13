@@ -103,9 +103,6 @@
 							</ul>
 						</div>
 
-						<div class="pricing-footer">
-							<a class="btn btn-primary" @click="inscription()">M'inscrire à ce cours</a>
-						</div>
 					</div>
 				</div>
 

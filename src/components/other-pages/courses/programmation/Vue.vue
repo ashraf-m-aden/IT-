@@ -115,9 +115,7 @@
 							</ul>
 						</div>
 
-						<div class="pricing-footer">
-							<a href="#" class="btn btn-primary">M'inscrire à ce cours</a>
-						</div>
+
 					</div>
 				</div>
 
