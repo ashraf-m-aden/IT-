@@ -2,7 +2,7 @@
   <!-- Start Navbar Area -->
   <header id="header" :class="['headroom', { 'is-sticky': isSticky }]">
     <div class="startp-nav">
-      <div class="container-fluid">
+      <div class="container">
         <nav class="navbar navbar-expand-md navbar-light">
           <router-link class="navbar-brand" to="/">
             <img src="../../assets/img/logo.png" alt="logo" />

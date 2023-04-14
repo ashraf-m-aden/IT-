@@ -3,11 +3,15 @@
     <HeaderTwo v-if="currentUrl == '/web-hosting'"></HeaderTwo>
     <HeaderThree v-else-if="currentUrl == '/machine-learning'"></HeaderThree>
     <HeaderFour v-else-if="currentUrl == '/digital-agency'"></HeaderFour>
-    <div v-else-if="currentUrl == '/not-found' || currentUrl == '/coming-soon'"></div>
+    <div
+      v-else-if="
+        currentUrl == '/not-found' || currentUrl == '/coming-soon'
+      "></div>
     <Header v-else></Header>
     <PreLoader v-if="isLoading" />
     <router-view></router-view>
-    <div v-if="currentUrl == '/not-found' || currentUrl == '/coming-soon'"></div>
+    <div
+      v-if="currentUrl == '/not-found' || currentUrl == '/coming-soon'"></div>
     <Footer v-else></Footer>
   </div>
 </template>
@@ -48,17 +52,18 @@ export default {
       }, 1500);
     },
   },
+  async beforeDestroy() {
+    await this.$store.dispatch("logout");
+  },
   async mounted() {
-    const id = localStorage.getItem('idUser');
+    const id = localStorage.getItem("idUser");
     if (id != null || undefined) {
       await this.$store.dispatch("afterLogin", id);
       await this.$store.dispatch("setCoursesDisponibles");
       await this.$store.dispatch("setMyCourses");
-
     } else {
       await auth.anonymous();
       await this.$store.dispatch("setCoursesDisponibles");
-
     }
     this.currentUrl = window.location.pathname;
     setTimeout(() => {
