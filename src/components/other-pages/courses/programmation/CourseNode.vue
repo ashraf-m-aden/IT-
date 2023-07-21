@@ -5,7 +5,7 @@
       <div class="d-table">
         <div class="d-table-cell">
           <div class="container">
-            <h2>Les fondamentaux des réseaux</h2>
+            <h2>Node.js</h2>
           </div>
         </div>
       </div>
@@ -67,27 +67,24 @@
         <div class="row align-items-center">
           <div class="col-lg-6 services-details">
             <div class="services-details-desc">
-              <h3>Initier vous au réseaux!</h3>
+              <h3>Le backend avec Javascript</h3>
               <p>
-                La formation Réseau de base est la première étape pour s'initier
-                à la technologie d'un acteur incontournable de l'industrie des
-                réseaux informatiques. Elle est le point de départ pour tous les
-                professionnels amenés à travailler en environnement Cisco.
-              </p>
-              <p>
-                Cette formation permet d’acquérir les connaissances et
-                compétences nécessaires pour installer, faire fonctionner,
-                configurer et vérifier les réseaux IPv4 et IPv6, y compris la
-                configuration des commutateurs LAN, la connexion aux réseaux WAN
-                et l'identification des menaces pour la sécurité de base. Elle a
-                pour objectif d'acquérir les aptitudes nécessaires pour la mise
-                en place, l'exploitation et le dépannage de réseaux
-                d'entreprises.
-              </p>
-              <p>
-                La formation couvre tous les aspects techniques pour la gestion
-                optimale d'un réseau : de la configuration des switch et
-                routeurs à l'élaboration de la stratégie sécuritaire adéquate.
+                JavaScript est devenu ces dernieres années plus qu'un language de frontend. Avec Node,
+                Express et MongoDB, vous utiliserez vos competences en javascript pour le backend !
+
+                À partir de Node et d'Express, vous découvrirez comment les applications web
+                fonctionnent sur le back-end. Vous créerez diverses routes pour les différentes
+                fonctions à mettre à la disposition de votre API. Ensuite, vous ajouterez MongoDB, une
+                base de données NoSQL, pour rendre votre API entièrement dynamique et vos données
+                pleinement persistantes.
+                Votre application front-end est presumé deja créee et de cette façon, vous pourrez vous
+                concentrer sur la création de votre API et la regarder évoluer, en affinant vos
+                compétences back-end et en choisissant librement votre propre parcours.
+
+                Vous créerez une API pour Créer, Lire, Mettre à jour et Supprimer (CRUD pour l’anglais
+                Create, Read, Update and Delete) des éléments en vente. Vous ajouterez
+                l'authentification à votre API pour la protéger, et vous intégrerez également la gestion
+                des fichiers utilisateur pour autoriser les utilisateurs à télécharger des images.
               </p>
             </div>
           </div>
@@ -95,7 +92,7 @@
           <div class="col-lg-6 services-details-image">
             <img
               v-wow
-              src="../../../../assets/img/courses/network2.jpeg"
+              src="../../../../assets/img/courses/nodejs.png"
               class="wow fadeInUp"
               alt="image"
             >
@@ -108,7 +105,7 @@
           <div class="col-lg-6 services-details-image">
             <img
               v-wow
-              src="../../../../assets/img/courses/network.jpeg"
+              src="../../../../assets/img/courses/mean.jpg"
               class="wow fadeInUp"
               alt="image"
             >
@@ -116,26 +113,25 @@
 
           <div class="col-lg-6 services-details">
             <div class="services-details-desc">
-              <p>À la fin de ce cours, vous serez capable de :</p>
-              <ul>
-                <li>
-                  Comprendre les mécanismes intervenant dans les communications
-                  réseau ;
-                </li>
-                <li>Construire des réseaux LANs simples ;</li>
-                <li>Établir la connectivité Internet ;</li>
-                <li>
-                  Configurer les commutateurs Cisco pour une mise en place d'un
-                  réseau LAN ;
-                </li>
-                <li>
-                  Étendre les réseaux de petite et moyenne taille avec une
-                  connectivité vers WAN ;
-                </li>
-                <li>
-                  Configurer, gérer et surveiller les périphériques Cisco ;
-                </li>
-              </ul>
+              <p>
+                À la fin de ce cours, vous serez capable de :
+                <ul>
+                  <li>
+                    créer un serveur web simple avec Express ;
+                  </li>
+                  <li>
+                    créer une API REST avec Node, Express et MongoDB ;
+                  </li>
+                  <li>
+                    mettre en place un système d'authentification sur une application Express ;
+                  </li>
+                  <li>
+                    gérer des utilisateur sur une application Express ;
+                  </li>
+                  <li>Recuprer des données de mongoDB grâce à Mongoose ;</li>
+                  <li>utiliser les tokens JWT ;</li>
+                </ul>
+              </p>
             </div>
           </div>
         </div>
@@ -144,34 +140,35 @@
     <!-- End Services Details Area -->
 
     <div class="container">
-      <div class="row justify-content-center">
+      <div class="row  justify-content-center ">
         <div class="col-lg-4 col-md-6 col-sm-6">
           <div class="pricing-table active-plan">
             <div class="pricing-header">
-              <h3>Les fondamentaux des réseaux</h3>
+              <h3>Node.js</h3>
             </div>
 
             <div class="price">
-              <span><sup>Fdj</sup>12000 <span>/Mois</span></span>
+              <span><sup>Fdj</sup>15000 <span>/Mois</span></span>
             </div>
 
             <div class="pricing-features">
               <ul>
                 <li class="active">
-                  Durée de la formation : 2 mois
+                  Durée de la formation : 3 mois
                 </li>
                 <li class="active">
-                  Matériels requis: Laptop Dual core, 4GB RAM, 500GB Hard Disk
+                  Matériels requis: PC i5 8GB ram
                 </li>
               </ul>
             </div>
-            <h6>Prérequis:</h6>
+            <h6>Prérequis: </h6>
             <div class="pricing-features">
               <ul>
                 <li class="active">
-                  Avoir des compétences de base sur les PCs, sur la navigation
-                  dans le système d’exploitation, sur l’utilisation d’Internet
-                  et sur la gestion des adresses IP
+                  Angular ou Vue.js
+                </li>
+                <li class="active">
+                  Github
                 </li>
               </ul>
             </div>
@@ -185,7 +182,9 @@
 <script>
 import FormationService from '../../../../services/formation.js'
 export default {
-  components: {},
+  components: {
+
+  },
   data () {
     return {
       formation: {},
@@ -195,7 +194,7 @@ export default {
   async beforeCreate () {
     const formations = this.$store.getters.formations
     if (formations.length === []) {
-      const filtered = formations.filter((f) => f.courseId === '1')
+      const filtered = formations.filter(f => f.courseId === '1')
       this.formation = filtered[0]
 
       if (this.formation) {
@@ -204,7 +203,7 @@ export default {
     } else {
       await this.$store.dispatch('setCoursesDisponibles')
 
-      const filtered = formations.filter((f) => f.courseId === '1')
+      const filtered = formations.filter(f => f.courseId === '1')
       this.formation = filtered[0]
 
       if (this.formation) {
@@ -218,7 +217,7 @@ export default {
       if (user) {
         const reserved = this.formation.reserved.includes(user.id)
         const contain = this.formation.students.includes(user.id)
-        if (reserved || contain) {
+        if ((reserved || contain)) {
           this.dejaInscrit = true
         }
       }
@@ -230,28 +229,25 @@ export default {
         if (user.emailVerified) {
           FormationService.registerFormation(this.formation)
         } else {
-          this.$toasted.show(
-            'Veuillez verifié votre email: connectez vous sur votre boite mail et cliqué sur le lien qui vous a été envoyé. (VERIFIEZ VOS SPAMS)',
-            {
-              theme: 'bubble',
-              position: 'top-right',
-              type: 'info',
-              duration: 10000
-            }
-          )
-        }
-      } else {
-        this.$toasted.show(
-          'Veuillez vous connectez ou vous enregistrer sur le site pour vous inscrire, puis verifiez votre email pour et cliquez sur le lien de verification',
-          {
+          this.$toasted.show('Veuillez verifié votre email: connectez vous sur votre boite mail et cliqué sur le lien qui vous a été envoyé. (VERIFIEZ VOS SPAMS)', {
             theme: 'bubble',
             position: 'top-right',
             type: 'info',
-            duration: 7000
-          }
-        )
+            duration: 10000
+
+          })
+        }
+      } else {
+        this.$toasted.show('Veuillez vous connectez ou vous enregistrer sur le site pour vous inscrire, puis verifiez votre email pour et cliquez sur le lien de verification', {
+          theme: 'bubble',
+          position: 'top-right',
+          type: 'info',
+          duration: 7000
+
+        })
       }
     }
   }
+
 }
 </script>

@@ -5,7 +5,7 @@
       <div class="d-table">
         <div class="d-table-cell">
           <div class="container">
-            <h2>Les fondamentaux des réseaux</h2>
+            <h2>Administration Système Linux</h2>
           </div>
         </div>
       </div>
@@ -67,27 +67,23 @@
         <div class="row align-items-center">
           <div class="col-lg-6 services-details">
             <div class="services-details-desc">
-              <h3>Initier vous au réseaux!</h3>
+              <h3>Linux Institue Professionnel</h3>
               <p>
-                La formation Réseau de base est la première étape pour s'initier
-                à la technologie d'un acteur incontournable de l'industrie des
-                réseaux informatiques. Elle est le point de départ pour tous les
-                professionnels amenés à travailler en environnement Cisco.
+                LIP (Linux Institue Professionnel) est une organisation à but
+                non lucratif créé dans le but d’offrir à ceux qui le désirent
+                des compétences en GNU/Linux. La LPIC est aujourd’hui la
+                certification la plus demandée dans le monde de l’Open Source.
+                Indépendante de toute distribution Linux, la certification LPI
+                est devenue dans la pratique une certification incontournable
+                pour qui veut évaluer ses compétences dans l’administration
+                Linux.
               </p>
               <p>
-                Cette formation permet d’acquérir les connaissances et
-                compétences nécessaires pour installer, faire fonctionner,
-                configurer et vérifier les réseaux IPv4 et IPv6, y compris la
-                configuration des commutateurs LAN, la connexion aux réseaux WAN
-                et l'identification des menaces pour la sécurité de base. Elle a
-                pour objectif d'acquérir les aptitudes nécessaires pour la mise
-                en place, l'exploitation et le dépannage de réseaux
-                d'entreprises.
-              </p>
-              <p>
-                La formation couvre tous les aspects techniques pour la gestion
-                optimale d'un réseau : de la configuration des switch et
-                routeurs à l'élaboration de la stratégie sécuritaire adéquate.
+                Cette formation est un cursus qui permet d’évaluer les aptitudes
+                en gestion de système Linux. L’objectif de l’équipe IT+ est de
+                vous procurer des compétences professionnelles plus
+                approfondies, qui vous permettra de valider les connaissances
+                exigées par la certification Comptia Linux+ et ainsi la réussir
               </p>
             </div>
           </div>
@@ -95,7 +91,7 @@
           <div class="col-lg-6 services-details-image">
             <img
               v-wow
-              src="../../../../assets/img/courses/network2.jpeg"
+              src="../../../../assets/img/courses/linux1.jpeg"
               class="wow fadeInUp"
               alt="image"
             >
@@ -108,7 +104,7 @@
           <div class="col-lg-6 services-details-image">
             <img
               v-wow
-              src="../../../../assets/img/courses/network.jpeg"
+              src="../../../../assets/img/courses/centos.jpeg"
               class="wow fadeInUp"
               alt="image"
             >
@@ -119,21 +115,27 @@
               <p>À la fin de ce cours, vous serez capable de :</p>
               <ul>
                 <li>
-                  Comprendre les mécanismes intervenant dans les communications
-                  réseau ;
-                </li>
-                <li>Construire des réseaux LANs simples ;</li>
-                <li>Établir la connectivité Internet ;</li>
-                <li>
-                  Configurer les commutateurs Cisco pour une mise en place d'un
-                  réseau LAN ;
+                  d'nstaller et configurer l’interface graphique sous Linux ;
                 </li>
                 <li>
-                  Étendre les réseaux de petite et moyenne taille avec une
-                  connectivité vers WAN ;
+                  d'installer et désinstaller les programmes sur les
+                  distributions des familles RedHat ou Debian, et gérer les
+                  bibliothèques partagées ;
+                </li>
+                <li>Gérer des systèmes de bases de Linux ;</li>
+                <li>
+                  Connaître les bases de la ligne de commande (Bash, vi) ;
+                </li>
+                <li>Installer et paramétrer des applications sous Linux;</li>
+                <li>Sauvegarder le système d'exploitation ;</li>
+                <li>Administratrer de système de réseaux Linux ;</li>
+                <li>
+                  Gérer les disques, partitions et systèmes de fichiers courants
+                  (y compris les quotas) ;
                 </li>
                 <li>
-                  Configurer, gérer et surveiller les périphériques Cisco ;
+                  Gérer des fichiers : permissions et propriétés, recherche et
+                  liens ;
                 </li>
               </ul>
             </div>
@@ -148,20 +150,20 @@
         <div class="col-lg-4 col-md-6 col-sm-6">
           <div class="pricing-table active-plan">
             <div class="pricing-header">
-              <h3>Les fondamentaux des réseaux</h3>
+              <h3>Administration Système Linux</h3>
             </div>
 
             <div class="price">
-              <span><sup>Fdj</sup>12000 <span>/Mois</span></span>
+              <span><sup>Fdj</sup>15000 <span>/Mois</span></span>
             </div>
 
             <div class="pricing-features">
               <ul>
                 <li class="active">
-                  Durée de la formation : 2 mois
+                  Durée de la formation : 3 mois
                 </li>
                 <li class="active">
-                  Matériels requis: Laptop Dual core, 4GB RAM, 500GB Hard Disk
+                  Matériels requis: Laptop core i3, 8GB RAM, 1TB Hard Disk
                 </li>
               </ul>
             </div>
@@ -169,9 +171,8 @@
             <div class="pricing-features">
               <ul>
                 <li class="active">
-                  Avoir des compétences de base sur les PCs, sur la navigation
-                  dans le système d’exploitation, sur l’utilisation d’Internet
-                  et sur la gestion des adresses IP
+                  Avoir une bonne expérience du système d’exploitation Microsoft
+                  Windows et des principes fondamentaux des réseaux
                 </li>
               </ul>
             </div>

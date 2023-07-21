@@ -6,7 +6,7 @@
         <div class="col-lg-6 col-md-12 services-content">
           <div class="section-title">
             <h2>Systemes et réseaux informatiques</h2>
-            <div class="bar"></div>
+            <div class="bar" />
             <p>
               Le département Réseaux et Systèmes forme des étudiants capables de
               concevoir, de paramétrer, de sécuriser et d’administrer des
@@ -24,53 +24,53 @@
           <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6">
               <div class="box">
-                <feather type="share-2"></feather> Réseaux de base, les
+                <feather type="share-2" /> Réseaux de base, les
                 fondamentaux
               </div>
             </div>
 
             <div class="col-lg-6 col-md-6 col-sm-6">
               <div class="box">
-                <feather type="globe"></feather> Réseaux avancées
+                <feather type="globe" /> Réseaux avancées
               </div>
             </div>
 
             <div class="col-lg-6 col-md-6 col-sm-6">
               <div class="box">
-                <feather type="cpu"></feather> GNS3: maitriser l'émulation des
+                <feather type="cpu" /> GNS3: maitriser l'émulation des
                 résaux
               </div>
             </div>
 
             <div class="col-lg-6 col-md-6 col-sm-6">
               <div class="box">
-                <feather type="shield"></feather> Securité Informatique
+                <feather type="shield" /> Securité Informatique
               </div>
             </div>
 
             <div class="col-lg-6 col-md-6 col-sm-6">
               <div class="box">
-                <feather type="layout"></feather> Installation et configuration
+                <feather type="layout" /> Installation et configuration
                 de windows 7, 8, 10 et 11
               </div>
             </div>
 
             <div class="col-lg-6 col-md-6 col-sm-6">
               <div class="box">
-                <feather type="server"></feather> Administration Système Windows
+                <feather type="server" /> Administration Système Windows
                 Server (2008, 2012, 2016)
               </div>
             </div>
 
             <div class="col-lg-6 col-md-6 col-sm-6">
               <div class="box">
-                <feather type="layout"></feather> Administration Système Linux
+                <feather type="layout" /> Administration Système Linux
               </div>
             </div>
 
             <div class="col-lg-6 col-md-6 col-sm-6">
               <div class="box">
-                <feather type="file-text"></feather> Bureautique (Word, Excel,
+                <feather type="file-text" /> Bureautique (Word, Excel,
                 Access, PowerPoint etc.…)
               </div>
             </div>
@@ -79,109 +79,109 @@
 
         <div class="col-lg-6 col-md-12 services-right-image">
           <img
+            v-wow
             src="../../../assets/img/services-right-image/book-self.png"
             class="wow fadeInDown"
-            v-wow
             data-wow-delay="0.6s"
             alt="book-self"
-          />
+          >
           <img
+            v-wow
             src="../../../assets/img/services-right-image/box.png"
             class="wow fadeInUp"
-            v-wow
             data-wow-delay="0.6s"
             alt="box"
-          />
+          >
           <img
+            v-wow
             src="../../../assets/img/services-right-image/chair.png"
             class="wow fadeInLeft"
-            v-wow
             data-wow-delay="0.6s"
             alt="chair"
-          />
+          >
           <img
+            v-wow
             src="../../../assets/img/services-right-image/cloud.png"
             class="wow zoomIn"
-            v-wow
             data-wow-delay="0.6s"
             alt="cloud"
-          />
+          >
           <img
+            v-wow
             src="../../../assets/img/services-right-image/cup.png"
             class="wow bounceIn"
-            v-wow
             data-wow-delay="0.6s"
             alt="cup"
-          />
+          >
           <img
+            v-wow
             src="../../../assets/img/services-right-image/flower-top.png"
             class="wow fadeInDown"
-            v-wow
             data-wow-delay="0.6s"
             alt="flower"
-          />
+          >
           <img
+            v-wow
             src="../../../assets/img/services-right-image/head-phone.png"
             class="wow zoomIn"
-            v-wow
             data-wow-delay="0.6s"
             alt="head-phone"
-          />
+          >
           <img
+            v-wow
             src="../../../assets/img/services-right-image/monitor.png"
             class="wow fadeInUp"
-            v-wow
             data-wow-delay="0.6s"
             alt="monitor"
-          />
+          >
           <img
+            v-wow
             src="../../../assets/img/services-right-image/mug.png"
             class="wow rotateIn"
-            v-wow
             data-wow-delay="0.6s"
             alt="mug"
-          />
+          >
           <img
+            v-wow
             src="../../../assets/img/services-right-image/table.png"
             class="wow fadeInUp"
-            v-wow
             data-wow-delay="0.6s"
             alt="table"
-          />
+          >
           <img
+            v-wow
             src="../../../assets/img/services-right-image/tissue.png"
             class="wow zoomIn"
-            v-wow
             data-wow-delay="0.6s"
             alt="tissue"
-          />
+          >
           <img
+            v-wow
             src="../../../assets/img/services-right-image/water-bottle.png"
             class="wow zoomIn"
-            v-wow
             data-wow-delay="0.6s"
             alt="water-bottle"
-          />
+          >
           <img
+            v-wow
             src="../../../assets/img/services-right-image/wifi.png"
             class="wow fadeInLeft"
-            v-wow
             data-wow-delay="0.6s"
             alt="wifi"
-          />
+          >
           <img
             src="../../../assets/img/services-right-image/cercle-shape.png"
             class="bg-image rotateme"
             alt="shape"
-          />
+          >
 
           <img
+            v-wow
             src="../../../assets/img/services-right-image/main-pic.png"
             class="wow fadeInUp"
-            v-wow
             data-wow-delay="0.6s"
             alt="main-pic"
-          />
+          >
         </div>
       </div>
     </div>
@@ -191,6 +191,5 @@
 
 <script>
 export default {
-  name: "Services",
-};
+}
 </script>

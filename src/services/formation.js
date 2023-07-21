@@ -1,6 +1,6 @@
 
-import { db } from "../../db";
-import store from "../store";
+import { db } from '../../db'
+import store from '../store'
 
 // interface Formation {
 //     inscription: Boolean,
@@ -18,59 +18,50 @@ import store from "../store";
 // }
 
 export default {
-    async getTraining() {
-        let documents;
-        await db.collection('formations', ref => ref.where('inscription', '==', true)).get().then(querySnapshot => {
+  async getTraining () {
+    let documents
+    await db.collection('formations', ref => ref.where('inscription', '==', true)).get().then(querySnapshot => {
+      documents = querySnapshot.docs.map(doc => doc.data()) // on fait ca pack qu'on recupere plein de doc dans querysnapshot
+      // do something with documents
+    })
+    return documents
+  },
+  async getMyTraining () {
+    const docs = []
 
-            documents = querySnapshot.docs.map(doc => doc.data());  // on fait ca pack qu'on recupere plein de doc dans querysnapshot
-            // do something with documents
-        })
-        return documents;
+    let user = store.getters.getUserData // je recuperer les données de l'user connecté dans vuex
 
-    },
-    async getMyTraining() {
-        var docs = [];
+    if (user == null) {
+      const id = localStorage.getItem('idUser')
+      await store.dispatch('afterLogin', id)
 
-        let user = store.getters.getUserData  // je recuperer les données de l'user connecté dans vuex
-
-        if (user == null) {
-            const id = localStorage.getItem('idUser');
-            await store.dispatch('afterLogin', id);
-
-            user = store.getters.getUserData  // je recuperer les données de l'user connecté dans vuex
-
-        }
-
-        user.reserved.forEach(async id => {
-            await db.collection('formations').doc(id).get().then(querySnapshot => {
-
-                const document = querySnapshot.data();  // on fait ca parce que c'est un seul document qu'on recupere dans querysnapshot
-                // do something with documents
-                docs.push(document)
-
-            })
-
-        });
-
-        return docs;
-
-    },
-
-    async registerFormation(formation) {
-        let user = store.getters.getUserData  // je recuperer les données de l'user connecté dans vuex
-
-
-        user.reserved.push(formation.id)  // j'ajoute la nouvelle formation aux formationx existantes 
-        await db.collection('users').doc(user.id).update({ reserved: user.reserved });  // je mets à jours la table
-
-        formation.reserved.push(user.id)  // j'ajoute la nouvelle formation aux formationx existantes 
-
-        await db.collection('formations').doc(formation.id).update({ reserved: formation.reserved });  // je mets à jours la table
-        store.dispatch("setMyCourses");
-
+      user = store.getters.getUserData // je recuperer les données de l'user connecté dans vuex
     }
 
-};
+    user.reserved.forEach(async id => {
+      await db.collection('formations').doc(id).get().then(querySnapshot => {
+        const document = querySnapshot.data() // on fait ca parce que c'est un seul document qu'on recupere dans querysnapshot
+        // do something with documents
+        docs.push(document)
+      })
+    })
+
+    return docs
+  },
+
+  async registerFormation (formation) {
+    const user = store.getters.getUserData // je recuperer les données de l'user connecté dans vuex
+
+    user.reserved.push(formation.id) // j'ajoute la nouvelle formation aux formationx existantes
+    await db.collection('users').doc(user.id).update({ reserved: user.reserved }) // je mets à jours la table
+
+    formation.reserved.push(user.id) // j'ajoute la nouvelle formation aux formationx existantes
+
+    await db.collection('formations').doc(formation.id).update({ reserved: formation.reserved }) // je mets à jours la table
+    store.dispatch('setMyCourses')
+  }
+
+}
 // // retrieve a collection
 // db.collection('documents')
 //     .get()

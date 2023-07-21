@@ -6,7 +6,7 @@
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="single-box">
             <div class="icon">
-              <feather type="server"></feather>
+              <feather type="server" />
             </div>
             <h3>Réseaux informatiques</h3>
             <p>
@@ -24,7 +24,7 @@
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="single-box bg-f78acb">
             <div class="icon">
-              <feather type="code"></feather>
+              <feather type="code" />
             </div>
             <h3>Developpement web</h3>
             <p>
@@ -39,7 +39,7 @@
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="single-box bg-c679e3">
             <div class="icon">
-              <feather type="users"></feather>
+              <feather type="users" />
             </div>
             <h3>Teams</h3>
             <p>
@@ -52,7 +52,7 @@
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="single-box bg-eb6b3d">
             <div class="icon">
-              <feather type="git-branch"></feather>
+              <feather type="git-branch" />
             </div>
             <h3>Ameliorez vous</h3>
             <p>
@@ -69,6 +69,6 @@
 
 <script>
 export default {
-  name: "BoxesArea",
-};
+  name: 'BoxesArea'
+}
 </script>

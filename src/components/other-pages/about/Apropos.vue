@@ -11,28 +11,52 @@
       </div>
 
       <div class="shape1">
-        <img src="../../../assets/img/shape1.png" alt="shape" />
+        <img
+          src="../../../assets/img/shape1.png"
+          alt="shape"
+        >
       </div>
       <div class="shape2 rotateme">
-        <img src="../../../assets/img/shape2.svg" alt="shape" />
+        <img
+          src="../../../assets/img/shape2.svg"
+          alt="shape"
+        >
       </div>
       <div class="shape3">
-        <img src="../../../assets/img/shape3.svg" alt="shape" />
+        <img
+          src="../../../assets/img/shape3.svg"
+          alt="shape"
+        >
       </div>
       <div class="shape4">
-        <img src="../../../assets/img/shape4.svg" alt="shape" />
+        <img
+          src="../../../assets/img/shape4.svg"
+          alt="shape"
+        >
       </div>
       <div class="shape5">
-        <img src="../../../assets/img/shape5.png" alt="shape" />
+        <img
+          src="../../../assets/img/shape5.png"
+          alt="shape"
+        >
       </div>
       <div class="shape6 rotateme">
-        <img src="../../../assets/img/shape4.svg" alt="shape" />
+        <img
+          src="../../../assets/img/shape4.svg"
+          alt="shape"
+        >
       </div>
       <div class="shape7">
-        <img src="../../../assets/img/shape4.svg" alt="shape" />
+        <img
+          src="../../../assets/img/shape4.svg"
+          alt="shape"
+        >
       </div>
       <div class="shape8 rotateme">
-        <img src="../../../assets/img/shape2.svg" alt="shape" />
+        <img
+          src="../../../assets/img/shape2.svg"
+          alt="shape"
+        >
       </div>
     </div>
     <!-- End Page Title -->
@@ -43,7 +67,10 @@
         <div class="row">
           <div class="col-lg-6 col-md-12">
             <div class="about-image">
-              <img src="../../../assets/img/1.png" alt="image" />
+              <img
+                src="../../../assets/img/1.png"
+                alt="image"
+              >
             </div>
           </div>
 
@@ -51,7 +78,7 @@
             <div class="about-content">
               <div class="section-title">
                 <h2>La Science des systemes d'information</h2>
-                <div class="bar"></div>
+                <div class="bar" />
               </div>
 
               <p>
@@ -138,7 +165,7 @@
         <span><a href="#">Or, get started now with a free trial</a></span>
       </div>
     </section>
-    End Ready To Talk Area 
+    End Ready To Talk Area
     <Partner></Partner>
     <Funfacts></Funfacts> -->
   </div>
@@ -149,7 +176,7 @@
 // import Partner from "../common/Partner";
 // import Funfacts from "../common/Funfacts";
 export default {
-  name: "AboutStyleOne",
-  components: {},
-};
+  name: 'AboutStyleOne',
+  components: {}
+}
 </script>

@@ -4,36 +4,34 @@
     <HeaderThree v-else-if="currentUrl == '/machine-learning'" />
     <HeaderFour v-else-if="currentUrl == '/digital-agency'" />
     <div
-      v-else-if="
-        currentUrl == '/not-found' || currentUrl == '/coming-soon'
-      "
+      v-else-if="currentUrl == '/not-found' || currentUrl == '/coming-soon'"
     />
-    <Header v-else />
+    <ComponentHeader v-else />
     <PreLoader v-if="isLoading" />
     <router-view />
     <div
       v-if="currentUrl == '/not-found' || currentUrl == '/coming-soon'"
     />
-    <Footer v-else />
+    <ComponentFooter v-else />
   </div>
 </template>
 
 <script>
-import Header from './components/layout/Header'
+import ComponentHeader from './components/layout/ComponentHeader'
 import HeaderTwo from './components/layout/HeaderTwo'
 import HeaderThree from './components/layout/HeaderThree'
 import HeaderFour from './components/layout/HeaderFour'
-import Footer from './components/layout/Footer'
+import ComponentFooter from './components/layout/ComponentFooter'
 import PreLoader from './components/layout/PreLoader'
 import auth from './services/auth'
 export default {
   name: 'App',
   components: {
-    Header,
+    ComponentHeader,
     HeaderTwo,
     HeaderThree,
     HeaderFour,
-    Footer,
+    ComponentFooter,
     PreLoader
   },
 

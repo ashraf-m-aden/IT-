@@ -12,7 +12,10 @@
             La page que vous cherchez est soit inexistante soit temporairement
             indisponible.
           </p>
-          <a href="/" class="btn btn-primary">Aller à l'acceuil</a>
+          <a
+            href="/"
+            class="btn btn-primary"
+          >Aller à l'acceuil</a>
         </div>
       </div>
     </section>
@@ -22,6 +25,6 @@
 
 <script>
 export default {
-  name: "NotFound",
-};
+  name: 'NotFound'
+}
 </script>

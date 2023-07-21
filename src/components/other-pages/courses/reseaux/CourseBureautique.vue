@@ -5,7 +5,7 @@
       <div class="d-table">
         <div class="d-table-cell">
           <div class="container">
-            <h2>Les fondamentaux des réseaux</h2>
+            <h2>Bureautique</h2>
           </div>
         </div>
       </div>
@@ -67,27 +67,24 @@
         <div class="row align-items-center">
           <div class="col-lg-6 services-details">
             <div class="services-details-desc">
-              <h3>Initier vous au réseaux!</h3>
+              <h3>Le framework progressiste de Google</h3>
               <p>
-                La formation Réseau de base est la première étape pour s'initier
-                à la technologie d'un acteur incontournable de l'industrie des
-                réseaux informatiques. Elle est le point de départ pour tous les
-                professionnels amenés à travailler en environnement Cisco.
+                La bureautique est un terme qui regroupe les logiciels qui
+                aident l'entreprise dans la rédaction de documents. Microsoft
+                Office est une suite bureautique permettant entre autres
+                d'écrire des lettres, rédiger des CV (avec Word), créer des
+                présentations (avec PowerPoint), créer des tableaux de calcul et
+                des graphiques (avec Excel).
               </p>
               <p>
-                Cette formation permet d’acquérir les connaissances et
-                compétences nécessaires pour installer, faire fonctionner,
-                configurer et vérifier les réseaux IPv4 et IPv6, y compris la
-                configuration des commutateurs LAN, la connexion aux réseaux WAN
-                et l'identification des menaces pour la sécurité de base. Elle a
-                pour objectif d'acquérir les aptitudes nécessaires pour la mise
-                en place, l'exploitation et le dépannage de réseaux
-                d'entreprises.
-              </p>
-              <p>
-                La formation couvre tous les aspects techniques pour la gestion
-                optimale d'un réseau : de la configuration des switch et
-                routeurs à l'élaboration de la stratégie sécuritaire adéquate.
+                Cette formation vous permettra d'acquérir des notions de base
+                d’initiation au traitement des documents avec les différents
+                logiciels (Word, Excel, Powerpoint etc…), en vous familiarisant
+                avec l’interface, l’affichage des menus, la gestion des objets
+                et documents et la mise en page des caractères et paragraphes.
+                Cette formation Microsoft office sera constituée d'exercices
+                pratiques où vous allez pratiquer tous vos acquis lors de la
+                formation.
               </p>
             </div>
           </div>
@@ -95,7 +92,7 @@
           <div class="col-lg-6 services-details-image">
             <img
               v-wow
-              src="../../../../assets/img/courses/network2.jpeg"
+              src="../../../../assets/img/courses/office1.jpeg"
               class="wow fadeInUp"
               alt="image"
             >
@@ -108,7 +105,7 @@
           <div class="col-lg-6 services-details-image">
             <img
               v-wow
-              src="../../../../assets/img/courses/network.jpeg"
+              src="../../../../assets/img/courses/office2.jpeg"
               class="wow fadeInUp"
               alt="image"
             >
@@ -119,21 +116,19 @@
               <p>À la fin de ce cours, vous serez capable de :</p>
               <ul>
                 <li>
-                  Comprendre les mécanismes intervenant dans les communications
-                  réseau ;
-                </li>
-                <li>Construire des réseaux LANs simples ;</li>
-                <li>Établir la connectivité Internet ;</li>
-                <li>
-                  Configurer les commutateurs Cisco pour une mise en place d'un
-                  réseau LAN ;
+                  Maîtriser les notions de base de Microsoft Office (Word,
+                  Excel, Powerpoint etc…) ;
                 </li>
                 <li>
-                  Étendre les réseaux de petite et moyenne taille avec une
-                  connectivité vers WAN ;
+                  Vous familiariser avec les différentes interfaces de Microsoft
+                  Office (Word, Excel, Powerpoint etc…) ;
                 </li>
                 <li>
-                  Configurer, gérer et surveiller les périphériques Cisco ;
+                  Maîtriser la gestion des documents et des objets sous
+                  Microsoft Office (Word, Excel, Powerpoint etc…) ;
+                </li>
+                <li>
+                  Faire la mise en page des caractères et des paragraphes ;
                 </li>
               </ul>
             </div>
@@ -148,7 +143,7 @@
         <div class="col-lg-4 col-md-6 col-sm-6">
           <div class="pricing-table active-plan">
             <div class="pricing-header">
-              <h3>Les fondamentaux des réseaux</h3>
+              <h3>Bureautique (Word, Excel, Access, PowerPoint etc.…)</h3>
             </div>
 
             <div class="price">
@@ -158,10 +153,10 @@
             <div class="pricing-features">
               <ul>
                 <li class="active">
-                  Durée de la formation : 2 mois
+                  Durée de la formation : 3 mois
                 </li>
                 <li class="active">
-                  Matériels requis: Laptop Dual core, 4GB RAM, 500GB Hard Disk
+                  Matériels requis: Laptop Dual core , 4GB RAM, 500GB Hard Disk
                 </li>
               </ul>
             </div>
@@ -169,9 +164,7 @@
             <div class="pricing-features">
               <ul>
                 <li class="active">
-                  Avoir des compétences de base sur les PCs, sur la navigation
-                  dans le système d’exploitation, sur l’utilisation d’Internet
-                  et sur la gestion des adresses IP
+                  Aucun
                 </li>
               </ul>
             </div>

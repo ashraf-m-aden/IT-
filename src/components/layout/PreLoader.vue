@@ -3,7 +3,10 @@
   <div class="preloader">
     <div class="container">
       <div class="avatar">
-        <img src="../../assets/img/logo.png" alt="IT+" />
+        <img
+          src="../../assets/img/logo.png"
+          alt="IT+"
+        >
       </div>
     </div>
   </div>
@@ -12,8 +15,7 @@
 
 <script>
 export default {
-  name: "PreLoader",
-};
+}
 </script>
 <style lang="scss" scoped>
 body,
