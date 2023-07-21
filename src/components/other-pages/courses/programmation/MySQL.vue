@@ -53,7 +53,7 @@
 
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/mysql 2.jpg" class="wow fadeInUp" v-wow alt="image">
+						<img src="../../../../assets/img/courses/mysql_2.jpg" class="wow fadeInUp" v-wow alt="image">
 					</div>
 
 					<div class="col-lg-6 services-details">

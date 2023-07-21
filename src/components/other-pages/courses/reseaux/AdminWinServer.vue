@@ -58,7 +58,7 @@
 
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/win server.jpeg" class="wow fadeInUp" v-wow
+						<img src="../../../../assets/img/courses/win_server.jpeg" class="wow fadeInUp" v-wow
 							alt="image">
 					</div>
 
