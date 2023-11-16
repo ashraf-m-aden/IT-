@@ -20,7 +20,7 @@
               </a>
 
               <div class="date">
-                <feather type="calendar"></feather> March 15, 2019
+                <vue-feather type="calendar"></vue-feather> March 15, 2019
               </div>
             </div>
 
@@ -37,7 +37,7 @@
                 ipsum suspendisse ultrices gravida.
               </p>
 
-              <a href="#" class="read-more-btn">Read More <feather type="arrow-right"></feather>
+              <a href="#" class="read-more-btn">Read More <vue-feather type="arrow-right"></vue-feather>
               </a>
             </div>
           </div>
@@ -51,7 +51,7 @@
               </a>
 
               <div class="date">
-                <feather type="calendar"></feather> March 17, 2019
+                <vue-feather type="calendar"></vue-feather> March 17, 2019
               </div>
             </div>
 
@@ -68,7 +68,7 @@
                 ipsum suspendisse ultrices gravida.
               </p>
 
-              <a href="#" class="read-more-btn">Read More <feather type="arrow-right"></feather>
+              <a href="#" class="read-more-btn">Read More <vue-feather type="arrow-right"></vue-feather>
               </a>
             </div>
           </div>
@@ -82,7 +82,7 @@
               </a>
 
               <div class="date">
-                <feather type="calendar"></feather> March 19, 2019
+                <vue-feather type="calendar"></vue-feather> March 19, 2019
               </div>
             </div>
 
@@ -97,7 +97,7 @@
                 ipsum suspendisse ultrices gravida.
               </p>
 
-              <a href="#" class="read-more-btn">Read More <feather type="arrow-right"></feather>
+              <a href="#" class="read-more-btn">Read More <vue-feather type="arrow-right"></vue-feather>
               </a>
             </div>
           </div>

@@ -48,7 +48,7 @@
               <div class="content">
                 <h3><a href="#">HTML et CSS</a></h3>
                 <a href="#" class="read-more-btn"><router-link to="/cours-programmation/html-css">Lire plus
-                    <feather type="plus-circle"></feather>
+                    <vue-feather type="plus-circle"></vue-feather>
                   </router-link></a>
               </div>
             </div>
@@ -61,7 +61,7 @@
               <div class="content">
                 <h3><a href="#">Javascript</a></h3>
                 <a href="#" class="read-more-btn"><router-link to="/cours-programmation/javascript">Lire plus
-                    <feather type="plus-circle"></feather>
+                    <vue-feather type="plus-circle"></vue-feather>
                   </router-link></a>
               </div>
             </div>
@@ -74,7 +74,7 @@
               <div class="content">
                 <h3><a href="#">MySQL</a></h3>
                 <a href="#" class="read-more-btn"><router-link to="/cours-programmation/mysql">Lire plus
-                    <feather type="plus-circle"></feather>
+                    <vue-feather type="plus-circle"></vue-feather>
                   </router-link></a>
               </div>
             </div>
@@ -86,7 +86,7 @@
               <div class="content">
                 <h3><a href="#">Vue.js</a></h3>
                 <a href="#" class="read-more-btn"><router-link to="/cours-programmation/vue">Lire plus
-                    <feather type="plus-circle"></feather>
+                    <vue-feather type="plus-circle"></vue-feather>
                   </router-link></a>
               </div>
             </div>
@@ -99,7 +99,7 @@
               <div class="content">
                 <h3><a href="#">Angular</a></h3>
                 <a href="" class="read-more-btn"><router-link to="/cours-programmation/angular">Lire plus
-                    <feather type="plus-circle"></feather>
+                    <vue-feather type="plus-circle"></vue-feather>
                   </router-link></a>
               </div>
             </div>
@@ -112,7 +112,7 @@
               <div class="content">
                 <h3><a href="#">Node.js</a></h3>
                 <a href="#" class="read-more-btn"><router-link to="/cours-programmation/node">Lire plus
-                    <feather type="plus-circle"></feather>
+                    <vue-feather type="plus-circle"></vue-feather>
                   </router-link></a>
               </div>
             </div>
@@ -132,7 +132,7 @@
                 <a href="#" class="read-more-btn"
                   ><router-link to="/cours-programmation/java"
                     >Lire plus
-                    <feather type="plus-circle"></feather></router-link
+                    <vue-feather type="plus-circle"></vue-feather></router-link
                 ></a>
               </div>
             </div>

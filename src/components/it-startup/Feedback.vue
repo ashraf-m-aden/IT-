@@ -208,11 +208,11 @@
           </div>
 
           <button class="prev-arrow slick-arrow">
-            <feather type="arrow-left"></feather>
+            <vue-feather type="arrow-left"></vue-feather>
           </button>
 
           <button class="next-arrow slick-arrow">
-            <feather type="arrow-right"></feather>
+            <vue-feather type="arrow-right"></vue-feather>
           </button>
         </div>
       </div>

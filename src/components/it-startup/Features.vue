@@ -13,7 +13,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="single-features">
                         <div class="icon">
-                            <feather type="settings"></feather>
+                            <vue-feather type="settings"></vue-feather>
                         </div>
 
                         <h3>Incredible Infrastructure</h3>
@@ -25,7 +25,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="single-features">
                         <div class="icon">
-                            <feather type="mail"></feather>
+                            <vue-feather type="mail"></vue-feather>
                         </div>
 
                         <h3>Email Notifications</h3>
@@ -37,7 +37,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="single-features">
                         <div class="icon bg-c679e3">
-                            <feather type="grid"></feather>
+                            <vue-feather type="grid"></vue-feather>
                         </div>
 
                         <h3>Simple Dashboard</h3>
@@ -49,7 +49,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="single-features">
                         <div class="icon bg-c679e3">
-                            <feather type="info"></feather>
+                            <vue-feather type="info"></vue-feather>
                         </div>
 
                         <h3>Information Retrieval</h3>
@@ -61,7 +61,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="single-features">
                         <div class="icon bg-eb6b3d">
-                            <feather type="mouse-pointer"></feather>
+                            <vue-feather type="mouse-pointer"></vue-feather>
                         </div>
 
                         <h3>Drag and Drop Functionality</h3>
@@ -73,7 +73,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="single-features">
                         <div class="icon bg-eb6b3d">
-                            <feather type="bell"></feather>
+                            <vue-feather type="bell"></vue-feather>
                         </div>
 
                         <h3>Deadline Reminders</h3>

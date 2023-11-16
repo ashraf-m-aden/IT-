@@ -18,7 +18,7 @@
                         <img src="../../../assets/img/works-image/1.jpg" alt="image">
 
                         <a href="#" class="icon">
-                            <feather type="settings"></feather>
+                            <vue-feather type="settings"></vue-feather>
                         </a>
 
                         <div class="works-content">
@@ -34,7 +34,7 @@
                         <img src="../../../assets/img/works-image/2.jpg" alt="image">
 
                         <a href="#" class="icon">
-                            <feather type="settings"></feather>
+                            <vue-feather type="settings"></vue-feather>
                         </a>
 
                         <div class="works-content">
@@ -50,7 +50,7 @@
                         <img src="../../../assets/img/works-image/3.jpg" alt="image">
 
                         <a href="#" class="icon">
-                            <feather type="settings"></feather>
+                            <vue-feather type="settings"></vue-feather>
                         </a>
 
                         <div class="works-content">
@@ -66,7 +66,7 @@
                         <img src="../../../assets/img/works-image/4.jpg" alt="image">
 
                         <a href="#" class="icon">
-                            <feather type="settings"></feather>
+                            <vue-feather type="settings"></vue-feather>
                         </a>
 
                         <div class="works-content">
@@ -82,7 +82,7 @@
                         <img src="../../../assets/img/works-image/5.jpg" alt="image">
 
                         <a href="#" class="icon">
-                            <feather type="settings"></feather>
+                            <vue-feather type="settings"></vue-feather>
                         </a>
 
                         <div class="works-content">

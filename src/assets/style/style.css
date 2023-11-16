@@ -587,7 +587,7 @@ Navbar CSS
   color: #44ce6f;
 }
 
-.startp-nav nav .navbar-nav .nav-item a .feather {
+.startp-nav nav .navbar-nav .nav-item a .vue-feather {
   width: 14px;
   position: relative;
   top: 1.5px;
@@ -1697,7 +1697,7 @@ Services CSS
   transition: 0.5s;
 }
 
-.services-content .box .feather {
+.services-content .box .vue-feather {
   position: relative;
   top: 2px;
   margin-right: 5px;

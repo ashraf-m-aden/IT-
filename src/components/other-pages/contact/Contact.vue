@@ -44,7 +44,7 @@
           <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="contact-info-box">
               <div class="icon">
-                <feather type="mail"></feather>
+                <vue-feather type="mail"></vue-feather>
               </div>
               <h3>Email</h3>
               <p><a href="#">Bientot</a></p>
@@ -54,7 +54,7 @@
           <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="contact-info-box">
               <div class="icon">
-                <feather type="map-pin"></feather>
+                <vue-feather type="map-pin"></vue-feather>
               </div>
               <h3>Venez nous voir</h3>
               <p>Bientot</p>
@@ -64,7 +64,7 @@
           <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
             <div class="contact-info-box">
               <div class="icon">
-                <feather type="phone"></feather>
+                <vue-feather type="phone"></vue-feather>
               </div>
               <h3>Appellez nous</h3>
               <p><a href="#">Bientot</a></p>

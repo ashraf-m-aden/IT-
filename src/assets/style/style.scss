@@ -518,7 +518,7 @@ Navbar CSS
           &.active {
             color: $light-blue-color;
           }
-          .feather {
+          .vue-feather {
             width: 14px;
             position: relative;
             top: 1.5px;
@@ -1496,7 +1496,7 @@ Services CSS
       z-index: -1;
       transition: $transition;
     }
-    .feather {
+    .vue-feather {
       position: relative;
       top: 2px;
       margin-right: 5px;
@@ -8175,7 +8175,7 @@ Shop Details CSS
         color: $white-color;
         border-color: $hosting-main-color;
       }
-      .feather {
+      .vue-feather {
         position: relative;
         top: 4px;
         overflow: unset;

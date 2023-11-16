@@ -42,7 +42,7 @@
 					</div>
 
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/js.png" class="wow fadeInUp" v-wow alt="image">
+						<img src="../../../../assets/img/courses/js.png" class="wow fadeInUp" alt="image">
 					</div>
 				</div>
 
@@ -51,7 +51,7 @@
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details-image">
 						<img src="../../../../assets/img/courses/JavaScript-Tutorials-for-Beginners-881x441.jpg"
-							class="wow fadeInUp" v-wow alt="image">
+							class="wow fadeInUp" alt="image">
 					</div>
 
 					<div class="col-lg-6 services-details">

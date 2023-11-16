@@ -58,7 +58,7 @@
 					</div>
 
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/gns3.jpeg" class="wow fadeInUp" v-wow alt="image">
+						<img src="../../../../assets/img/courses/gns3.jpeg" class="wow fadeInUp" alt="image">
 					</div>
 				</div>
 
@@ -66,7 +66,7 @@
 
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/ciscogns3.jpeg" class="wow fadeInUp" v-wow alt="image">
+						<img src="../../../../assets/img/courses/ciscogns3.jpeg" class="wow fadeInUp" alt="image">
 					</div>
 
 					<div class="col-lg-6 services-details">

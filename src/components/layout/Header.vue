@@ -8,9 +8,11 @@
             <img src="../../assets/img/logo.png" alt="logo" />
           </router-link>
 
-          <b-navbar-toggle target="navbarSupportedContent"></b-navbar-toggle>
-
-          <b-collapse class="collapse navbar-collapse mean-menu" id="navbarSupportedContent" is-nav>
+          <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" id="collapseBtn"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav ml-auto">
               <li class="nav-item">
                 <router-link to="/" class="nav-link">Acceuil</router-link>
@@ -21,7 +23,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link">Programmes <feather type="chevron-down"></feather></a>
+                <a class="nav-link">Programmes <vue-feather type="chevron-down"></vue-feather></a>
                 <ul class="dropdown_menu">
                   <li class="nav-item">
                     <router-link to="/cours-programmation" class="nav-link">Developpement</router-link>
@@ -36,34 +38,10 @@
               <li class="nav-item">
                 <router-link to="/contact" class="nav-link">Contact</router-link>
               </li>
-              <!-- <li class="nav-item">
-                <router-link to="/formations-disponibles" class="nav-link">Formations disponibles</router-link>
-              </li> -->
-              <!-- <li class="nav-item" v-show="isAuthenticated">
-                <router-link to="/mes-formations" class="nav-link">Mes formations</router-link>
-              </li>
 
-              <li class="nav-item">
-                <router-link to="/login" v-show="!isAuthenticated ">
-                  <a class="nav-link">Se connecter</a>
-                </router-link>
-              </li>
-              <li class="nav-item">
-                <router-link to="/" v-show="isAuthenticated ">
-                  <a class=" conn" style="color='red'" @click="logout()">Deconnection</a>
-                </router-link>
-              </li> -->
             </ul>
-          </b-collapse>
-          <!-- 
-          <div class="others-option">
-            <router-link to="/login" v-show="!isAuthenticated">
-              <a class="btn btn-primary">Se connecter</a>
-            </router-link>
-            <router-link to="/" v-show="isAuthenticated">
-              <a class="btn btn-outline-danger" @click="logout()">Deconnection</a>
-            </router-link>
-          </div> -->
+          </div>
+
         </nav>
       </div>
     </div>
@@ -91,6 +69,7 @@ export default {
     };
   },
 
+
   mounted() {
     const that = this;
     window.addEventListener("scroll", () => {
@@ -104,6 +83,17 @@ export default {
     });
     window.addEventListener("resize", this.handleResize);
     this.handleResize();
+    window.addEventListener("DOMContentLoaded", function () {
+      var btn = document.getElementById("collapseBtn");
+      var element = document.getElementById("navbarSupportedContent");
+
+      // Create a collapse instance, toggles the collapse element on invocation
+      var myCollapse = new bootstrap.Collapse(element);
+
+      btn.addEventListener("click", function () {
+        myCollapse.toggle();
+      });
+    });
   },
 
   computed: {

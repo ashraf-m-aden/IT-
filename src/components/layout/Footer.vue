@@ -47,37 +47,37 @@
 
             <ul class="footer-contact-info">
               <li>
-                <feather type="map-pin"></feather>
+                <vue-feather type="map-pin"></vue-feather>
                 Bientot
               </li>
               <li>
-                <feather type="mail"></feather> Email:
+                <vue-feather type="mail"></vue-feather> Email:
                 <a href="#">Bientot</a>
               </li>
               <li>
-                <feather type="phone-call"></feather> Phone:
+                <vue-feather type="phone-call"></vue-feather> Phone:
                 <a href="#"> Bientot</a>
               </li>
             </ul>
             <ul class="social-links">
               <li>
                 <a href="#" class="facebook">
-                  <feather type="facebook"></feather>
+                  <vue-feather type="facebook"></vue-feather>
                 </a>
               </li>
               <li>
                 <a href="#" class="twitter">
-                  <feather type="twitter"></feather>
+                  <vue-feather type="twitter"></vue-feather>
                 </a>
               </li>
               <li>
                 <a href="#" class="instagram">
-                  <feather type="instagram"></feather>
+                  <vue-feather type="instagram"></vue-feather>
                 </a>
               </li>
               <li>
                 <a href="#" class="linkedin">
-                  <feather type="linkedin"></feather>
+                  <vue-feather type="linkedin"></vue-feather>
                 </a>
               </li>
             </ul>
@@ -99,11 +99,11 @@
     <div class="shape8 rotateme">
       <img src="../../assets/img/shape2.svg" alt="shape" />
     </div>
-    <!-- <div class="go-top"><feather type="arrow-up"></feather></div> -->
+    <!-- <div class="go-top"><vue-feather type="arrow-up"></vue-feather></div> -->
 
     <back-to-top bottom="50px" right="50px">
       <div class="go-top">
-        <feather type="arrow-up"></feather>
+        <vue-feather type="arrow-up"></vue-feather>
       </div>
     </back-to-top>
   </footer>

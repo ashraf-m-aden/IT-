@@ -27,16 +27,16 @@
 
                             <ul>
                                 <li><a href="#">
-                                        <feather type="facebook"></feather>
+                                        <vue-feather type="facebook"></vue-feather>
                                     </a></li>
                                 <li><a href="#">
-                                        <feather type="twitter"></feather>
+                                        <vue-feather type="twitter"></vue-feather>
                                     </a></li>
                                 <li><a href="#">
-                                        <feather type="linkedin"></feather>
+                                        <vue-feather type="linkedin"></vue-feather>
                                     </a></li>
                                 <li><a href="#">
-                                        <feather type="gitlab"></feather>
+                                        <vue-feather type="gitlab"></vue-feather>
                                     </a></li>
                             </ul>
 
@@ -59,16 +59,16 @@
 
                             <ul>
                                 <li><a href="#">
-                                        <feather type="facebook"></feather>
+                                        <vue-feather type="facebook"></vue-feather>
                                     </a></li>
                                 <li><a href="#">
-                                        <feather type="twitter"></feather>
+                                        <vue-feather type="twitter"></vue-feather>
                                     </a></li>
                                 <li><a href="#">
-                                        <feather type="linkedin"></feather>
+                                        <vue-feather type="linkedin"></vue-feather>
                                     </a></li>
                                 <li><a href="#">
-                                        <feather type="gitlab"></feather>
+                                        <vue-feather type="gitlab"></vue-feather>
                                     </a></li>
                             </ul>
 
@@ -91,16 +91,16 @@
 
                             <ul>
                                 <li><a href="#">
-                                        <feather type="facebook"></feather>
+                                        <vue-feather type="facebook"></vue-feather>
                                     </a></li>
                                 <li><a href="#">
-                                        <feather type="twitter"></feather>
+                                        <vue-feather type="twitter"></vue-feather>
                                     </a></li>
                                 <li><a href="#">
-                                        <feather type="linkedin"></feather>
+                                        <vue-feather type="linkedin"></vue-feather>
                                     </a></li>
                                 <li><a href="#">
-                                        <feather type="gitlab"></feather>
+                                        <vue-feather type="gitlab"></vue-feather>
                                     </a></li>
                             </ul>
 
@@ -123,16 +123,16 @@
 
                             <ul>
                                 <li><a href="#">
-                                        <feather type="facebook"></feather>
+                                        <vue-feather type="facebook"></vue-feather>
                                     </a></li>
                                 <li><a href="#">
-                                        <feather type="twitter"></feather>
+                                        <vue-feather type="twitter"></vue-feather>
                                     </a></li>
                                 <li><a href="#">
-                                        <feather type="linkedin"></feather>
+                                        <vue-feather type="linkedin"></vue-feather>
                                     </a></li>
                                 <li><a href="#">
-                                        <feather type="gitlab"></feather>
+                                        <vue-feather type="gitlab"></vue-feather>
                                     </a></li>
                             </ul>
 
@@ -155,16 +155,16 @@
 
                             <ul>
                                 <li><a href="#">
-                                        <feather type="facebook"></feather>
+                                        <vue-feather type="facebook"></vue-feather>
                                     </a></li>
                                 <li><a href="#">
-                                        <feather type="twitter"></feather>
+                                        <vue-feather type="twitter"></vue-feather>
                                     </a></li>
                                 <li><a href="#">
-                                        <feather type="linkedin"></feather>
+                                        <vue-feather type="linkedin"></vue-feather>
                                     </a></li>
                                 <li><a href="#">
-                                        <feather type="gitlab"></feather>
+                                        <vue-feather type="gitlab"></vue-feather>
                                     </a></li>
                             </ul>
 
@@ -187,16 +187,16 @@
 
                             <ul>
                                 <li><a href="#">
-                                        <feather type="facebook"></feather>
+                                        <vue-feather type="facebook"></vue-feather>
                                     </a></li>
                                 <li><a href="#">
-                                        <feather type="twitter"></feather>
+                                        <vue-feather type="twitter"></vue-feather>
                                     </a></li>
                                 <li><a href="#">
-                                        <feather type="linkedin"></feather>
+                                        <vue-feather type="linkedin"></vue-feather>
                                     </a></li>
                                 <li><a href="#">
-                                        <feather type="gitlab"></feather>
+                                        <vue-feather type="gitlab"></vue-feather>
                                     </a></li>
                             </ul>
 
@@ -219,16 +219,16 @@
 
                             <ul>
                                 <li><a href="#">
-                                        <feather type="facebook"></feather>
+                                        <vue-feather type="facebook"></vue-feather>
                                     </a></li>
                                 <li><a href="#">
-                                        <feather type="twitter"></feather>
+                                        <vue-feather type="twitter"></vue-feather>
                                     </a></li>
                                 <li><a href="#">
-                                        <feather type="linkedin"></feather>
+                                        <vue-feather type="linkedin"></vue-feather>
                                     </a></li>
                                 <li><a href="#">
-                                        <feather type="gitlab"></feather>
+                                        <vue-feather type="gitlab"></vue-feather>
                                     </a></li>
                             </ul>
 
@@ -251,16 +251,16 @@
 
                             <ul>
                                 <li><a href="#">
-                                        <feather type="facebook"></feather>
+                                        <vue-feather type="facebook"></vue-feather>
                                     </a></li>
                                 <li><a href="#">
-                                        <feather type="twitter"></feather>
+                                        <vue-feather type="twitter"></vue-feather>
                                     </a></li>
                                 <li><a href="#">
-                                        <feather type="linkedin"></feather>
+                                        <vue-feather type="linkedin"></vue-feather>
                                     </a></li>
                                 <li><a href="#">
-                                        <feather type="gitlab"></feather>
+                                        <vue-feather type="gitlab"></vue-feather>
                                     </a></li>
                             </ul>
 
@@ -275,69 +275,70 @@
                             <img src="../../../assets/img/team-image/4.jpg" alt="image">
                         </div>
 
-                    <div class="team-content">
-                        <div class="team-info">
-                            <h3>Jason Statham</h3>
-                            <span>UX/UI Designer</span>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Jason Statham</h3>
+                                <span>UX/UI Designer</span>
+                            </div>
+
+                            <ul>
+                                <li><a href="#">
+                                        <vue-feather type="facebook"></vue-feather>
+                                    </a></li>
+                                <li><a href="#">
+                                        <vue-feather type="twitter"></vue-feather>
+                                    </a></li>
+                                <li><a href="#">
+                                        <vue-feather type="linkedin"></vue-feather>
+                                    </a></li>
+                                <li><a href="#">
+                                        <vue-feather type="gitlab"></vue-feather>
+                                    </a></li>
+                            </ul>
+
+                            <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
+                        </div>
+                    </div>
+                </slide>
+
+                <slide>
+                    <div class="single-team">
+                        <div class="team-image">
+                            <img src="../../../assets/img/team-image/5.jpg" alt="image">
                         </div>
 
-                        <ul>
-                            <li><a href="#">
-                                    <feather type="facebook"></feather>
-                                </a></li>
-                            <li><a href="#">
-                                    <feather type="twitter"></feather>
-                                </a></li>
-                            <li><a href="#">
-                                    <feather type="linkedin"></feather>
-                                </a></li>
-                            <li><a href="#">
-                                    <feather type="gitlab"></feather>
-                                </a></li>
-                        </ul>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Corey Anderson</h3>
+                                <span>Project Manager</span>
+                            </div>
 
-                        <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-                    </div>
-                </div>
-            </slide>
+                            <ul>
+                                <li><a href="#">
+                                        <vue-feather type="facebook"></vue-feather>
+                                    </a></li>
+                                <li><a href="#">
+                                        <vue-feather type="twitter"></vue-feather>
+                                    </a></li>
+                                <li><a href="#">
+                                        <vue-feather type="linkedin"></vue-feather>
+                                    </a></li>
+                                <li><a href="#">
+                                        <vue-feather type="gitlab"></vue-feather>
+                                    </a></li>
+                            </ul>
 
-            <slide>
-                <div class="single-team">
-                    <div class="team-image">
-                        <img src="../../../assets/img/team-image/5.jpg" alt="image">
-                    </div>
-
-                    <div class="team-content">
-                        <div class="team-info">
-                            <h3>Corey Anderson</h3>
-                            <span>Project Manager</span>
+                            <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
                         </div>
-
-                        <ul>
-                            <li><a href="#">
-                                    <feather type="facebook"></feather>
-                                </a></li>
-                            <li><a href="#">
-                                    <feather type="twitter"></feather>
-                                </a></li>
-                            <li><a href="#">
-                                    <feather type="linkedin"></feather>
-                                </a></li>
-                            <li><a href="#">
-                                    <feather type="gitlab"></feather>
-                                </a></li>
-                        </ul>
-
-                        <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
                     </div>
-                </div>
-            </slide>
+                </slide>
 
-        </carousel>
-    </div>
+            </carousel>
+        </div>
 
-</section>
-<!-- End Team Area --></template>
+    </section>
+    <!-- End Team Area -->
+</template>
 
 <script>
 import { Carousel, Slide } from 'vue-carousel';

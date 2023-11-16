@@ -14,7 +14,7 @@
             <ul class="navbar-nav nav ml-auto">
               <li class="nav-item">
                 <a href="#" class="nav-link active">
-                  Home <feather type="chevron-down"></feather>
+                  Home <vue-feather type="chevron-down"></vue-feather>
                 </a>
 
                 <ul class="dropdown_menu">
@@ -46,7 +46,7 @@
               </li>
 
               <li class="nav-item">
-                <a href="#" class="nav-link">About <feather type="chevron-down"></feather></a>
+                <a href="#" class="nav-link">About <vue-feather type="chevron-down"></vue-feather></a>
                 <ul class="dropdown_menu">
                   <li class="nav-item">
                     <router-link to="/about-style-one" class="nav-link">About Style 1</router-link>
@@ -63,7 +63,7 @@
               </li>
 
               <li class="nav-item">
-                <a href="#" class="nav-link">Pages <feather type="chevron-down"></feather></a>
+                <a href="#" class="nav-link">Pages <vue-feather type="chevron-down"></vue-feather></a>
                 <ul class="dropdown_menu">
                   <li class="nav-item">
                     <a href="#" class="nav-link">Features</a>
@@ -147,7 +147,7 @@
               </li>
 
               <li class="nav-item">
-                <a href="#" class="nav-link">Blog <feather type="chevron-down"></feather></a>
+                <a href="#" class="nav-link">Blog <vue-feather type="chevron-down"></vue-feather></a>
                 <ul class="dropdown_menu">
                   <li class="nav-item">
                     <router-link to="/blog-grid" class="nav-link">Blog Grid</router-link>
@@ -187,7 +187,7 @@
 
           <div class="others-option">
             <router-link to="/cart" class="cart-wrapper-btn">
-              <feather type="shopping-cart"></feather>
+              <vue-feather type="shopping-cart"></vue-feather>
               <span>{{ shoppingCart.length }}</span>
             </router-link>
             <a href="#" class="btn btn-light">Support</a>
