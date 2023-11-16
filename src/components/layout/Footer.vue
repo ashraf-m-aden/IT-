@@ -101,11 +101,7 @@
     </div>
     <!-- <div class="go-top"><vue-feather type="arrow-up"></vue-feather></div> -->
 
-    <back-to-top bottom="50px" right="50px">
-      <div class="go-top">
-        <vue-feather type="arrow-up"></vue-feather>
-      </div>
-    </back-to-top>
+
   </footer>
   <!-- End Footer Area -->
 </template>
@@ -114,5 +110,6 @@
 import { ref } from 'vue'
 export default {
   name: "FooterPage",
+
 };
 </script>

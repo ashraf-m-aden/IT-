@@ -9,6 +9,11 @@
     <router-view></router-view>
     <div v-if="currentUrl == '/not-found' || currentUrl == '/coming-soon'"></div>
     <Footer v-else></Footer>
+    <button bottom="50px" right="50px" @click="toTopFunction">
+      <div class="go-top">
+        <vue-feather type="arrow-up"></vue-feather>
+      </div>
+    </button>
   </div>
 </template>
 
@@ -46,7 +51,12 @@ export default {
       store,
     };
   },
-
+  methods: {
+    toTopFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  },
   watch: {
     $route(pathUrl) {
       this.currentUrl = pathUrl.path;
@@ -79,6 +89,8 @@ export default {
     setTimeout(() => {
       this.isLoading = false;
     }, 2000);
+    // When the user clicks on the button, scroll to the top of the document
+
   },
 };
 </script>
