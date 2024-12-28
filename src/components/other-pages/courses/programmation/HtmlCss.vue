@@ -68,7 +68,7 @@
 								<li>mettre votre site web en ligne ;</li>
 							</ul>
 							</p>
-							<!-- 
+							<!--
 							<div class="services-details-accordion">
 								<VueFaqAccordion :items="myItems" />
 							</div> -->
@@ -78,7 +78,7 @@
 			</div>
 		</section>
 		<!-- End Services Details Area -->
-
+<!--
 		<div class="container">
 
 			<div class="row  justify-content-center ">
@@ -107,7 +107,7 @@
 				</div>
 
 			</div>
-		</div>
+		</div> -->
 
 		<transition name="modal">
 			<div class="modal-mask" v-if="showModal">

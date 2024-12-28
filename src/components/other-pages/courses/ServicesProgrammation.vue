@@ -45,11 +45,11 @@
             <div class="agency-services-box" @click="goPage('/cours-programmation/html-css')">
               <img src="../../../assets/img/courses/logo-html5-css3.png" alt="image" />
 
-              <div class="content">
+              <div class="content"><router-link to="/cours-programmation/html-css">
                 <h3><a href="#">HTML et CSS</a></h3>
-                <a href="#" class="read-more-btn"><router-link to="/cours-programmation/html-css">Lire plus
-                    <vue-feather type="plus-circle"></vue-feather>
-                  </router-link></a>
+                <a href="#" class="read-more-btn">Lire plus
+                  <vue-feather type="plus-circle"></vue-feather>
+                </a> </router-link>
               </div>
             </div>
           </div>
@@ -58,11 +58,11 @@
             <div class="agency-services-box" @click="goPage('/cours-programmation/javascript')">
               <img src="../../../assets/img/courses/JavaScript-Logo.png" alt="image" />
 
-              <div class="content">
+              <div class="content"><router-link to="/cours-programmation/javascript">
                 <h3><a href="#">Javascript</a></h3>
-                <a href="#" class="read-more-btn"><router-link to="/cours-programmation/javascript">Lire plus
+                <a href="#" class="read-more-btn">Lire plus
                     <vue-feather type="plus-circle"></vue-feather>
-                  </router-link></a>
+                  </a> </router-link>
               </div>
             </div>
           </div>
@@ -71,11 +71,11 @@
             <div class="agency-services-box" @click="goPage('/cours-programmation/mysql')">
               <img src="../../../assets/img/courses/mysql.jpg" alt="image" />
 
-              <div class="content">
+              <div class="content"><router-link to="/cours-programmation/mysql">
                 <h3><a href="#">MySQL</a></h3>
-                <a href="#" class="read-more-btn"><router-link to="/cours-programmation/mysql">Lire plus
+                <a href="#" class="read-more-btn">Lire plus
                     <vue-feather type="plus-circle"></vue-feather>
-                  </router-link></a>
+                 </a> </router-link>
               </div>
             </div>
           </div>
@@ -84,10 +84,12 @@
               <img src="../../../assets/img/courses/Logo-Vuejs.png" alt="image" />
 
               <div class="content">
-                <h3><a href="#">Vue.js</a></h3>
-                <a href="#" class="read-more-btn"><router-link to="/cours-programmation/vue">Lire plus
+                <router-link to="/cours-programmation/vue">
+                  <h3><a href="#">Vue.js</a></h3>
+                  <a href="#" class="read-more-btn">Lire plus
                     <vue-feather type="plus-circle"></vue-feather>
-                  </router-link></a>
+                  </a>
+                </router-link>
               </div>
             </div>
           </div>
@@ -96,11 +98,11 @@
             <div class="agency-services-box" @click="goPage('/cours-programmation/angular')">
               <img src="../../../assets/img/courses/2048px-Angular_full_color_logo.svg.png" alt="image" />
 
-              <div class="content">
+              <div class="content"><router-link to="/cours-programmation/angular">
                 <h3><a href="#">Angular</a></h3>
-                <a href="" class="read-more-btn"><router-link to="/cours-programmation/angular">Lire plus
+                  <a href="" class="read-more-btn">Lire plus
                     <vue-feather type="plus-circle"></vue-feather>
-                  </router-link></a>
+                  </a> </router-link>
               </div>
             </div>
           </div>
@@ -109,11 +111,11 @@
             <div class="agency-services-box" @click="goPage('/cours-programmation/node')">
               <img src="../../../assets/img/courses/1200px-Node.js_logo.svg.png" alt="image" />
 
-              <div class="content">
+              <div class="content"><router-link to="/cours-programmation/node">
                 <h3><a href="#">Node.js</a></h3>
-                <a href="#" class="read-more-btn"><router-link to="/cours-programmation/node">Lire plus
-                    <vue-feather type="plus-circle"></vue-feather>
-                  </router-link></a>
+                <a href="#" class="read-more-btn">Lire plus
+                  <vue-feather type="plus-circle"></vue-feather>
+                </a> </router-link>
               </div>
             </div>
           </div>
@@ -163,14 +165,15 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import { ref } from 'vue'
-export default {
-  name: "ServicesProgrammation",
-  methods: {
-    goPage(url) {
-      this.$router.push(url);
-    },
-  },
-};
+import { useRouter, useRoute } from 'vue-router'
+
+const router = useRouter();
+const name = ref("ServicesProgrammation")
+
+const goPage = (url) => {
+  router.push(url);
+}
+
 </script>

@@ -64,7 +64,7 @@
 
 							</ul>
 							</p>
-							<!-- 
+							<!--
 							<div class="services-details-accordion">
 								<VueFaqAccordion :items="myItems" />
 							</div> -->
@@ -75,7 +75,7 @@
 		</section>
 		<!-- End Services Details Area -->
 
-		<div class="container">
+		<!-- <div class="container">
 
 			<div class="row  justify-content-center ">
 
@@ -112,7 +112,7 @@
 				</div>
 
 			</div>
-		</div>
+		</div> -->
 	</div>
 </template>
 
