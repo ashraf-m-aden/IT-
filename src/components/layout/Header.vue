@@ -5,7 +5,7 @@
       <div class="container">
         <nav class="navbar navbar-expand-md navbar-light">
           <router-link class="navbar-brand" to="/">
-            <img src="../../assets/img/logo.png" alt="logo" />
+            <img src="../../assets/img/logo.svg" alt="logo" />
           </router-link>
 
           <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" id="collapseBtn"

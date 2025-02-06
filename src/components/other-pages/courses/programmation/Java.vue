@@ -42,7 +42,7 @@
 					</div>
 
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/1200px-Java_Logo.svg.png" class="wow fadeInUp" alt="image">
+						<img src="../../../../assets/img/courses/1200px-Java_Logo.png" class="wow fadeInUp" alt="image">
 					</div>
 				</div>
 

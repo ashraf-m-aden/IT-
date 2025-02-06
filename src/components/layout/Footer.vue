@@ -7,7 +7,7 @@
           <div class="single-footer-widget">
             <div class="logo">
               <a href="/">
-                <img src="../../assets/img/logo.png" alt="logo" />
+                <img src="../../assets/img/logo.svg" alt="logo" />
               </a>
             </div>
             <p>

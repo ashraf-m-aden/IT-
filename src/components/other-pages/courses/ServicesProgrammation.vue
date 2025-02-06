@@ -96,7 +96,7 @@
 
           <div class="col-lg-4 col-sm-6 col-md-6">
             <div class="agency-services-box" @click="goPage('/cours-programmation/angular')">
-              <img src="../../../assets/img/courses/2048px-Angular_full_color_logo.svg.png" alt="image" />
+              <img src="../../../assets/img/courses/2048px-Angular_full_color_logo.png" alt="image" />
 
               <div class="content"><router-link to="/cours-programmation/angular">
                 <h3><a href="#">Angular</a></h3>
@@ -109,7 +109,7 @@
 
           <div class="col-lg-4 col-sm-6 col-md-6">
             <div class="agency-services-box" @click="goPage('/cours-programmation/node')">
-              <img src="../../../assets/img/courses/1200px-Node.js_logo.svg.png" alt="image" />
+              <img src="../../../assets/img/courses/1200px-Node.js_logo.png" alt="image" />
 
               <div class="content"><router-link to="/cours-programmation/node">
                 <h3><a href="#">Node.js</a></h3>

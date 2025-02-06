@@ -3,7 +3,7 @@
   <div class="preloader">
     <div class="container">
       <div class="avatar">
-        <img src="../../assets/img/logo.png" alt="IT+" />
+        <img src="../../assets/img/logo.svg" alt="IT+" />
       </div>
     </div>
   </div>
