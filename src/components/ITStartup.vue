@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Banner from "./it-startup/Banner";
+import Banner from "./it-startup/BannerComponent";
 import BoxesArea from "./it-startup/BoxesArea";
 import ReseauxInformatiques from "./it-startup/ReseauxInformatiques.vue";
 import Programmation from "./it-startup/Programmation.vue";

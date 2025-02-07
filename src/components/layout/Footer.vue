@@ -26,14 +26,12 @@
                 <router-link to="/a-propos" class="nav-link">A propos de nous</router-link>
               </li>
               <li>
-                <router-link to="/cours-programmation" class="nav-link">Formation en developpementr</router-link>
+                <router-link to="/cours-programmation" class="nav-link">Formation en developpement</router-link>
               </li>
               <li>
                 <router-link to="/cours-reseaux-systemes" class="nav-link">Formation en réseaux</router-link>
               </li>
-              <li>
-                <router-link to="/a-propos" class="nav-link">Nos prix</router-link>
-              </li>
+
               <li>
                 <router-link to="/contact" class="nav-link">Contact</router-link>
               </li>
@@ -48,15 +46,15 @@
             <ul class="footer-contact-info">
               <li>
                 <vue-feather type="map-pin"></vue-feather>
-                Bientot
+                Hodan 1 Lot 28
               </li>
               <li>
                 <vue-feather type="mail"></vue-feather> Email:
-                <a href="#">Bientot</a>
+                <a href="#">djib.it.advanced.technology@gmail.com</a>
               </li>
               <li>
                 <vue-feather type="phone-call"></vue-feather> Phone:
-                <a href="#"> Bientot</a>
+                <a href="#"> +253 77 484707</a>
               </li>
             </ul>
             <ul class="social-links">
@@ -75,11 +73,11 @@
                   <vue-feather type="instagram"></vue-feather>
                 </a>
               </li>
-              <li>
+              <!-- <li>
                 <a href="#" class="linkedin">
                   <vue-feather type="linkedin"></vue-feather>
                 </a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>

@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-12">
       <div class="map-container">
-        <div class="map">
+        <div class="map">sss
           <l-map ref="map" v-model:zoom="zoom" :center="[11.5532, 43.1503]">
             <l-tile-layer
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -37,25 +37,7 @@ export default {
     LMarker,
     LPopup,
   },
-  mounted() {
-    // delete Icon.Default.prototype._getIconUrl;
-    // Icon.Default.mergeOptions({
-    //   iconRetinaUrl: import("leaflet/dist/images/marker-icon-2x.png"),
-    //   iconUrl: import("leaflet/dist/images/marker-icon.png"),
-    //   shadowUrl: import("leaflet/dist/images/marker-shadow.png"),
-    // });
-    // var map = L.map("map").setView([11.5532, 43.1503], 15);
-    // L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    //   attribution:
-    //     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    //   maxZoom: 18,
-    //   id: "mapbox/streets-v11",
-    //   tileSize: 512,
-    //   zoomOffset: -1,
-    // }).addTo(map);
-    // var marker = L.marker([11.553, 43.1501]);
-    // marker.addTo(map).bindPopup("Autorité de l'Aviation Civile de Djibouti");
-  },
+
   data() {
     return {
       zoom: 17,
@@ -75,12 +57,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../sass/main.scss";
+// @import "../assets/style/custom.scss";
 .map-container {
   margin-top: 2rem;
   width: 500px;
   height: 300px;
-  @include respond(phone) {
+  @media (max-width: 37.5em) {
+
     width: 300px;
     height: 300px;
   }

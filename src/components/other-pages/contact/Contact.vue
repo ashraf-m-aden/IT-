@@ -40,154 +40,120 @@
     <!-- Start Contact Info Area -->
     <section class="contact-info-area ptb-80">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="row text-center">
+          <div class="col-lg-6 col-md-6 col-sm-6">
             <div class="contact-info-box">
               <div class="icon">
                 <vue-feather type="mail"></vue-feather>
               </div>
               <h3>Email</h3>
-              <p><a href="#">Bientot</a></p>
+              <p><a href="#">djib.it.advanced.technology@gmail.com</a></p>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-6">
-            <div class="contact-info-box">
-              <div class="icon">
-                <vue-feather type="map-pin"></vue-feather>
-              </div>
-              <h3>Venez nous voir</h3>
-              <p>Bientot</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
+          <div class="col-lg-6 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
             <div class="contact-info-box">
               <div class="icon">
                 <vue-feather type="phone"></vue-feather>
               </div>
               <h3>Appellez nous</h3>
-              <p><a href="#">Bientot</a></p>
+              <p><a href="#">+253 77 484707</a></p>
             </div>
           </div>
+          <div class="col-12 text-center">
+            <div class="contact-info-box text-center">
+              <div class="icon">
+                <vue-feather type="map-pin"></vue-feather>
+              </div>
+              <div class="map-container">
+                <div class="map">
+                  <l-map ref="map" v-model:zoom="zoom" :center="[11.554622, 43.100724]">
+                    <l-tile-layer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" layer-type="base"
+                      name="OpenStreetMap"></l-tile-layer>
+                    <l-marker :lat-lng="[11.554622, 43.100724]">
+                      <l-icon :icon-url="iconUrl" :icon-size="iconSize" />
+                      <l-popup> IT+ ADVANCED TECHNOLOGY</l-popup>
+                    </l-marker>
+                  </l-map>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-12  offset-lg-0 offset-md-3 offset-sm-3 m-auto">
+            <img src="../../../assets/img/image.png" class="m-auto">
+            <p>Scanne moi!
+            </p>
+          </div>
+
+
         </div>
       </div>
     </section>
-    <!-- End Contact Info Area -->
 
-    <!-- Start Contact Area -->
-    <!-- <section class="contact-area ptb-80 pt-0">
-      <div class="container">
-        <div class="section-title">
-          <h2>Get In Touch With Us</h2>
-          <div class="bar"></div>
-          <p>Anything On your Mind. We’ll Be Glad To Assist You!</p>
-        </div>
-
-        <div class="row h-100 justify-content-center align-items-center">
-          <div class="col-lg-6 col-md-12">
-            <img src="../../../assets/img/1.png" alt="image" />
-          </div>
-
-          <div class="col-lg-6 col-md-12">
-            <form id="contactForm">
-              <div class="row">
-                <div class="col-lg-12 col-md-12">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      class="form-control"
-                      required
-                      data-error="Please enter your name"
-                      placeholder="Name"
-                    />
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12 col-md-12">
-                  <div class="form-group">
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      class="form-control"
-                      required
-                      data-error="Please enter your email"
-                      placeholder="Email"
-                    />
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12 col-md-6">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      name="phone_number"
-                      id="phone_number"
-                      required
-                      data-error="Please enter your number"
-                      class="form-control"
-                      placeholder="Phone"
-                    />
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12 col-md-6">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      name="msg_subject"
-                      id="msg_subject"
-                      class="form-control"
-                      required
-                      data-error="Please enter your subject"
-                      placeholder="Subject"
-                    />
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12 col-md-12">
-                  <div class="form-group">
-                    <textarea
-                      name="message"
-                      class="form-control"
-                      id="message"
-                      cols="30"
-                      rows="5"
-                      required
-                      data-error="Write your message"
-                      placeholder="Your Message"
-                    ></textarea>
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12 col-md-12">
-                  <button type="submit" class="btn btn-primary">
-                    Send Message
-                  </button>
-                  <div id="msgSubmit" class="h3 text-center hidden"></div>
-                  <div class="clearfix"></div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- End Contact Area -->
   </div>
 </template>
 
 <script>
-import { ref } from 'vue'
+import "leaflet/dist/leaflet.css";
+import {
+  LMap,
+  LTileLayer,
+  LIcon,
+  LMarker,
+  LPopup,
+} from "@vue-leaflet/vue-leaflet";
 export default {
   name: "ContactPage",
+  components: {
+    LMap,
+    LTileLayer,
+    LIcon,
+    LMarker,
+    LPopup,
+  },
+
+  data() {
+    return {
+      zoom: 17,
+      iconWidth: 20,
+      iconHeight: 30,
+    };
+  },
+  computed: {
+    iconUrl() {
+      return `https://cdn.pixabay.com/photo/2014/04/03/10/03/google-309739_640.png`;
+    },
+    iconSize() {
+      return [this.iconWidth, this.iconHeight];
+    },
+  },
+
 };
 </script>
+
+<style lang="scss" scoped>
+// @import "../assets/style/custom.scss";
+.map-container {
+  margin-top: 2rem;
+  width: 100%;
+  height: 300px;
+
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+.map-frame {
+  height: 100%;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+</style>

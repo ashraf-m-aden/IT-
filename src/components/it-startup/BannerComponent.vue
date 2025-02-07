@@ -17,6 +17,10 @@
                   professionels, avec IT+ l'informatique n'aura jamais eté aussi
                   accessible.
                 </p>
+                <div class="d-flex">
+                  <a class="read-more-btn syllabus" target="_blank" href="/SYLLABUS IT+ ADVANCED TECHNOLOGY.pdf" download="SYLLABUS IT+ ADVANCED TECHNOLOGY.pdf">Télecharger le syllabus
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -73,9 +77,19 @@
   <!-- End Main Banner -->
 </template>
 
+
 <script>
-import { ref } from 'vue'
 export default {
-  name: "BannerPage",
-};
+  fileUrl:  "/public/SYLLABUS IT+ ADVANCED TECHNOLOGY.pdf" // If in 'public/' folder
+
+}
 </script>
+<style>
+.syllabus {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 1px;
+
+}
+</style>
