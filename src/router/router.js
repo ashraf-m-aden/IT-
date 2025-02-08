@@ -33,7 +33,7 @@ import NotFound from "../components/other-pages/not-found/NotFound.vue";
 import ITStartup from "../components/ITStartup";
 
 export const router = VueRouter.createRouter({
-  history: VueRouter.createWebHashHistory(),
+  history: VueRouter.createWebHistory(),
   linkExactActiveClass: "active",
   scrollBehavior() {
     return { x: 0, y: 0 };
