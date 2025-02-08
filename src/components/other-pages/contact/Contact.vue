@@ -56,7 +56,7 @@
                 <vue-feather type="phone"></vue-feather>
               </div>
               <h3>Appellez nous</h3>
-              <p><a href="#">+253 77 484707</a></p>
+              <p><a href="#">+253 77 151875</a></p>
             </div>
           </div>
           <div class="col-12 text-center">
