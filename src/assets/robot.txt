@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://formations.it-advanced-technology.com/sitemap.xml
+Disallow: /not-found
+Disallow: /login
+Sitemap: https://it-advanced-technology.com/sitemap.xml
