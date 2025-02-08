@@ -41,7 +41,7 @@
 					</div>
 
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/vue.jpg" class="wow fadeInUp" alt="image">
+						<img src="../../../../assets/img/courses/vue.jpg" class="wow fadeInUp" alt="IT+ ADVANCED TECHNOLOGY">
 					</div>
 				</div>
 
@@ -49,7 +49,7 @@
 
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/vue2.jpg" class="wow fadeInUp" alt="image">
+						<img src="../../../../assets/img/courses/vue2.jpg" class="wow fadeInUp" alt="IT+ ADVANCED TECHNOLOGY">
 					</div>
 
 					<div class="col-lg-6 services-details">

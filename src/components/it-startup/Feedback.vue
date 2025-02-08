@@ -18,7 +18,7 @@
               <div class="item">
                 <div class="single-feedback">
                   <div class="client-img">
-                    <img src="../../assets/img/client-image/1.jpg" alt="image" />
+                    <img src="../../assets/img/client-image/1.jpg" alt="IT+ ADVANCED TECHNOLOGY" />
                   </div>
 
                   <h3>John Lucy</h3>
@@ -35,7 +35,7 @@
               <div class="item">
                 <div class="single-feedback">
                   <div class="client-img">
-                    <img src="../../assets/img/client-image/2.jpg" alt="image" />
+                    <img src="../../assets/img/client-image/2.jpg" alt="IT+ ADVANCED TECHNOLOGY" />
                   </div>
 
                   <h3>John Smith</h3>
@@ -52,7 +52,7 @@
               <div class="item">
                 <div class="single-feedback">
                   <div class="client-img">
-                    <img src="../../assets/img/client-image/3.jpg" alt="image" />
+                    <img src="../../assets/img/client-image/3.jpg" alt="IT+ ADVANCED TECHNOLOGY" />
                   </div>
 
                   <h3>Maxwel Warner</h3>
@@ -69,7 +69,7 @@
               <div class="item">
                 <div class="single-feedback">
                   <div class="client-img">
-                    <img src="../../assets/img/client-image/4.jpg" alt="image" />
+                    <img src="../../assets/img/client-image/4.jpg" alt="IT+ ADVANCED TECHNOLOGY" />
                   </div>
 
                   <h3>Ross Taylor</h3>
@@ -86,7 +86,7 @@
               <div class="item">
                 <div class="single-feedback">
                   <div class="client-img">
-                    <img src="../../assets/img/client-image/5.jpg" alt="image" />
+                    <img src="../../assets/img/client-image/5.jpg" alt="IT+ ADVANCED TECHNOLOGY" />
                   </div>
 
                   <h3>James Anderson</h3>
@@ -103,7 +103,7 @@
               <div class="item">
                 <div class="single-feedback">
                   <div class="client-img">
-                    <img src="../../assets/img/client-image/1.jpg" alt="image" />
+                    <img src="../../assets/img/client-image/1.jpg" alt="IT+ ADVANCED TECHNOLOGY" />
                   </div>
 
                   <h3>Steven Smith</h3>
@@ -120,7 +120,7 @@
               <div class="item">
                 <div class="single-feedback">
                   <div class="client-img">
-                    <img src="../../assets/img/client-image/2.jpg" alt="image" />
+                    <img src="../../assets/img/client-image/2.jpg" alt="IT+ ADVANCED TECHNOLOGY" />
                   </div>
 
                   <h3>Steven Lucy</h3>
@@ -137,7 +137,7 @@
               <div class="item">
                 <div class="single-feedback">
                   <div class="client-img">
-                    <img src="../../assets/img/client-image/3.jpg" alt="image" />
+                    <img src="../../assets/img/client-image/3.jpg" alt="IT+ ADVANCED TECHNOLOGY" />
                   </div>
 
                   <h3>John Terry</h3>

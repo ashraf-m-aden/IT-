@@ -7,7 +7,7 @@
           <div class="single-footer-widget">
             <div class="logo">
               <a href="/">
-                <img src="../../assets/img/logo.svg" alt="logo" />
+                <img src="../../assets/img/logo.svg" alt="IT+ ADVANCED TECHNOLOGY" />
               </a>
             </div>
             <p>
@@ -20,7 +20,7 @@
 
         <div class="col-lg-4 col-md-6 col-sm-6">
           <div class="single-footer-widget pl-5">
-            <h3>Compagnie</h3>
+            <h3>Centre de formation</h3>
             <ul class="list">
               <li>
                 <router-link to="/a-propos" class="nav-link">A propos de nous</router-link>

@@ -16,7 +16,7 @@
           <div class="single-blog-post">
             <div class="blog-image">
               <a href="#">
-                <img src="../../assets/img/blog-image/1.jpg" alt="image" />
+                <img src="../../assets/img/blog-image/1.jpg" alt="IT+ ADVANCED TECHNOLOGY" />
               </a>
 
               <div class="date">
@@ -47,7 +47,7 @@
           <div class="single-blog-post">
             <div class="blog-image">
               <a href="#">
-                <img src="../../assets/img/blog-image/2.jpg" alt="image" />
+                <img src="../../assets/img/blog-image/2.jpg" alt="IT+ ADVANCED TECHNOLOGY" />
               </a>
 
               <div class="date">
@@ -78,7 +78,7 @@
           <div class="single-blog-post">
             <div class="blog-image">
               <a href="#">
-                <img src="../../assets/img/blog-image/3.jpg" alt="image" />
+                <img src="../../assets/img/blog-image/3.jpg" alt="IT+ ADVANCED TECHNOLOGY" />
               </a>
 
               <div class="date">

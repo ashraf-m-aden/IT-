@@ -43,7 +43,7 @@
         <div class="row">
           <div class="col-lg-4 col-sm-6 col-md-6">
             <div class="agency-services-box" @click="goPage('/cours-reseaux-systemes/fondamentaux-reseaux')">
-              <img src="../../../assets/img/courses/fondamentaux.jpeg" alt="image" />
+              <img src="../../../assets/img/courses/fondamentaux.jpeg" alt="IT+ ADVANCED TECHNOLOGY" />
 
               <div class="content">
                 <h3><a href="#">Les fondamentaux des réseaux</a></h3>
@@ -56,7 +56,7 @@
 
           <div class="col-lg-4 col-sm-6 col-md-6">
             <div class="agency-services-box" @click="goPage('/cours-reseaux-systemes/reseaux-avances')">
-              <img src="../../../assets/img/courses/ccna.jpeg" alt="image" />
+              <img src="../../../assets/img/courses/ccna.jpeg" alt="IT+ ADVANCED TECHNOLOGY" />
 
               <div class="content">
                 <h3><a href="#">Réseaux avancés</a></h3>
@@ -69,7 +69,7 @@
 
           <div class="col-lg-4 col-sm-6 col-md-6">
             <div class="agency-services-box" @click="goPage('/cours-reseaux-systemes/gns3')">
-              <img src="../../../assets/img/courses/gns3.jpeg" alt="image" />
+              <img src="../../../assets/img/courses/gns3.jpeg" alt="IT+ ADVANCED TECHNOLOGY" />
 
               <div class="content">
                 <h3><a href="#">Maitriser l'émulation des réseaux</a></h3>
@@ -81,7 +81,7 @@
           </div>
           <div class="col-lg-4 col-sm-6 col-md-6">
             <div class="agency-services-box" @click="goPage('/cours-reseaux-systemes/securite-informatique')">
-              <img src="../../../assets/img/courses/security.jpeg" alt="image" />
+              <img src="../../../assets/img/courses/security.jpeg" alt="IT+ ADVANCED TECHNOLOGY" />
 
               <div class="content">
                 <h3><a href="#">Securité informatique</a></h3>
@@ -95,7 +95,7 @@
 
           <div class="col-lg-4 col-sm-6 col-md-6">
             <div class="agency-services-box" @click="goPage('/cours-reseaux-systemes/installation-windows')">
-              <img src="../../../assets/img/courses/windows.jpeg" alt="image" />
+              <img src="../../../assets/img/courses/windows.jpeg" alt="IT+ ADVANCED TECHNOLOGY" />
 
               <div class="content">
                 <h3>
@@ -110,7 +110,7 @@
 
           <div class="col-lg-4 col-sm-6 col-md-6">
             <div class="agency-services-box" @click="goPage('cours-reseaux-systemes/admin-serveur')">
-              <img src="../../../assets/img/courses/winserverr.jpeg" alt="image" />
+              <img src="../../../assets/img/courses/winserverr.jpeg" alt="IT+ ADVANCED TECHNOLOGY" />
 
               <div class="content">
                 <h3>
@@ -124,7 +124,7 @@
           </div>
           <div class="col-lg-4 col-sm-6 col-md-6">
             <div class="agency-services-box" @click="goPage('/cours-reseaux-systemes/linux')">
-              <img src="../../../assets/img/courses/LINUX-LOGO.png" alt="image" />
+              <img src="../../../assets/img/courses/LINUX-LOGO.png" alt="IT+ ADVANCED TECHNOLOGY" />
 
               <div class="content">
                 <h3><a href="#">Administration systeme Linux </a></h3>
@@ -136,7 +136,7 @@
           </div>
           <div class="col-lg-4 col-sm-6 col-md-6">
             <div class="agency-services-box" @click="goPage('/cours-reseaux-systemes/bureautique')">
-              <img src="../../../assets/img/courses/Office_logos.jpg" alt="image" />
+              <img src="../../../assets/img/courses/Office_logos.jpg" alt="IT+ ADVANCED TECHNOLOGY" />
 
               <div class="content">
                 <h3><a href="#">Bureautique</a></h3>

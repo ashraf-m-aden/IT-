@@ -27,7 +27,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-12">
                         <div class="ml-about-img">
-                            <img src="../../../assets/img/about4.png" alt="image">
+                            <img src="../../../assets/img/about4.png" alt="IT+ ADVANCED TECHNOLOGY">
                         </div>
                     </div>
 

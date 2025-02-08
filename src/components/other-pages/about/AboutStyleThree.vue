@@ -27,7 +27,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-12">
                         <div class="agency-about-img">
-                            <img src="../../../assets/img/agency-image/about-img.jpg" alt="image">
+                            <img src="../../../assets/img/agency-image/about-img.jpg" alt="IT+ ADVANCED TECHNOLOGY">
                         </div>
                     </div>
 

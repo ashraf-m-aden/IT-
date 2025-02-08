@@ -7,7 +7,8 @@
           <div class="row h-100 justify-content-center align-items-center">
             <div class="col-lg-5">
               <div class="hero-content">
-                <h1>L'informatique n'a jamais eté aussi accessible</h1>
+                <h1>IT+ ADVANCED TECHNOLOGY</h1>
+                <h3>L'informatique n'a jamais eté aussi accessible</h3>
                 <p>
                   Prenez part à de nombreuse formations pratiques en
                   programmation et en réseaux informatiques. Peu importe votre

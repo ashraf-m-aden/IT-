@@ -43,7 +43,7 @@
         <div class="row">
           <div class="col-lg-6 col-md-12">
             <div class="about-image">
-              <img src="../../../assets/img/1.png" alt="image" />
+              <img src="../../../assets/img/1.png" alt="IT+ ADVANCED TECHNOLOGY" />
             </div>
           </div>
 
@@ -136,7 +136,7 @@
         <span><a href="#">Or, get started now with a free trial</a></span>
       </div>
     </section>
-    End Ready To Talk Area 
+    End Ready To Talk Area
     <Partner></Partner>
     <Funfacts></Funfacts> -->
   </div>

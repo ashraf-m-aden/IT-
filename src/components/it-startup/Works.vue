@@ -15,7 +15,7 @@
                 :perPageCustom="[[0, 1], [768, 2], [1200, 3], [1500, 4]]">
                 <slide>
                     <div class="single-works">
-                        <img src="../../../assets/img/works-image/1.jpg" alt="image">
+                        <img src="../../../assets/img/works-image/1.jpg" alt="IT+ ADVANCED TECHNOLOGY">
 
                         <a href="#" class="icon">
                             <vue-feather type="settings"></vue-feather>
@@ -31,7 +31,7 @@
 
                 <slide>
                     <div class="single-works">
-                        <img src="../../../assets/img/works-image/2.jpg" alt="image">
+                        <img src="../../../assets/img/works-image/2.jpg" alt="IT+ ADVANCED TECHNOLOGY">
 
                         <a href="#" class="icon">
                             <vue-feather type="settings"></vue-feather>
@@ -47,7 +47,7 @@
 
                 <slide>
                     <div class="single-works">
-                        <img src="../../../assets/img/works-image/3.jpg" alt="image">
+                        <img src="../../../assets/img/works-image/3.jpg" alt="IT+ ADVANCED TECHNOLOGY">
 
                         <a href="#" class="icon">
                             <vue-feather type="settings"></vue-feather>
@@ -63,7 +63,7 @@
 
                 <slide>
                     <div class="single-works">
-                        <img src="../../../assets/img/works-image/4.jpg" alt="image">
+                        <img src="../../../assets/img/works-image/4.jpg" alt="IT+ ADVANCED TECHNOLOGY">
 
                         <a href="#" class="icon">
                             <vue-feather type="settings"></vue-feather>
@@ -79,7 +79,7 @@
 
                 <slide>
                     <div class="single-works">
-                        <img src="../../../assets/img/works-image/5.jpg" alt="image">
+                        <img src="../../../assets/img/works-image/5.jpg" alt="IT+ ADVANCED TECHNOLOGY">
 
                         <a href="#" class="icon">
                             <vue-feather type="settings"></vue-feather>

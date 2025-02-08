@@ -4,9 +4,10 @@
     <div class="startp-nav">
       <div class="container">
         <nav class="navbar navbar-expand-md navbar-light">
-          <router-link class="navbar-brand" to="/">
-            <img src="../../assets/img/logo.svg" alt="logo" />
-          </router-link>
+
+            <a class="navbar-brand" href="/">
+                <img src="../../assets/img/logo.svg" class="navbarbrand" :class="{ 'navbar-shrink': isShrunk }"  alt="IT+ ADVANCED TECHNOLOGY" />
+            </a>
 
           <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" id="collapseBtn"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -52,8 +53,8 @@
 <script>
 import auth from "../../services/auth";
 import { userStore } from "../../store/user";
+import { ref, onMounted, onUnmounted } from "vue";
 
-import { ref } from 'vue'
 export default {
   name: "HeaderPage",
 
@@ -61,18 +62,27 @@ export default {
     const isSticky = ref(false);
     const isMobile = ref(false);
     const store = userStore();
+    const isShrunk = ref(false);
 
     return {
       isSticky,
       isMobile,
       store,
+      isShrunk,
     };
   },
 
 
+
+
+
+
   mounted() {
+
     const that = this;
     window.addEventListener("scroll", () => {
+      this.isShrunk = window.scrollY > 50; // Shrink when scrolled 50px
+
       let scrollPos = window.scrollY;
       // eslint-disable-next-line no-console
       if (scrollPos >= 100) {
@@ -130,5 +140,22 @@ export default {
   text-decoration-line: underline;
   text-decoration-color: red;
   color: red;
+}
+
+.navbarbrand{
+  width: 100px;
+  animation: backwards 1s;
+
+}
+/* Navbar Shrinks on Scroll */
+.navbar-shrink {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  width: 40px; /* Shrinks the logo */
+
+}
+
+.navbar-shrink .navbarbrand {
+  width: 40px; /* Shrinks the logo */
+
 }
 </style>
