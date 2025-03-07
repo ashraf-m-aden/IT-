@@ -11,6 +11,9 @@ const pinia = createPinia();
 import { router } from "./router/router";
 import store from "./store";
 const app = createApp(App);
+const head = createHead();
+
+app.use(head);
 app.component(VueFeather.name, VueFeather);
 
 app.use(pinia).use(router).mount("#app");

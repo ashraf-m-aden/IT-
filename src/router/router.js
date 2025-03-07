@@ -39,52 +39,150 @@ export const router = VueRouter.createRouter({
     return { x: 0, y: 0 };
   },
   routes: [
-    { path: "/", component: ITStartup },
+    {
+      path: "/", component: ITStartup, meta: {
+        title: 'IT+ Advanced Technology',
+        description: 'Bienvenue dans le meilleur centre de formation pratique en informatique à .',
+      }
+    },
 
-    { path: "/cours-programmation/html-css", component: Html },
-    { path: "/cours-programmation", component: ServicesProgrammation },
-    { path: "/cours-programmation/angular", component: Angular },
-    { path: "/cours-programmation/vue", component: Vue },
-    { path: "/cours-programmation/javascript", component: Javascript },
-    { path: "/cours-programmation/java", component: Java },
-    { path: "/cours-programmation/node", component: Node },
-    { path: "/cours-programmation/mysql", component: MySQL },
+    {
+      path: "/cours-programmation/html-css", component: Html, meta: {
+        title: 'HTML - IT+ Advanced Technology',
+        description: 'Plongez dans les base de la programmation avec notre formation en HTML et CSS',
+      }
+    },
+    {
+      path: "/cours-programmation", component: ServicesProgrammation, meta: {
+        title: 'PROGRAMMATION - IT+ Advanced Technology',
+        description: 'Consultez la liste de nos formations en programmation',
+      }
+    },
+    {
+      path: "/cours-programmation/angular", component: Angular, meta: {
+        title: 'ANGULAR - IT+ Advanced Technology',
+        description: 'Maitrisez un des meilleurs frameworks Javascript',
+      }
+    },
+    {
+      path: "/cours-programmation/vue", component: Vue, meta: {
+        title: 'VUE - IT+ Advanced Technology',
+        description: 'Maitrisez un des meilleurs frameworks Javascript',
+      }
+    },
+    {
+      path: "/cours-programmation/javascript", component: Javascript,  meta: {
+        title: 'JAVASCRIPT - IT+ Advanced Technology',
+        description: 'Apprenez les bases du Javascript et élargissez vos horizons!',
+      }
+    },
+    {
+      path: "/cours-programmation/java", component: Java,  meta: {
+        title: 'JAVA - IT+ Advanced Technology',
+        description: 'Maitrisez un des languages de programmation les plus populaires',
+      }
+    },
+    {
+      path: "/cours-programmation/node", component: Node,  meta: {
+        title: 'NODE - IT+ Advanced Technology',
+        description: 'Plongez dans le mondes des backends et créez vos premieres applications backends',
+      }
+    },
+    {
+      path: "/cours-programmation/mysql", component: MySQL,  meta: {
+        title: 'MYSQL - IT+ Advanced Technology',
+        description: 'Nos formations en base de données vont vous interesser!',
+      }
+    },
 
-    { path: "/cours-reseaux-systemes", component: ServiceReseauxSystemes },
-    { path: "/cours-reseaux-systemes/linux", component: Linux },
+    {
+      path: "/cours-reseaux-systemes", component: ServiceReseauxSystemes,  meta: {
+        title: 'RESEAUX - IT+ Advanced Technology',
+        description: 'La liste de nos formations en réseaux informatiques',
+      }
+    },
+    {
+      path: "/cours-reseaux-systemes/linux", component: Linux, meta: {
+        title: 'Formation Linux - IT+ Advanced Technology',
+        description: "Maîtrisez l'administration Linux et découvrez les bases des systèmes open-source avec notre formation pratique.",
+      }
+    },
     {
       path: "/cours-reseaux-systemes/fondamentaux-reseaux",
-      component: FondamentauxReseaux,
+      component: FondamentauxReseaux,meta: {
+        title: 'Fondamentaux des Réseaux - IT+ Advanced Technology',
+        description: 'Apprenez les bases des réseaux informatiques : protocoles, infrastructures et configuration pour bien débuter.',
+      },
     },
     {
       path: "/cours-reseaux-systemes/reseaux-avances",
-      component: ReseauxAvances,
+      component: ReseauxAvances, meta: {
+        title: 'Réseaux Avancés - IT+ Advanced Technology',
+        description: 'Approfondissez vos connaissances en réseaux informatiques et maîtrisez les architectures avancées.',
+      },
     },
-    { path: "/cours-reseaux-systemes/gns3", component: GNS3 },
+    {
+      path: "/cours-reseaux-systemes/gns3", component: GNS3, meta: {
+        title: 'GNS3 et Simulation Réseau - IT+ Advanced Technology',
+        description: 'Utilisez GNS3 pour simuler et tester vos configurations réseau dans un environnement pratique.',
+      }
+    },
     {
       path: "/cours-reseaux-systemes/securite-informatique",
-      component: SecuriteInformatique,
+      component: SecuriteInformatique,  meta: {
+        title: 'Sécurité Informatique - IT+ Advanced Technology',
+        description: 'Développez vos compétences en cybersécurité et apprenez à protéger les systèmes informatiques contre les menaces.',
+      },
     },
     {
       path: "/cours-reseaux-systemes/installation-windows",
-      component: InstallationWindows,
+      component: InstallationWindows, meta: {
+        title: 'Installation et Configuration Windows - IT+ Advanced Technology',
+        description: 'Apprenez à installer, configurer et gérer les systèmes Windows pour une utilisation professionnelle.',
+      },
     },
     {
       path: "/cours-reseaux-systemes/admin-serveur",
-      component: AdminWinServer,
+      component: AdminWinServer,  meta: {
+        title: 'Administration Windows Server - IT+ Advanced Technology',
+        description: "Maîtrisez l'administration des serveurs Windows et optimisez la gestion des infrastructures IT.",
+      },
     },
-    { path: "/cours-reseaux-systemes/bureautique", component: Bureautique },
+    {
+      path: "/cours-reseaux-systemes/bureautique", component: Bureautique,meta: {
+        title: 'Formation Bureautique - IT+ Advanced Technology',
+        description: 'Optimisez votre productivité avec nos formations en bureautique : Word, Excel, PowerPoint et plus encore.',
+      }
+    },
 
-    // { path: '/login', component: Login },
-    // { path: '/register', component: Register },
 
-    { path: "/not-found", component: NotFound },
+{
+  path: "/not-found", component: NotFound, meta: {
+    title: 'IT+ Advanced Technology',
+      description: 'OOPS 404',
+    }
+},
 
-    { path: "/a-propos", component: Apropo },
+{
+  path: "/a-propos", component: Apropo, meta: {
+    title: 'À Propos - IT+ Advanced Technology',
+    description: 'Découvrez IT+ Advanced Technology, le centre de formation de référence en informatique et technologies à Djibouti.',
+  }
+},
 
-    { path: "/contact", component: Contact },
+{
+  path: "/contact", component: Contact, meta: {
+        title: 'À Propos - IT+ Advanced Technology',
+        description: 'Découvrez IT+ Advanced Technology, le centre de formation de référence en informatique et technologies à Djibouti.',
+      }
+},
 
-    { path: "/**", component: NotFound },
+{
+  path: "/**", component: NotFound, meta: {
+    title: 'Contact - IT+ Advanced Technology',
+    description: 'Contactez IT+ Advanced Technology pour en savoir plus sur nos formations et nos services en informatique.',
+  }
+},
   ],
 });
 
@@ -96,4 +194,17 @@ router.beforeEach((to, from, next) => {
     return next("/");
   }
   next();
+});
+router.afterEach((to) => {
+  document.title = to.meta.title || 'IT+ Advanced Technology';
+
+  const metaDescription = document.querySelector('meta[name="description"]');
+  if (metaDescription) {
+    metaDescription.setAttribute('content', to.meta.description || 'IT+ Advanced Technology');
+  } else {
+    const metaTag = document.createElement('meta');
+    metaTag.name = 'description';
+    metaTag.content = to.meta.description || 'IT+ Advanced Technology';
+    document.head.appendChild(metaTag);
+  }
 });
