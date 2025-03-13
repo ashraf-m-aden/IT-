@@ -5,7 +5,7 @@
       <div class="d-table">
         <div class="d-table-cell">
           <div class="container">
-            <h2>Cours de systemes et réseaux informatiques</h2>
+            <h2>Cours et formations en systemes et réseaux informatiques</h2>
           </div>
         </div>
       </div>

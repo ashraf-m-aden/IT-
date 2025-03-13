@@ -5,7 +5,7 @@
       <div class="row h-100 justify-content-center align-items-center">
         <div class="col-lg-6 col-md-12 services-content">
           <div class="section-title">
-            <h2>Systemes et réseaux informatiques</h2>
+            <h2>Cours et formations en Systemes et réseaux informatiques</h2>
             <div class="bar"></div>
             <p>
               Le département Réseaux et Systèmes forme des étudiants capables de

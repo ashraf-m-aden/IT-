@@ -19,7 +19,7 @@
 
         <div class="col-lg-6 col-md-12 services-content">
           <div class="section-title">
-            <h2>Programmation informatique</h2>
+            <h2>Cours et formations en Programmation informatique</h2>
             <div class="bar"></div>
             <p>
               Le domaine de la programmation est un domaine tres vaste, créatif,
@@ -45,7 +45,7 @@
                 <vue-feather type="code"></vue-feather> Javascript
               </div>
             </div>
-            <!-- 
+            <!--
             <div class="col-lg-6 col-md-6 col-sm-6">
               <div class="box"><vue-feather type="code"></vue-feather> Java</div>
             </div> -->

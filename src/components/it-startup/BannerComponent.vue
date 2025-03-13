@@ -8,7 +8,7 @@
             <div class="col-lg-5">
               <div class="hero-content">
                 <h1>IT+ ADVANCED TECHNOLOGY</h1>
-                <h3>L'informatique n'a jamais eté aussi accessible</h3>
+                <h3>Avec nos cours et nos formations, l'informatique n'a jamais eté aussi accessible</h3>
                 <p>
                   Prenez part à de nombreuse formations pratiques en
                   programmation et en réseaux informatiques. Peu importe votre

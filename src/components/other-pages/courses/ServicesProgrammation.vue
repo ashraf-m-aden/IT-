@@ -5,7 +5,7 @@
       <div class="d-table">
         <div class="d-table-cell">
           <div class="container">
-            <h2>Cours de programmation informatique</h2>
+            <h2>Cours et formations en programmation informatique</h2>
           </div>
         </div>
       </div>

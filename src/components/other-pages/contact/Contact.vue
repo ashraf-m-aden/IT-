@@ -80,7 +80,7 @@
             </div>
           </div>
           <div class="col-12  offset-lg-0 offset-md-3 offset-sm-3 m-auto">
-            <img src="../../../assets/img/image.png" class="m-auto">
+            <img src="/image.png" class="m-auto">
             <p>Scanne moi!
             </p>
           </div>
