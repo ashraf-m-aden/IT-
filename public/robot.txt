@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /cours-programmation/
+Allow: /cours-reseaux-systemes/
+Allow: /a-propos
+Allow: /contact
+Disallow: /login
+Sitemap: https://it-advanced-technology.com/sitemap.xml
