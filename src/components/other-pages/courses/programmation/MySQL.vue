@@ -58,7 +58,7 @@
 
 					<div class="col-lg-6 services-details">
 						<div class="services-details-desc">
-							<p>À la fin de ce cours, vous serez capable de :
+							<p>À la fin de ce cours, vous serez capable de :</p>
 							<ul>
 								<li>créer une base de données mySQL ;</li>
 								<li>
@@ -70,7 +70,7 @@
 								<li>Utiliser des triggers pour automatiser certaines actions ;</li>
 
 							</ul>
-							</p>
+							
 							<!--
 							<div class="services-details-accordion">
 								<VueFaqAccordion :items="myItems" />

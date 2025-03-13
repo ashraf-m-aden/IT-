@@ -67,7 +67,7 @@
 
 					<div class="col-lg-6 services-details">
 						<div class="services-details-desc">
-							<p>À la fin de ce cours, vous serez capable de :
+							<p>À la fin de ce cours, vous serez capable de :</p>
 							<ul>
 								<li>Comprendre les mécanismes intervenant dans les communications réseau ;</li>
 								<li>
@@ -82,7 +82,7 @@
 								<li>Configurer, gérer et surveiller les périphériques Cisco ;</li>
 
 							</ul>
-							</p>
+							
 							<!--
 							<div class="services-details-accordion">
 								<VueFaqAccordion :items="myItems" />

@@ -64,7 +64,7 @@
 
 					<div class="col-lg-6 services-details">
 						<div class="services-details-desc">
-							<p>À la fin de ce cours, vous serez capable de :
+							<p>À la fin de ce cours, vous serez capable de :</p>
 							<ul>
 								<li> créer un serveur web simple avec Express ;
 								</li>
@@ -77,7 +77,7 @@
 								<li>Recuprer des données de mongoDB grâce à Mongoose ;</li>
 								<li>utiliser les tokens JWT ;</li>
 							</ul>
-							</p>
+							
 							<!--
 							<div class="services-details-accordion">
 								<VueFaqAccordion :items="myItems" />

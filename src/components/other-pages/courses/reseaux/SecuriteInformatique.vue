@@ -74,7 +74,7 @@
 
 					<div class="col-lg-6 services-details">
 						<div class="services-details-desc">
-							<p>À la fin de ce cours, vous serez capable de :
+							<p>À la fin de ce cours, vous serez capable de :</p>
 							<ul>
 								<li>Déjouer les cyberattaques ;</li>
 								<li>
@@ -92,7 +92,7 @@
 								<li>Maîtriser les protocoles de réseaux dédiés;</li>
 
 							</ul>
-							</p>
+							
 							<!--
 							<div class="services-details-accordion">
 								<VueFaqAccordion :items="myItems" />

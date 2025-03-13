@@ -65,7 +65,7 @@
 
 					<div class="col-lg-6 services-details">
 						<div class="services-details-desc">
-							<p>À la fin de ce cours, vous serez capable de :
+							<p>À la fin de ce cours, vous serez capable de :</p>
 							<ul>
 								<li> D’exploiter un réseau de taille moyenne avec de multiples commutateurs, contenant
 									VLANs,
@@ -83,7 +83,7 @@
 									Cisco IOS, images et licences;</li>
 
 							</ul>
-							</p>
+							
 							<!--
 							<div class="services-details-accordion">
 								<VueFaqAccordion :items="myItems" />

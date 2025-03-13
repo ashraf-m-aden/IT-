@@ -64,7 +64,7 @@
 
 					<div class="col-lg-6 services-details">
 						<div class="services-details-desc">
-							<p>À la fin de ce cours, vous serez capable de :
+							<p>À la fin de ce cours, vous serez capable de :</p>
 							<ul>
 								<li>d'nstaller et configurer l’interface graphique sous Linux ;</li>
 								<li>
@@ -83,7 +83,7 @@
 									quotas) ;</li>
 								<li>Gérer des fichiers : permissions et propriétés, recherche et liens ;</li>
 							</ul>
-							</p>
+							
 							<!--
 							<div class="services-details-accordion">
 								<VueFaqAccordion :items="myItems" />

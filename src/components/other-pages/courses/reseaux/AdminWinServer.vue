@@ -63,7 +63,7 @@
 
 					<div class="col-lg-6 services-details">
 						<div class="services-details-desc">
-							<p>À la fin de ce cours, vous serez capable de :
+							<p>À la fin de ce cours, vous serez capable de :</p>
 							<ul>
 								<li>Installer et configurer Microsoft Windows Server (2008, 2012 ou 2016)
 									;</li>
@@ -83,7 +83,7 @@
 								<li>Gérer le stockage local, les services de fichiers et imprimantes sous Windows
 									serveur ;</li>
 							</ul>
-							</p>
+							
 							<!--
 							<div class="services-details-accordion">
 								<VueFaqAccordion :items="myItems" />

@@ -54,7 +54,7 @@
 
 					<div class="col-lg-6 services-details">
 						<div class="services-details-desc">
-							<p>À la fin de ce cours, vous serez capable de :
+							<p>À la fin de ce cours, vous serez capable de :</p>
 							<ul>
 								<li>Découvrir les nouveautés et les fonctionnalités des systèmes Windows ;</li>
 								<li>
@@ -63,7 +63,7 @@
 									Maîtriser les systèmes d’exploitation Windows ;</li>
 
 							</ul>
-							</p>
+							
 							<!--
 							<div class="services-details-accordion">
 								<VueFaqAccordion :items="myItems" />

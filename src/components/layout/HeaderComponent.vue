@@ -55,8 +55,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, computed, watch } from "vue";
-//import bootstrap from 'bootstrap';
-
+import { Collapse } from 'bootstrap';
 
     const isSticky = ref(false);
     const isMobile = ref(false);
@@ -68,33 +67,32 @@ import { ref, onMounted, onUnmounted, computed, watch } from "vue";
 
 
 
-  // onMounted(()=> {
+  onMounted(()=> {
 
-  //   window.addEventListener("scroll", () => {
-  //     isShrunk.value = window.scrollY > 50; // Shrink when scrolled 50px
+    window.addEventListener("scroll", () => {
+      isShrunk.value = window.scrollY > 50; // Shrink when scrolled 50px
 
-  //     let scrollPos = window.scrollY;
-  //     // eslint-disable-next-line no-console
-  //     if (scrollPos >= 100) {
-  //       isSticky.value = true;
-  //     } else {
-  //       isSticky.value = false;
-  //     }
-  //   });
-  //   window.addEventListener("resize", handleResize);
-  //   handleResize();
-  //   window.addEventListener("DOMContentLoaded", function () {
-  //     var btn = document.getElementById("collapseBtn");
-  //     var element = document.getElementById("navbarSupportedContent");
+      let scrollPos = window.scrollY;
+      // eslint-disable-next-line no-console
+      if (scrollPos >= 100) {
+        isSticky.value = true;
+      } else {
+        isSticky.value = false;
+      }
+    });
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    window.addEventListener("DOMContentLoaded", function () {
+      var btn = document.getElementById("collapseBtn");
+      var element = document.getElementById("navbarSupportedContent");
 
-  //     var myCollapse = new bootstrap.Collapse(element);
-  //     var myCollapse = new bootstrap.
+      var myCollapse = new Collapse(element!);
 
-  //     btn?.addEventListener("click", function () {
-  //       myCollapse.toggle();
-  //     });
-  //   });
-  // })
+      btn?.addEventListener("click", function () {
+        myCollapse.toggle();
+      });
+    });
+  })
 
 
 

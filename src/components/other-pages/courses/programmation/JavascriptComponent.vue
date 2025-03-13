@@ -56,7 +56,7 @@
 
 					<div class="col-lg-6 services-details">
 						<div class="services-details-desc">
-							<p>À la fin de ce cours, vous serez capable de :
+							<p>À la fin de ce cours, vous serez capable de :</p>
 							<ul>
 								<li>d'utiliser les variables, boucles et fonctions en JavaScript ;</li>
 								<li>
@@ -67,7 +67,7 @@
 									creer et réagir à des évenements ;</li>
 
 							</ul>
-							</p>
+							
 							<!--
 							<div class="services-details-accordion">
 								<VueFaqAccordion :items="myItems" />

@@ -54,7 +54,7 @@
 
 					<div class="col-lg-6 services-details">
 						<div class="services-details-desc">
-							<p>À la fin de ce cours, vous serez capable de :
+							<p>À la fin de ce cours, vous serez capable de :</p>
 							<ul>
 								<li>creer une application Vue ;</li>
 								<li>
@@ -70,7 +70,7 @@
 								<li>gerer les etats des données;</li>
 								<li>et bien plus encore ;</li>
 							</ul>
-							</p>
+							
 							<!--
 							<div class="services-details-accordion">
 								<VueFaqAccordion :items="myItems" />
