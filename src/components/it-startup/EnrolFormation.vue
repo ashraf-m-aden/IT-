@@ -45,10 +45,10 @@
 
 
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
+              <!-- <div class="col-lg-4 col-md-6 col-sm-6" v-for="(formation, index) in allFormations" :key="index">
                     <div class="pricing-table">
                         <div class="pricing-header">
-                            <h3>Basic Plan</h3>
+                            <h3> {{ formation.name }} </h3>
                         </div>
 
                         <div class="price">
@@ -72,7 +72,7 @@
                             <a href="#" class="btn btn-primary">Select Plan</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
 
             </div>
@@ -86,4 +86,18 @@
     <!-- End Pricing Area -->
      </div>
 </template>
+<script setup lang="ts">
+import { computed, } from 'vue';
+import { formationStore } from '../../store/formations';
+
+
+const store =  formationStore()
+
+const allFormations= computed(()=>{
+  return store.getAllformations
+
+})
+
+
+</script>
 

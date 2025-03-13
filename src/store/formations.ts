@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import FormationService from "../services/formation";
+import FormationService from "../services/formation.ts";
 
 export const formationStore = defineStore("formation", {
   state: () => {
@@ -11,10 +11,10 @@ export const formationStore = defineStore("formation", {
   // getters are Vuex's equivalent to computed properties in Vue.
   // functions here will always contain state as a parameter
   getters: {
-    getMyFormations() {
+    getMyFormations():any {
       return this.myFormations;
     },
-    getAllformations() {
+    getAllformations():any {
       // eslint-disable-next-line no-console
       return this.formationsData;
     },
@@ -33,16 +33,12 @@ export const formationStore = defineStore("formation", {
   // actions are effectively the functions that get called by your components in order to trigger a mutation.
   actions: {
     async setCoursesDisponibles() {
-      await FormationService.getTraining().then((data) => {
+      await FormationService.getTraining().then((data:any) => {
         this.formationsData = data;
       });
     },
 
-    async setMyCourses() {
-      const myFormations = await FormationService.getMyTraining();
-      this.myFormations = myFormations;
-    },
-
+ 
     // getMyCourses({ dispatch }) {
     //     if (localStorage.getItem('isLoggedIn')) {
     //         commit('SET_AUTH', true)

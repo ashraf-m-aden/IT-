@@ -20,16 +20,21 @@ import { useRoute } from "vue-router";
 import HeaderComponent from "./components/layout/HeaderComponent.vue";
 import PreLoaderComponent from "./components/layout/PreLoaderComponent.vue";
 import FooterComponent from "./components/layout/FooterComponent.vue";
+import { formationStore } from "./store/formations";
 
 const isLoading = ref(true);
 const currentUrl = ref();
 const route = useRoute();
-
+const store = formationStore()
 const toTopFunction = () => {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 };
 
+onMounted(async()=>
+{
+await store.setCoursesDisponibles()
+})
 watch(route, () => {
   currentUrl.value = route.fullPath;
 
