@@ -11,28 +11,28 @@
       </div>
 
       <div class="shape1">
-        <img src="../../../assets/img/shape1.png" alt="shape" />
+        <img src="../../../assets/img/shape1.png" alt="IT+ formation cours informatique djibouti" />
       </div>
       <div class="shape2 rotateme">
-        <img src="../../../assets/img/shape2.svg" alt="shape" />
+        <img src="../../../assets/img/shape2.svg" alt="IT+ formation cours informatique djibouti" />
       </div>
       <div class="shape3">
-        <img src="../../../assets/img/shape3.svg" alt="shape" />
+        <img src="../../../assets/img/shape3.svg" alt="IT+ formation cours informatique djibouti" />
       </div>
       <div class="shape4">
-        <img src="../../../assets/img/shape4.svg" alt="shape" />
+        <img src="../../../assets/img/shape4.svg" alt="IT+ formation cours informatique djibouti" />
       </div>
       <div class="shape5">
-        <img src="../../../assets/img/shape5.png" alt="shape" />
+        <img src="../../../assets/img/shape5.png" alt="IT+ formation cours informatique djibouti" />
       </div>
       <div class="shape6 rotateme">
-        <img src="../../../assets/img/shape4.svg" alt="shape" />
+        <img src="../../../assets/img/shape4.svg" alt="IT+ formation cours informatique djibouti" />
       </div>
       <div class="shape7">
-        <img src="../../../assets/img/shape4.svg" alt="shape" />
+        <img src="../../../assets/img/shape4.svg" alt="IT+ formation cours informatique djibouti" />
       </div>
       <div class="shape8 rotateme">
-        <img src="../../../assets/img/shape2.svg" alt="shape" />
+        <img src="../../../assets/img/shape2.svg" alt="IT+ formation cours informatique djibouti" />
       </div>
     </div>
     <!-- End Page Title -->
@@ -97,31 +97,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import "leaflet/dist/leaflet.css";
-// import {
-//   LMap,
-//   LTileLayer,
-//   LIcon,
-//   LMarker,
-//   LPopup,
-// } from "@vue-leaflet/vue-leaflet";
-import { computed, ref } from "vue";
 
-      const zoom = ref(17)
-      const iconWidth = ref(20)
-      const iconHeight = ref(30)
-
-    const iconUrl =  computed(() =>{
-      return `https://cdn.pixabay.com/photo/2014/04/03/10/03/google-309739_640.png`;
-    })
-    const iconSize = computed(() =>{
-      return [iconWidth.value, iconHeight.value];
-    })
-
-
-
-</script>
 
 <style lang="scss" scoped>
 // @import "../assets/style/custom.scss";

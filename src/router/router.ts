@@ -33,11 +33,12 @@ import VueComponent from "../components/other-pages/courses/programmation/VueCom
 import AngularComponent from "../components/other-pages/courses/programmation/AngularComponent.vue";
 import HtmlCss from "../components/other-pages/courses/programmation/HtmlCss.vue";
 import Apropos from "../components/other-pages/about/A_Propos.vue";
+import { useHead } from "@vueuse/head";
 
-export const router = VueRouter.createRouter({
+ const router = VueRouter.createRouter({
   history: VueRouter.createWebHistory(),
   linkExactActiveClass: "active",
-  scrollBehavior() {
+  scrollBehavior():any {
     return { x: 0, y: 0 };
   },
   routes: [
@@ -45,7 +46,7 @@ export const router = VueRouter.createRouter({
       path: "/",
       component: ITStartup,
       meta: {
-        title: "IT+ Advanced Technology",
+        title: "ACCUEIL - IT+ Advanced Technology",
         description:
           "Bienvenue dans le meilleur centre de formation pratique en informatique à Djibouti. | Cours en Formations en informatique à Djibouti",
       },
@@ -255,6 +256,7 @@ export const router = VueRouter.createRouter({
 });
 
 router.beforeEach((to, from, next) => {
+  from
   if (
     (to.path === "/login" || to.path === "/login#") &&
     localStorage.getItem("isLoggedIn") == "true"
@@ -263,19 +265,36 @@ router.beforeEach((to, from, next) => {
   }
   next();
 });
+// Use `@vueuse/head` to dynamically update meta tags
 router.afterEach((to) => {
-  document.title = to.meta.title || "IT+ Advanced Technology";
-
-  const metaDescription = document.querySelector('meta[name="description"]');
-  if (metaDescription) {
-    metaDescription.setAttribute(
-      "content",
-      to.meta.description || "IT+ Advanced Technology"
-    );
-  } else {
-    const metaTag = document.createElement("meta");
-    metaTag.name = "description";
-    metaTag.content = to.meta.description || "IT+ Advanced Technology";
-    document.head.appendChild(metaTag);
-  }
+  useHead({
+    title: to.meta.title as string || "IT+ Advanced Technology",
+    meta: [
+      {
+        name: "description",
+        content:
+          to.meta.description as string ||
+          "Bienvenue chez IT+ Advanced Technology, votre centre de formation en informatique à Djibouti.",
+      },
+      {
+        property: "og:title",
+        content: to.meta.title as string || "IT+ Advanced Technology",
+      },
+      {
+        property: "og:description",
+        content:
+          to.meta.description  as string ||
+          "Bienvenue chez IT+ Advanced Technology, votre centre de formation en informatique à Djibouti.",
+      },
+      {
+        property: "og:type",
+        content: "website",
+      },
+      {
+        property: "og:url",
+        content: window.location.href,
+      },
+    ],
+  });
 });
+export default router;

@@ -54,7 +54,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted, computed, watch } from "vue";
+import { ref, onMounted } from "vue";
 import { Collapse } from 'bootstrap';
 
     const isSticky = ref(false);

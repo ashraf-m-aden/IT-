@@ -92,10 +92,10 @@
 
     <img src="../../assets/img/map.png" class="map" alt="map" />
     <div class="shape1">
-      <img src="../../assets/img/shape1.png" alt="shape" />
+      <img src="../../assets/img/shape1.png" alt="IT+ formation cours informatique djibouti" />
     </div>
     <div class="shape8 rotateme">
-      <img src="../../assets/img/shape2.svg" alt="shape" />
+      <img src="../../assets/img/shape2.svg" alt="IT+ formation cours informatique djibouti" />
     </div>
     <!-- <div class="go-top"><vue-feather type="arrow-up"></vue-feather></div> -->
 

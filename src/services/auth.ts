@@ -1,19 +1,18 @@
-import EventEmitter from "events";
 const isloggedIn = "isLoggedIn";
 import { db, fb } from "../../db";
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
-class Auth extends EventEmitter {
+class Auth {
   authToken = null;
   userProfile = null;
   tokenExpiry = null;
   // Login With Firebase
-  login(email, password) {
+  login(email: string, password: string) {
     return fb.auth().signInWithEmailAndPassword(email, password);
   }
 
-  async signUp(email, password) {
+  async signUp(email: string, password: string) {
     return fb
       .auth()
       .createUserWithEmailAndPassword(email, password)
@@ -26,12 +25,12 @@ class Auth extends EventEmitter {
           number: "",
           formations: [],
           profession: "",
-          email: authResult.user.email,
-          id: authResult.user.uid,
+          email: authResult?.user?.email,
+          id: authResult?.user?.uid,
           role: "Student",
         };
         await db.collection("users").doc(user.id).set(user); // cree dans la collection users un document qui a cet id users.id avk les donné "user"
-        await authResult.user.sendEmailVerification();
+        await authResult?.user?.sendEmailVerification();
         localStorage.setItem(isloggedIn, "true");
       });
   }
@@ -40,7 +39,7 @@ class Auth extends EventEmitter {
     await fb.auth().signOut();
   }
 
-  getUserData(userId) {
+  getUserData(userId:string) {
     return db.collection("users").doc(userId).get();
   }
   async anonymous() {
@@ -48,5 +47,4 @@ class Auth extends EventEmitter {
   }
 }
 
-import { ref } from "vue";
 export default new Auth();

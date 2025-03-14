@@ -91,7 +91,7 @@
           <img src="../../assets/img/services-right-image/tissue.png" class="wow zoomIn" alt="tissue" />
           <img src="../../assets/img/services-right-image/water-bottle.png" class="wow zoomIn" alt="water-bottle" />
           <img src="../../assets/img/services-right-image/wifi.png" class="wow fadeInLeft" alt="wifi" />
-          <img src="../../assets/img/services-right-image/cercle-shape.png" class="bg-image rotateme" alt="shape" />
+          <img src="../../assets/img/services-right-image/cercle-shape.png" class="bg-image rotateme" alt="IT+ formation cours informatique djibouti" />
 
           <img src="../../assets/img/services-right-image/main-pic.png" class="wow fadeInUp" alt="main-pic" />
         </div>

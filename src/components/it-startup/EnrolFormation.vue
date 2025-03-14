@@ -14,28 +14,28 @@
       </div>
 
       <div class="shape1">
-        <img src="../../assets/img/shape1.png" alt="shape" />
+        <img src="../../assets/img/shape1.png" alt="IT+ formation cours informatique djibouti" />
       </div>
       <div class="shape2 rotateme">
-        <img src="../../assets/img/shape2.svg" alt="shape" />
+        <img src="../../assets/img/shape2.svg" alt="IT+ formation cours informatique djibouti" />
       </div>
       <div class="shape3">
-        <img src="../../assets/img/shape3.svg" alt="shape" />
+        <img src="../../assets/img/shape3.svg" alt="IT+ formation cours informatique djibouti" />
       </div>
       <div class="shape4">
-        <img src="../../assets/img/shape4.svg" alt="shape" />
+        <img src="../../assets/img/shape4.svg" alt="IT+ formation cours informatique djibouti" />
       </div>
       <div class="shape5">
-        <img src="../../assets/img/shape5.png" alt="shape" />
+        <img src="../../assets/img/shape5.png" alt="IT+ formation cours informatique djibouti" />
       </div>
       <div class="shape6 rotateme">
-        <img src="../../assets/img/shape4.svg" alt="shape" />
+        <img src="../../assets/img/shape4.svg" alt="IT+ formation cours informatique djibouti" />
       </div>
       <div class="shape7">
-        <img src="../../assets/img/shape4.svg" alt="shape" />
+        <img src="../../assets/img/shape4.svg" alt="IT+ formation cours informatique djibouti" />
       </div>
       <div class="shape8 rotateme">
-        <img src="../../assets/img/shape2.svg" alt="shape" />
+        <img src="../../assets/img/shape2.svg" alt="IT+ formation cours informatique djibouti" />
       </div>
     </div>
     <!-- End Page Title -->
@@ -45,7 +45,7 @@
 
 
             <div class="row">
-              <!-- <div class="col-lg-4 col-md-6 col-sm-6" v-for="(formation, index) in allFormations" :key="index">
+              <div class="col-lg-4 col-md-6 col-sm-6" v-for="(formation, index) in allFormations" :key="index">
                     <div class="pricing-table">
                         <div class="pricing-header">
                             <h3> {{ formation.name }} </h3>
@@ -72,16 +72,16 @@
                             <a href="#" class="btn btn-primary">Select Plan</a>
                         </div>
                     </div>
-                </div> -->
+                </div>
 
 
             </div>
         </div>
 
-        <div class="shape8 rotateme"><img src="../../assets/img/shape2.svg" alt="shape"></div>
-        <div class="shape2 rotateme"><img src="../../assets/img/shape2.svg" alt="shape"></div>
-        <div class="shape7"><img src="../../assets/img/shape4.svg" alt="shape"></div>
-        <div class="shape4"><img src="../../assets/img/shape4.svg" alt="shape"></div>
+        <div class="shape8 rotateme"><img src="../../assets/img/shape2.svg" alt="IT+ formation cours informatique djibouti"></div>
+        <div class="shape2 rotateme"><img src="../../assets/img/shape2.svg" alt="IT+ formation cours informatique djibouti"></div>
+        <div class="shape7"><img src="../../assets/img/shape4.svg" alt="IT+ formation cours informatique djibouti"></div>
+        <div class="shape4"><img src="../../assets/img/shape4.svg" alt="IT+ formation cours informatique djibouti"></div>
     </section>
     <!-- End Pricing Area -->
      </div>
