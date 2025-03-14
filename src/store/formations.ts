@@ -5,7 +5,8 @@ import { ref } from "vue";
 
 export const formationStore = defineStore("formation", () => {
 
-  const formationsData = ref<FormationType[]>([])
+  const formationDispo = ref<FormationType[]>([])
+  const allFormation = ref<FormationType[]>([])
   const myFormations = ref<FormationType[]>([])
 
 
@@ -15,18 +16,43 @@ export const formationStore = defineStore("formation", () => {
     return myFormations.value;
   }
   const getAllformations = () => {
-    return formationsData.value;
+    return allFormation.value;
+  }
+
+  const getAllformationsDispo = () => {
+    return formationDispo.value;
   }
 
 
-  const setCoursesDisponibles = async () => {
-    await FormationService.getFormationsEnCours().then((data: any) => {
-      formationsData.value = data;
+
+  const retrieveAllFormation = async () => {
+    await FormationService.getAllFormations().then((data: FormationType[]) => {
+      formationDispo.value = data.filter((f)=>{return f.inscription});
+      allFormation.value = data
+    });
+  }
+
+  const addFormation = async (formation:FormationType) => {
+    await FormationService.addFormation(formation).then(async() => {
+      await retrieveAllFormation()
+    });
+  }
+
+  const deleteformation = async (id:string) => {
+    await FormationService.deleteformation(id).then(async() => {
+      await retrieveAllFormation()
+    });
+  }
+
+  const updateFormation = async (formation:FormationType) => {
+    await FormationService.updateformation(formation).then(async() => {
+      await retrieveAllFormation()
     });
   }
 
 
-  return {formationsData,myFormations,setCoursesDisponibles,getAllformations,getMyFormations}
+
+  return {getAllformationsDispo,retrieveAllFormation,getAllformations,getMyFormations, addFormation,updateFormation,deleteformation}
 
 });
 
