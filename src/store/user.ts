@@ -2,12 +2,12 @@ import { defineStore } from "pinia";
 import { ref, computed } from "vue";
 import type { UserType } from "../types/user";
 import firebase from "firebase/compat/app";
-import auth from "../services/auth";
+import AuthService from "../services/auth.service";
 import type { DocumentData } from "firebase/firestore";
 
 export const useAuthStore = defineStore("auth", () => {
   // State (using ref)
-  const userData = ref<UserType|undefined>(undefined);
+  const userData = ref<UserType | undefined>(undefined);
   const isLoggedIn = ref(false);
 
   // Getters (computed properties)
@@ -15,39 +15,52 @@ export const useAuthStore = defineStore("auth", () => {
   const getAuthentication = computed(() => isLoggedIn.value);
 
   // Actions (replacing mutations & actions)
-  async function checkAuth() {
+  const checkAuth = async () => {
+
     firebase.auth().onAuthStateChanged(async (user) => {
       if (user) {
         try {
-          const res = await auth.getUserData(user.uid);
+          const res = await AuthService.getUserData(user.uid);
           setAuth(true);
           setUser(res.data());
+          console.log(res.data());
+
         } catch {
           setAuth(false);
           setUser(undefined);
-          auth.Logout();
+          AuthService.Logout();
         }
       } else {
         setAuth(false);
         setUser(undefined);
-        auth.Logout();
+        AuthService.Logout();
       }
     });
   }
 
-  async function afterLogin(id:string) {
-    localStorage.setItem("idUser", id);
-    const res = await auth.getUserData(id);
-    setAuth(true);
-    setUser(res.data());
+  const login = async (email: string, password: string) => {
+    try {
+
+      const user = await AuthService.login(email, password)
+      console.log(user);
+
+      // localStorage.setItem("idUser", user.uid);
+      // const res = await auth.getUserData(id);
+      // setAuth(true);
+      // setUser(res.data());
+    } catch (error) {
+      console.log(error);
+
+    }
+
   }
 
-  async function logout() {
-    await auth.Logout();
+  const logout = async () => {
+    await AuthService.Logout();
     afterLogout();
   }
 
-  function afterLogout() {
+  const afterLogout = async () => {
     setAuth(false);
     setUser(undefined);
     localStorage.setItem("isLoggedIn", false.toString());
@@ -55,12 +68,12 @@ export const useAuthStore = defineStore("auth", () => {
   }
 
   // Private functions (replacing mutations)
-  function setAuth(value:boolean) {
+  const setAuth = async (value: boolean) => {
     localStorage.setItem("isLoggedIn", value.toString());
     isLoggedIn.value = value;
   }
 
-  function setUser(data:DocumentData|undefined) {
+  const setUser = async (data: DocumentData | undefined) => {
     userData.value = data as UserType;
   }
 
@@ -70,7 +83,7 @@ export const useAuthStore = defineStore("auth", () => {
     getUserData,
     getAuthentication,
     checkAuth,
-    afterLogin,
+    login,
     logout,
     afterLogout,
   };

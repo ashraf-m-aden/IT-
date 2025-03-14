@@ -1,20 +1,28 @@
 const isloggedIn = "isLoggedIn";
-import { db, fb } from "../../db";
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
-class Auth {
+import { auth, db } from "../../firebaseConfig";
+class AuthService {
   authToken = null;
   userProfile = null;
   tokenExpiry = null;
   // Login With Firebase
   login(email: string, password: string) {
-    return fb.auth().signInWithEmailAndPassword(email, password);
+    return new Promise(async (resolve, reject) => {
+      try {
+        console.log(email ,password);
+        
+        const authResult = await auth.signInWithEmailAndPassword(email, password);
+        resolve(authResult)
+      } catch (error) {
+        reject(error)
+      }
+    });
   }
 
   async signUp(email: string, password: string) {
-    return fb
-      .auth()
+    return auth
       .createUserWithEmailAndPassword(email, password)
       .then(async (authResult) => {
         // this.tokenExpiry = new Date();
@@ -36,10 +44,10 @@ class Auth {
   }
 
   async Logout() {
-    await fb.auth().signOut();
+    await auth.signOut();
   }
 
-  getUserData(userId:string) {
+  getUserData(userId: string) {
     return db.collection("users").doc(userId).get();
   }
   async anonymous() {
@@ -47,4 +55,4 @@ class Auth {
   }
 }
 
-export default new Auth();
+export default new AuthService();

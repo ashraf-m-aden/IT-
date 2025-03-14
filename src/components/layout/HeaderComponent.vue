@@ -43,6 +43,16 @@
                 <router-link to="/enroll" class="nav-link">S'inscrire à une formation</router-link>
               </li>
 
+              <li class="nav-item">
+                <router-link to="/new_course" class="nav-link">Ajouter un cours</router-link>
+              </li>
+
+              <li class="nav-item" v-if="connectedUser">
+               <button class="btn btn-danger" v-on:click="logout()">
+                Deconnecter
+               </button>
+              </li>
+
             </ul>
           </div>
 
@@ -54,19 +64,16 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
+import { ref, onMounted, computed } from "vue";
 import { Collapse } from 'bootstrap';
+import { useAuthStore } from "../../store/user";
+import { useRouter } from "vue-router";
 
+const userStore = useAuthStore()
+const router = useRouter()
     const isSticky = ref(false);
     const isMobile = ref(false);
     const isShrunk = ref(false);
-
-
-
-
-
-
-
   onMounted(()=> {
 
     window.addEventListener("scroll", () => {
@@ -95,6 +102,14 @@ import { Collapse } from 'bootstrap';
   })
 
 
+  const connectedUser = computed(()=>{
+    return userStore.userData
+  })
+
+  const logout =async ()=>{
+    await userStore.logout()
+    router.push("/")
+  }
 
     const handleResize = ()=> {
       if (window.innerWidth < 992) {

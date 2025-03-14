@@ -5,7 +5,7 @@
       <div class="d-table">
         <div class="d-table-cell">
           <div class="container">
-            <h2>Inscrivez-vous à nos formations disponibles</h2>
+            <h2>Nouveau cours</h2>
             <div class="bar"></div>
         </div>
       </div>
@@ -43,33 +43,9 @@
 
 
       <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-6 m-auto" v-for="(formation, index) in allFormations" :key="index">
-          <div class="pricing-table">
-            <div class="pricing-header">
-              <h3> {{ formation?.courseName }} </h3>
-            </div>
-
-            <div class="price">
-              <span>10000<sup>Fdj</sup> <span>/Mois</span></span>
-            </div>
-
-            <div class="pricing-features">
-              <ul>
-                <li class="active">Pendant 2mois!</li>
-                <li class="active">Highest Speed</li>
-                <li class="active">1 GB Storage</li>
-                <li class="active">Unlimited Website</li>
-                <li class="active">Unlimited Users</li>
-                <li class="active">24x7 Great Support</li>
-                <li>Data Security and Backups</li>
-                <li>Monthly Reports and Analytics</li>
-              </ul>
-            </div>
-
-            <div class="pricing-footer">
-              <a href="#" class="btn btn-primary">Select Plan</a>
-            </div>
-          </div>
+        <div class="col-lg-4 col-md-6 col-sm-6" >
+          
+          
         </div>
 
 
@@ -87,12 +63,14 @@
   </div>
 </template>
 <script setup lang="ts">
-import { computed, } from 'vue';
+import { computed, ref, } from 'vue';
 import { formationStore } from '../../store/formations';
+import { FormationType } from '../../types/formation';
 
 
 const store = formationStore()
 
+const newFormation = ref(new FormationType())
 const allFormations = computed(() => {
   return store.getAllformations
 

@@ -5,4 +5,5 @@ Allow: /cours-reseaux-systemes/
 Allow: /a-propos
 Allow: /contact
 Disallow: /login
+Disallow: /new_course
 Sitemap: https://it-advanced-technology.com/sitemap.xml

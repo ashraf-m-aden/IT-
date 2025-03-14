@@ -34,7 +34,8 @@ import AngularComponent from "../components/other-pages/courses/programmation/An
 import HtmlCss from "../components/other-pages/courses/programmation/HtmlCss.vue";
 import Apropos from "../components/other-pages/about/A_Propos.vue";
 import { useHead } from "@vueuse/head";
-
+import LoginComponent from "../components/other-pages/LoginComponent.vue"
+import NewCourse from "../components/it-startup/NewCourse.vue";
  const router = VueRouter.createRouter({
   history: VueRouter.createWebHistory(),
   linkExactActiveClass: "active",
@@ -233,16 +234,31 @@ import { useHead } from "@vueuse/head";
       },
     },
     {
-
       path: "/enroll",
       component: EnrolFormation,
       meta: {
-        title: "À Propos - IT+ Advanced Technology",
+        title: "Inscription - IT+ Advanced Technology",
         description:
           "Inscrivez vous à nos formations et cours disponibles. | Cours en Formations en informatique à Djibouti",
       },
     },
 
+    {
+      path: "/new_course",
+      component: NewCourse,
+      meta: {
+        title: "Nouvelle formation - IT+ Advanced Technology",
+    
+      },
+    },
+
+    {
+      path: "/login",
+      component: LoginComponent,
+      meta: {
+        title: "Login - IT+ Advanced Technology",
+    },
+    },
     {
       path: "/**",
       component: NotFound,

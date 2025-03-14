@@ -1,25 +1,26 @@
-import { db } from "../../db.ts";
 
-// interface Formation {
-//     inscription: Boolean,
-//     started: Boolean,
-//     finished: Boolean,
-//     numberOfMonth: Number,
-//     professeurId: String,
-//     startDate: String,
-//     endDate: String,
-//     students_inscris: Array,  // ici l'etudiant a payé
-//     students_reserv: Array,   // ici il s'est juste inscrit à la session en ligne
-//     courseId: String,
-//     courseName: String
+
+import { db } from "../../firebaseConfig.ts";
 
 // }
 
 export default {
-  async getTraining() {
+  async getFormationsEnCours() {
     let documents;
     await db
       .collection("formations") .where("inscription", "==", true)
+      .get()
+      .then((querySnapshot) => {
+        documents = querySnapshot.docs.map((doc) => doc.data()); // on fait ca pack qu'on recupere plein de doc dans querysnapshot
+        // do something with documents
+      });
+    return documents;
+  },
+
+  async getAllFormations() {
+    let documents;
+    await db
+      .collection("formations")
       .get()
       .then((querySnapshot) => {
         documents = querySnapshot.docs.map((doc) => doc.data()); // on fait ca pack qu'on recupere plein de doc dans querysnapshot

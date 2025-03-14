@@ -6,7 +6,7 @@ import { createPinia } from "pinia";
 import "./assets/style/style.scss";
 import VueFeather from "vue-feather";
 import { createHead } from "@vueuse/head";
-
+import "../firebaseConfig"
 const pinia = createPinia();
 // import * as VueRouter from "vue-router";
 // App.use(VueRouter);
