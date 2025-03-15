@@ -65,7 +65,7 @@
                 </div>
               </div>
               <div class="description">
-                <h6>Démarre le {{ formatDate(formation.startDate as string|Timestamp) }}</h6>
+                <h6>Démarre le {{ formatDate(formation.startDate ) }}</h6>
                 <p>
                   {{ formation.description }}
                 </p>
@@ -190,13 +190,10 @@ const allFormations = computed(() => {
 })
 const progress = (formation: FormationType) => { return ((formation.students.length / formation.maxStudents) * 100) };
 
-const formatDate = (date: string | Timestamp) => {
-  if (typeof date == "object") {
-    return date.toDate().toLocaleDateString()
-  } else {
-    return new Date(date).toLocaleDateString()
-  }
+const formatDate = (date: Date | Timestamp) => {
 
+    return new Date(date.toString()).toLocaleDateString()
+  
 }
 
 const register = async (formation: FormationType) => {

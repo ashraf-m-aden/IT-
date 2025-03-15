@@ -135,7 +135,7 @@
                     </td>
                     <td>
 
-                      {{ formatDate(formation.startDate as string|Timestamp) }}
+                      {{ formatDate(formation.startDate ) }}
                       <input type="date" v-model="formation.startDate">
                     </td>
                     <td>
@@ -311,12 +311,9 @@ const isDisabled = computed(() => {
   }
 })
 
-const formatDate = (date: string | Timestamp) => {
-  if (typeof date == "object") {
-    return date.toDate().toLocaleDateString()
-  } else {
-    return new Date(date).toLocaleDateString()
-  }
+const formatDate = (date: Date | Timestamp) => {
+
+return new Date(date.toString()).toLocaleDateString()
 
 }
 </script>
