@@ -12,7 +12,7 @@
           <img src="../../assets/img/services-left-image/small-top.png" class="wow fadeInDown" alt="small-top" />
           <img src="../../assets/img/services-left-image/table.png" class="wow zoomIn" alt="table" />
           <img src="../../assets/img/services-left-image/target.png" class="wow fadeInUp" alt="target" />
-          <img src="../../assets/img/services-left-image/cercle-shape.png" class="bg-image rotateme" alt="shape" />
+          <img src="../../assets/img/services-left-image/cercle-shape.png" class="bg-image rotateme" alt="IT+ formation cours informatique djibouti" />
 
           <img src="../../assets/img/services-left-image/main-pic.png" class="wow fadeInUp" alt="main-pic" />
         </div>

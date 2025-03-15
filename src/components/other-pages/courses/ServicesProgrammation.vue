@@ -11,28 +11,28 @@
       </div>
 
       <div class="shape1">
-        <img src="../../../assets/img/shape1.png" alt="shape" />
+        <img src="../../../assets/img/shape1.png" alt="IT+ formation cours informatique djibouti" />
       </div>
       <div class="shape2 rotateme">
-        <img src="../../../assets/img/shape2.svg" alt="shape" />
+        <img src="../../../assets/img/shape2.svg" alt="IT+ formation cours informatique djibouti" />
       </div>
       <div class="shape3">
-        <img src="../../../assets/img/shape3.svg" alt="shape" />
+        <img src="../../../assets/img/shape3.svg" alt="IT+ formation cours informatique djibouti" />
       </div>
       <div class="shape4">
-        <img src="../../../assets/img/shape4.svg" alt="shape" />
+        <img src="../../../assets/img/shape4.svg" alt="IT+ formation cours informatique djibouti" />
       </div>
       <div class="shape5">
-        <img src="../../../assets/img/shape5.png" alt="shape" />
+        <img src="../../../assets/img/shape5.png" alt="IT+ formation cours informatique djibouti" />
       </div>
       <div class="shape6 rotateme">
-        <img src="../../../assets/img/shape4.svg" alt="shape" />
+        <img src="../../../assets/img/shape4.svg" alt="IT+ formation cours informatique djibouti" />
       </div>
       <div class="shape7">
-        <img src="../../../assets/img/shape4.svg" alt="shape" />
+        <img src="../../../assets/img/shape4.svg" alt="IT+ formation cours informatique djibouti" />
       </div>
       <div class="shape8 rotateme">
-        <img src="../../../assets/img/shape2.svg" alt="shape" />
+        <img src="../../../assets/img/shape2.svg" alt="IT+ formation cours informatique djibouti" />
       </div>
     </div>
     <!-- End Page Title -->
@@ -143,22 +143,22 @@
       </div>
 
       <div class="shape2 rotateme">
-        <img src="../../../assets/img/shape2.svg" alt="shape" />
+        <img src="../../../assets/img/shape2.svg" alt="IT+ formation cours informatique djibouti" />
       </div>
       <div class="shape3">
-        <img src="../../../assets/img/shape3.svg" alt="shape" />
+        <img src="../../../assets/img/shape3.svg" alt="IT+ formation cours informatique djibouti" />
       </div>
       <div class="shape4">
-        <img src="../../../assets/img/shape4.svg" alt="shape" />
+        <img src="../../../assets/img/shape4.svg" alt="IT+ formation cours informatique djibouti" />
       </div>
       <div class="shape6 rotateme">
-        <img src="../../../assets/img/shape4.svg" alt="shape" />
+        <img src="../../../assets/img/shape4.svg" alt="IT+ formation cours informatique djibouti" />
       </div>
       <div class="shape7">
-        <img src="../../../assets/img/shape4.svg" alt="shape" />
+        <img src="../../../assets/img/shape4.svg" alt="IT+ formation cours informatique djibouti" />
       </div>
       <div class="shape8 rotateme">
-        <img src="../../../assets/img/shape2.svg" alt="shape" />
+        <img src="../../../assets/img/shape2.svg" alt="IT+ formation cours informatique djibouti" />
       </div>
     </div>
     <!-- End Services Area -->
@@ -166,13 +166,11 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-import { useRouter, useRoute } from 'vue-router'
+import { useRouter } from 'vue-router'
 
 const router = useRouter();
-const name = ref("ServicesProgrammation")
 
-const goPage = (url) => {
+const goPage = (url:any) => {
   router.push(url);
 }
 

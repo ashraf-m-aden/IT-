@@ -1,21 +1,26 @@
-import EventEmitter from "events";
 const isloggedIn = "isLoggedIn";
-import { db, fb } from "../../db";
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
-class Auth extends EventEmitter {
+import { auth, db } from "../../firebaseConfig";
+class AuthService {
   authToken = null;
   userProfile = null;
   tokenExpiry = null;
   // Login With Firebase
-  login(email, password) {
-    return fb.auth().signInWithEmailAndPassword(email, password);
+  login(email: string, password: string) {
+    return new Promise(async (resolve, reject) => {
+      try {        
+        const authResult = await auth.signInWithEmailAndPassword(email, password);
+        resolve(authResult)
+      } catch (error) {
+        reject(error)
+      }
+    });
   }
 
-  async signUp(email, password) {
-    return fb
-      .auth()
+  async signUp(email: string, password: string) {
+    return auth
       .createUserWithEmailAndPassword(email, password)
       .then(async (authResult) => {
         // this.tokenExpiry = new Date();
@@ -26,21 +31,21 @@ class Auth extends EventEmitter {
           number: "",
           formations: [],
           profession: "",
-          email: authResult.user.email,
-          id: authResult.user.uid,
+          email: authResult?.user?.email,
+          id: authResult?.user?.uid,
           role: "Student",
         };
         await db.collection("users").doc(user.id).set(user); // cree dans la collection users un document qui a cet id users.id avk les donné "user"
-        await authResult.user.sendEmailVerification();
+        await authResult?.user?.sendEmailVerification();
         localStorage.setItem(isloggedIn, "true");
       });
   }
 
   async Logout() {
-    await fb.auth().signOut();
+    await auth.signOut();
   }
 
-  getUserData(userId) {
+  getUserData(userId: string) {
     return db.collection("users").doc(userId).get();
   }
   async anonymous() {
@@ -48,5 +53,4 @@ class Auth extends EventEmitter {
   }
 }
 
-import { ref } from "vue";
-export default new Auth();
+export default new AuthService();

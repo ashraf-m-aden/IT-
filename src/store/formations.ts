@@ -1,51 +1,62 @@
 import { defineStore } from "pinia";
-import FormationService from "../services/formation.ts";
+import FormationService from "../services/formation.service.ts";
+import type { FormationType } from "../types/formation.ts";
+import { ref, toRaw } from "vue";
 
-export const formationStore = defineStore("formation", {
-  state: () => {
-    return {
-      formationsData: [],
-      myFormations: [],
-    };
-  },
+export const formationStore = defineStore("formation", () => {
+
+  const formationDispo = ref<FormationType[]>([])
+  const allFormation = ref<FormationType[]>([])
+  const myFormations = ref<FormationType[]>([])
+
+
   // getters are Vuex's equivalent to computed properties in Vue.
   // functions here will always contain state as a parameter
-  getters: {
-    getMyFormations():any {
-      return this.myFormations;
-    },
-    getAllformations():any {
-      // eslint-disable-next-line no-console
-      return this.formationsData;
-    },
-  },
+  const getMyFormations = () => {
+    return myFormations.value;
+  }
+  const getAllformations = () => {
+    return allFormation.value;
+  }
 
-  // mutations are essentially functions that update state in some way.
-  // You can think of these as kind of being Vuex's equivalent to Vue's methods.
-  // mutations: {
-  //   SET_COURSES(state, formations) {
-  //     state.formations = formations;
-  //   },
-  //   SET_MYCOURSES(state, formations) {
-  //     state.myFormations = formations;
-  //   },
-  // },
-  // actions are effectively the functions that get called by your components in order to trigger a mutation.
-  actions: {
-    async setCoursesDisponibles() {
-      await FormationService.getTraining().then((data:any) => {
-        this.formationsData = data;
-      });
-    },
+  const getAllformationsDispo = () => {
+    return formationDispo.value;
+  }
 
- 
-    // getMyCourses({ dispatch }) {
-    //     if (localStorage.getItem('isLoggedIn')) {
-    //         commit('SET_AUTH', true)
-    //     } else {
-    //         commit('SET_AUTH', false)
+const convertToJson = (data:any) =>{
+  return JSON.parse(JSON.stringify(toRaw(data)));
+}
 
-    //     }
-    // }
-  },
+  const retrieveAllFormation = async () => {
+    await FormationService.getAllFormations().then((data: FormationType[]) => {
+      formationDispo.value = data.filter((f)=>{return f.inscription});
+      allFormation.value = data
+      
+      
+    });
+  }
+
+  const addFormation = async (formation:FormationType) => {    
+    await FormationService.addFormation(convertToJson(formation)).then(async() => {
+      await retrieveAllFormation()
+    });
+  }
+
+  const deleteformation = async (id:string) => {
+    await FormationService.deleteformation(id).then(async() => {
+      await retrieveAllFormation()
+    });
+  }
+
+  const updateFormation = async (formation:FormationType) => {
+    await FormationService.updateformation(convertToJson(formation)).then(async() => {
+      await retrieveAllFormation()
+    });
+  }
+
+
+
+  return {getAllformationsDispo,retrieveAllFormation,getAllformations,getMyFormations, addFormation,updateFormation,deleteformation}
+
 });
+

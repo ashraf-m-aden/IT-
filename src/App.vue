@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <HeaderComponent ></HeaderComponent>
+    <HeaderComponent></HeaderComponent>
     <PreLoaderComponent v-show="isLoading" />
     <router-view></router-view>
 
@@ -21,25 +21,27 @@ import HeaderComponent from "./components/layout/HeaderComponent.vue";
 import PreLoaderComponent from "./components/layout/PreLoaderComponent.vue";
 import FooterComponent from "./components/layout/FooterComponent.vue";
 import { formationStore } from "./store/formations";
+import { useAuthStore } from "./store/user";
 
-const isLoading = ref(true);
+const isLoading = ref(false);
 const currentUrl = ref();
 const route = useRoute();
-const store = formationStore()
+const fstore = formationStore()
+const ustore = useAuthStore()
 const toTopFunction = () => {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 };
 
-onMounted(async()=>
-{
-await store.setCoursesDisponibles()
+onMounted(async () => {
+  await
+    await fstore.retrieveAllFormation()
+  await ustore.checkAuth()
 })
 watch(route, () => {
   currentUrl.value = route.fullPath;
 
   isLoading.value = true;
-
   setTimeout(() => {
     isLoading.value = false;
   }, 1500);
