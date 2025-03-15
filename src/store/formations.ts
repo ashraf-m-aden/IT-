@@ -1,7 +1,7 @@
 import { defineStore } from "pinia";
 import FormationService from "../services/formation.service.ts";
 import type { FormationType } from "../types/formation.ts";
-import { ref } from "vue";
+import { ref, toRaw } from "vue";
 
 export const formationStore = defineStore("formation", () => {
 
@@ -23,17 +23,21 @@ export const formationStore = defineStore("formation", () => {
     return formationDispo.value;
   }
 
-
+const convertToJson = (data:any) =>{
+  return JSON.parse(JSON.stringify(toRaw(data)));
+}
 
   const retrieveAllFormation = async () => {
     await FormationService.getAllFormations().then((data: FormationType[]) => {
       formationDispo.value = data.filter((f)=>{return f.inscription});
       allFormation.value = data
+      
+      
     });
   }
 
-  const addFormation = async (formation:FormationType) => {
-    await FormationService.addFormation(formation).then(async() => {
+  const addFormation = async (formation:FormationType) => {    
+    await FormationService.addFormation(convertToJson(formation)).then(async() => {
       await retrieveAllFormation()
     });
   }
@@ -45,7 +49,7 @@ export const formationStore = defineStore("formation", () => {
   }
 
   const updateFormation = async (formation:FormationType) => {
-    await FormationService.updateformation(formation).then(async() => {
+    await FormationService.updateformation(convertToJson(formation)).then(async() => {
       await retrieveAllFormation()
     });
   }

@@ -12,9 +12,19 @@ const pinia = createPinia();
 // App.use(VueRouter);
 import  router  from "./router/router";
 const head = createHead(); // Create the head manager
-
+import Toast, { POSITION } from "vue-toastification";
+// Import the CSS or use your own!
+import "vue-toastification/dist/index.css";
 
 const app = createApp(App);
+
+app.use(Toast, {
+    // Setting the global default position
+    position: POSITION.TOP_RIGHT,
+    timeout: 2000
+});
+
+
 app.use(head); // Use @vueuse/head globally
 
 app.component(VueFeather.name!, VueFeather);

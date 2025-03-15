@@ -5,6 +5,7 @@ export class FormationType {
     courseName: string = "";
     endDate: string = "";
     finished: boolean = false;
+    enabled: boolean = true;
     id: string = "";
     description: string = "";
     img: string = "";
@@ -17,5 +18,6 @@ export class FormationType {
     startDate: Date = new Date();
     started: boolean = false;
     students:UserType[] = []
+    interestedStudents:UserType[] = []
     maxStudents:number=15;
 }

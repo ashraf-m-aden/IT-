@@ -10,9 +10,7 @@ class AuthService {
   // Login With Firebase
   login(email: string, password: string) {
     return new Promise(async (resolve, reject) => {
-      try {
-        console.log(email ,password);
-        
+      try {        
         const authResult = await auth.signInWithEmailAndPassword(email, password);
         resolve(authResult)
       } catch (error) {

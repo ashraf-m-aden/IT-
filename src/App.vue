@@ -1,6 +1,5 @@
 <template>
   <div>
-    <NotificationComponent></NotificationComponent>
 
     <HeaderComponent></HeaderComponent>
     <PreLoaderComponent v-show="isLoading" />
@@ -21,7 +20,6 @@ import { useRoute } from "vue-router";
 import HeaderComponent from "./components/layout/HeaderComponent.vue";
 import PreLoaderComponent from "./components/layout/PreLoaderComponent.vue";
 import FooterComponent from "./components/layout/FooterComponent.vue";
-import NotificationComponent from "./components/NotificationComponent.vue";
 import { formationStore } from "./store/formations";
 import { useAuthStore } from "./store/user";
 
@@ -37,18 +35,14 @@ const toTopFunction = () => {
 
 onMounted(async () => {
   await
-    await fstore.setCoursesDisponibles()
+    await fstore.retrieveAllFormation()
   await ustore.checkAuth()
 })
 watch(route, () => {
   currentUrl.value = route.fullPath;
 
   isLoading.value = true;
-  console.log("finish");
-
   setTimeout(() => {
-    console.log("finish");
-
     isLoading.value = false;
   }, 1500);
 });

@@ -23,8 +23,6 @@ export const useAuthStore = defineStore("auth", () => {
           const res = await AuthService.getUserData(user.uid);
           setAuth(true);
           setUser(res.data());
-          console.log(res.data());
-
         } catch {
           setAuth(false);
           setUser(undefined);
@@ -41,13 +39,7 @@ export const useAuthStore = defineStore("auth", () => {
   const login = async (email: string, password: string) => {
     try {
 
-      const user = await AuthService.login(email, password)
-      console.log(user);
-
-      // localStorage.setItem("idUser", user.uid);
-      // const res = await auth.getUserData(id);
-      // setAuth(true);
-      // setUser(res.data());
+    await AuthService.login(email, password)
     } catch (error) {
       console.log(error);
 
