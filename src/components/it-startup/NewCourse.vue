@@ -135,7 +135,7 @@
                     </td>
                     <td>
 
-                      {{ formatDate(formation.startDate) }}
+                      {{ formatDate(formation.startDate as string|Timestamp) }}
                       <input type="date" v-model="formation.startDate">
                     </td>
                     <td>

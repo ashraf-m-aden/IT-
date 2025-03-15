@@ -65,7 +65,7 @@
                 </div>
               </div>
               <div class="description">
-                <h6>Démarre le {{ formatDate(formation.startDate) }}</h6>
+                <h6>Démarre le {{ formatDate(formation.startDate as string|Timestamp) }}</h6>
                 <p>
                   {{ formation.description }}
                 </p>
