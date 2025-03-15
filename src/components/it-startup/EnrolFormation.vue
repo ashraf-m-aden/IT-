@@ -181,6 +181,7 @@ import { UserType } from '../../types/user';
 
 import { useToast } from 'vue-toastification'
 import Email_fr from '../emails/email_fr.vue';
+import mailService from '../../services/mail.service';
 
 const toast = useToast()
 const store = formationStore()
@@ -204,11 +205,7 @@ const register = async (formation: FormationType) => {
   await store.updateFormation(formation)
   toast.success("Enregistrement effectué avec succés")
   showModal.value = false
-  const phoneNumber = '25377151875'; // Replace with recipient's number (no "+" or spaces)
-  const message = encodeURIComponent('Hello! I need some help.');
-  const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
-  
-  window.open(whatsappLink, '_blank');
+mailService.sendEmail(newStudent.value.email, mail.)
 }
 const imInterested = async (formation: FormationType) => {
   if (selectedFormation.value.interestedStudents) {
