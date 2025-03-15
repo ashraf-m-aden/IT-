@@ -166,6 +166,9 @@
       <div class="shape7"><img src="../../assets/img/shape4.svg" alt="IT+ formation cours informatique djibouti"></div>
       <div class="shape4"><img src="../../assets/img/shape4.svg" alt="IT+ formation cours informatique djibouti"></div>
     </section>
+    <div class="col-12">
+      <Email_fr :name="newStudent.name" :course="selectedFormation.courseName" ref="mail"></Email_fr>
+    </div>
     <!-- End Pricing Area -->
   </div>
 </template>
@@ -177,6 +180,7 @@ import type { Timestamp } from 'firebase/firestore';
 import { UserType } from '../../types/user';
 
 import { useToast } from 'vue-toastification'
+import Email_fr from '../emails/email_fr.vue';
 
 const toast = useToast()
 const store = formationStore()
@@ -186,7 +190,6 @@ const selectedFormation = ref(new FormationType());
 const newStudent = ref(new UserType())
 const allFormations = computed(() => {
   return store.getAllformationsDispo()
-
 })
 const progress = (formation: FormationType) => { return ((formation.students.length / formation.maxStudents) * 100) };
 
@@ -241,6 +244,8 @@ const isDisabled = computed(() => {
     return true
   } else return false
 })
+
+
 </script>
 
 <style lang="scss">
