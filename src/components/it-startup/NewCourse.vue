@@ -162,8 +162,8 @@
                     <td>
                       <ul class="list-group">
                         <li v-for="(student, index) in formation.students" :key="index" class="list-group-item">
-                          <button class="bg-danger text-light small float-end"
-                            @click="delStudent(formation, student)">Del</button>
+                          <!-- <button class="bg-danger text-light small float-end"
+                            @click="delStudent(formation, student)">Del</button> -->
                           Nom:{{ student.name }}
                           <br>
                           Email:{{ student.email }}

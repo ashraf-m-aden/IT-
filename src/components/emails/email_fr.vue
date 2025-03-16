@@ -54,15 +54,13 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { computed  } from "vue";
 
 defineProps<{ name: string; course: string }>();
-const emailTemplate = ref("");
+const emailTemplate = computed(() => {
+  return document.getElementById("template")?.outerHTML || "";
+});
 defineExpose({ emailTemplate });
-onMounted(() => {
-  emailTemplate.value = document.getElementById("template")?.outerHTML || "";
-
-})
 </script>
 
 <style scoped lang="scss">

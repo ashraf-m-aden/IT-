@@ -7,7 +7,7 @@
           <div class="single-footer-widget">
             <div class="logo">
               <a href="/">
-                <img src="../../assets/img/logo.svg" alt="IT+ ADVANCED TECHNOLOGY" />
+                <img src="../../assets/img/logo.svg" alt="IT+ ADVANCED TECHNOLOGY" class="logo" />
               </a>
             </div>
             <p>
@@ -105,3 +105,12 @@
 </template>
 
 
+<style lang="scss" scoped>
+@import "../../assets/style/style.scss";
+.logo{
+  text-align: center;
+  margin-bottom: 20px;
+  width: 200px;
+}
+  
+</style>

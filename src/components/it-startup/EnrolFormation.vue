@@ -297,6 +297,7 @@
         :name="newStudent.name"
         :course="selectedFormation.courseName"
         ref="mail"
+        style="display: none;"
       ></Email_fr>
     </div>
     <!-- End Pricing Area -->
@@ -335,7 +336,9 @@ const register = async (formation: FormationType) => {
   await store.updateFormation(formation)
   toast.success("Enregistrement effectué avec succés")
   showModal.value = false
-mailService.sendEmail(newStudent.value.email, mail.value?.emailTemplate!)
+  setTimeout(() => {
+    mailService.sendEmail(newStudent.value.email, mail.value?.emailTemplate!)
+  }, 1000);
 }
 const imInterested = async (formation: FormationType) => {
   if (selectedFormation.value.interestedStudents) {
