@@ -8,6 +8,8 @@ import VueFeather from "vue-feather";
 import { createHead } from "@vueuse/head";
 import "../firebaseConfig"
 const pinia = createPinia();
+import axios from "axios";
+
 // import * as VueRouter from "vue-router";
 // App.use(VueRouter);
 import  router  from "./router/router";
@@ -17,7 +19,8 @@ import Toast, { POSITION } from "vue-toastification";
 import "vue-toastification/dist/index.css";
 
 const app = createApp(App);
-
+// Set Axios globally
+app.config.globalProperties.$axios = axios;
 app.use(Toast, {
     // Setting the global default position
     position: POSITION.TOP_RIGHT,
