@@ -43,7 +43,7 @@
                 <router-link to="/enroll" class="nav-link">S'inscrire à une formation</router-link>
               </li>
 
-              <li class="nav-item">
+              <li class="nav-item" v-if="connectedUser">
                 <router-link to="/new_course" class="nav-link">Ajouter un cours</router-link>
               </li>
 
