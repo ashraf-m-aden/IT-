@@ -7,7 +7,7 @@ class MailService {
         axios.create({
           headers: { "Content-Type": "application/json" },
         });
-        axios.defaults.baseURL =  "http://localhost:3001"; // "https://ashraf.intern.aws.prd.demodesu.com/api"; // import.meta.env.VITE_BACKEND_URL;
+        axios.defaults.baseURL =  "https://itmail25-7ae8f8c37449.herokuapp.com/"; // "https://ashraf.intern.aws.prd.demodesu.com/api"; // import.meta.env.VITE_BACKEND_URL;
       }
     
      template = '../components/emails/email_fr.vue';
