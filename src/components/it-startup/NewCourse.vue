@@ -235,7 +235,6 @@ import { Timestamp } from "firebase/firestore";
 
 import { useToast } from 'vue-toastification'
 import { formationStore } from '../../store/formations';
-import type { UserType } from '../../types/user';
 const store = formationStore()
 const toast = useToast()
 const isLoading = ref(false)
@@ -259,11 +258,11 @@ const addFormation = async () => {
   }
 }
 
-const delStudent = async (formation: FormationType, student: UserType) => {
-  formation.students = formation.students.filter((item) => item.email != student.email)
-  await updateFormation(formation)
+// const delStudent = async (formation: FormationType, student: UserType) => {
+//   formation.students = formation.students.filter((item) => item.email != student.email)
+//   await updateFormation(formation)
 
-}
+//}
 const updateFormation = async (formation: FormationType) => {
   isLoading.value = true;
   try {
