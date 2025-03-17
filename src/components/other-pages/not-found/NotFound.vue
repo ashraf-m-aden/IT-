@@ -12,7 +12,7 @@
             La page que vous cherchez est soit inexistante soit temporairement
             indisponible.
           </p>
-          <a href="/" class="btn btn-primary">Aller à l'acceuil</a>
+          <a href="/" class="btn btn-primary">Aller à l'accueil</a>
         </div>
       </div>
     </section>
