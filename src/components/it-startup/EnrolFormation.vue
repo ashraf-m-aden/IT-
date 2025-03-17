@@ -82,19 +82,7 @@
               </div>
 
               <div class="price">
-                <div class="progress">
-                  <div
-                    class="progress-bar bg-primary"
-                    role="progressbar"
-                    :style="{ width: progress(formation) + '%' }"
-                    :aria-valuenow="progress(formation)"
-                    aria-valuemin="0"
-                    :aria-valuemax="formation.maxStudents"
-                  >
-                    {{ formation.students.length }} /
-                    {{ formation.maxStudents }}
-                  </div>
-                </div>
+          
               </div>
               <div class="description">
                 <h6>Démarre le {{ formatDate(formation.startDate) }}</h6>
@@ -160,9 +148,7 @@
                       placeholder="abc@mail.com"
                       v-model="newStudent.email"
                     />
-                    <p v-if="isEmailDisabled" class="text-danger">
-                      <em>Cet email est deja utilisé pour ce cours</em>
-                    </p>
+              
                   </div>
                   <div class="mb-3">
                     <label for="" class="form-label">Mon numéro</label>
@@ -230,9 +216,7 @@
                       placeholder="abc@mail.com"
                       v-model="newStudent.email"
                     />
-                    <p v-if="isEmailDisabled2" class="text-danger">
-                      <em>Cet email est deja utilisé pour ce cours</em>
-                    </p>
+                
                   </div>
                   <div class="mb-3">
                     <label for="" class="form-label">Mon numéro</label>
@@ -323,7 +307,7 @@ const newStudent = ref(new UserType())
 const allFormations = computed(() => {
   return store.getAllformationsDispo()
 })
-const progress = (formation: FormationType) => { return ((formation.students.length / formation.maxStudents) * 100) };
+// const progress = (formation: FormationType) => { return ((formation.students.length / formation.maxStudents) * 100) };
 
 const formatDate = (date: Date | Timestamp) => {
 
@@ -359,16 +343,8 @@ const openModal = (formation: FormationType, isModal: boolean) => {
   }
 }
 
-const isEmailDisabled = computed(() => {
-  if (selectedFormation.value.students?.find(student => student.email == newStudent.value.email)) {
-    return true
-  } else return false
-})
-const isEmailDisabled2 = computed(() => {
-  if (selectedFormation.value.interestedStudents?.find(student => student.email == newStudent.value.email)) {
-    return true
-  } else return false
-})
+
+
 const isDisabled = computed(() => {
   if (newStudent.value.name == "" || newStudent.value.mobile == 0 || newStudent.value.email == "") {
     return true
