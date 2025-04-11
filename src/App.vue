@@ -1,30 +1,49 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div>
+
+    <HeaderComponent></HeaderComponent>
+    <PreLoaderComponent v-show="isLoading" />
+    <router-view></router-view>
+
+    <FooterComponent></FooterComponent>
+    <button bottom="50px" right="50px" @click="toTopFunction">
+      <div class="go-top">
+        <vue-feather type="arrow-up"></vue-feather>
+      </div>
+    </button>
+  </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script setup lang="ts">
+import { onMounted, ref, watch } from "vue";
+import { useRoute } from "vue-router";
+import HeaderComponent from "./components/layout/HeaderComponent.vue";
+import PreLoaderComponent from "./components/layout/PreLoaderComponent.vue";
+import FooterComponent from "./components/layout/FooterComponent.vue";
+import { formationStore } from "./store/formations";
+import { useAuthStore } from "./store/user";
 
-nav {
-  padding: 30px;
+const isLoading = ref(false);
+const currentUrl = ref();
+const route = useRoute();
+const fstore = formationStore()
+const ustore = useAuthStore()
+const toTopFunction = () => {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+};
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+onMounted(async () => {
+  await
+    await fstore.retrieveAllFormation()
+  await ustore.checkAuth()
+})
+watch(route, () => {
+  currentUrl.value = route.fullPath;
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+  isLoading.value = true;
+  setTimeout(() => {
+    isLoading.value = false;
+  }, 1500);
+});
+</script>

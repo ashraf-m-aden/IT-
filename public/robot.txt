@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Allow: /cours-programmation/
+Allow: /cours-reseaux-systemes/
+Allow: /a-propos
+Allow: /contact
+Disallow: /login
+Disallow: /new_course
+Disallow: /not-found
+Sitemap: https://codelab.it-advanced-technology.com/sitemap.xml
