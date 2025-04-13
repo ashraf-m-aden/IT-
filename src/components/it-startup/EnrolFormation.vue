@@ -181,7 +181,7 @@ useHead({
   title: 'Inscription - IT+ CODE LAB',
   meta: [
     { name: 'description', content: 'Inscrivez-vous à nos formations et cours disponibles. | Code Lab | Cours et Formations en informatique à Djibouti' },
-    { name: 'keywords', content: 'formation,Code Lab,formations,angular,vue, html, css,linux,sécurité,javascript, java, informatique,djibouti, Djibouti, programmation, réseaux, cours, Code Lab' }
+    { name: 'keywords', content: 'formation,Code Lab,formations,angular,vue, html, css,linux,sécurité,javascript, java, informatique,djibouti, Djibouti, programmation, réseaux, cours, codelab, it+' }
   ]
 })
 const toast = useToast()

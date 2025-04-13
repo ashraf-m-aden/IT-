@@ -92,7 +92,7 @@ useHead({
   title: 'ANGULAR - IT+ CODE LAB',
   meta: [
     { name: 'description', content: 'Maitrisez un des meilleurs frameworks Javascript | Code Lab | Cours et Formations en informatique à Djibouti' },
-    { name: 'keywords', content: 'formation,Code Lab,formations,angular,vue, html, css,linux,sécurité,javascript, java, informatique,djibouti, Djibouti, programmation, réseaux, cours, Code Lab' }
+    { name: 'keywords', content: 'formation,Code Lab,formations,angular,vue, html, css,linux,sécurité,javascript, java, informatique,djibouti, Djibouti, programmation, réseaux, cours, codelab, it+' }
   ]
 })
 </script>

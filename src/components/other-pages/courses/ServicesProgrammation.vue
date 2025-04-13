@@ -180,7 +180,7 @@ useHead({
   title: 'PROGRAMMATION - IT+ CODE LAB',
   meta: [
     { name: 'description', content: 'Consultez la liste de nos formations en programmation | Code Lab | Cours et Formations en informatique à Djibouti' }
-    ,{ name: 'keywords', content: 'formation,Code Lab,formations,angular,vue, html, css,linux,sécurité,javascript, java, informatique,djibouti, Djibouti, programmation, réseaux, cours, Code Lab' }
+    ,{ name: 'keywords', content: 'formation,Code Lab,formations,angular,vue, html, css,linux,sécurité,javascript, java, informatique,djibouti, Djibouti, programmation, réseaux, cours, codelab, it+' }
     ]
 })
 

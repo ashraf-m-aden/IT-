@@ -67,7 +67,7 @@
 								<li>creer des pages pour les petits écrans ;</li>
 								<li>mettre votre site web en ligne ;</li>
 							</ul>
-							
+
 							<!--
 							<div class="services-details-accordion">
 								<VueFaqAccordion :items="myItems" />
@@ -196,7 +196,7 @@ useHead({
   title: 'HTML - IT+ CODE LAB',
   meta: [
     { name: 'description', content: 'Plongez dans les bases de la programmation avec notre formation en HTML et CSS | Code Lab | Cours et Formations en informatique à Djibouti' }
-	,{ name: 'keywords', content: 'formation,Code Lab,formations,angular,vue, html, css,linux,sécurité,javascript, java, informatique,djibouti, Djibouti, programmation, réseaux, cours, Code Lab' }
+	,{ name: 'keywords', content: 'formation,Code Lab,formations,angular,vue, html, css,linux,sécurité,javascript, java, informatique,djibouti, Djibouti, programmation, réseaux, cours, codelab, it+' }
 	]
 })
 </script>

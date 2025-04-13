@@ -148,6 +148,6 @@ useHead({
   title: 'À Propos - IT+ CODE LAB',
   meta: [
     { name: 'description', content: 'Découvrez IT+ CODE LAB, le centre de formation de référence en informatique et technologies à Djibouti. | Code Lab | Cours et Formations en informatique à Djibouti' },
-    { name: 'keywords', content: 'formation,formations,angular,vue, html, css,linux,sécurité,javascript, java, informatique,djibouti, Djibouti, programmation, réseaux, cours, Code Lab' }
+    { name: 'keywords', content: 'formation,formations,angular,vue, html, css,linux,sécurité,javascript, java, informatique,djibouti, Djibouti, programmation, réseaux, cours, codelab, it+' }
   ]
 }); </script>

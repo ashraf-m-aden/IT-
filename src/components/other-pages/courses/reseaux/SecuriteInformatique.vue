@@ -92,7 +92,7 @@
 								<li>Maîtriser les protocoles de réseaux dédiés;</li>
 
 							</ul>
-							
+
 							<!--
 							<div class="services-details-accordion">
 								<VueFaqAccordion :items="myItems" />
@@ -153,7 +153,7 @@ useHead({
   title: 'Sécurité Informatique - IT+ CODE LAB',
   meta: [
     { name: 'description', content: 'Développez vos compétences en cybersécurité et apprenez à protéger les systèmes informatiques contre les menaces. | Code Lab | Cours et Formations en informatique à Djibouti' },
-    { name: 'keywords', content: 'formation,Code Lab,formations,angular,vue, html, css,linux,sécurité,javascript, java, informatique,djibouti, Djibouti, programmation, réseaux, cours, Code Lab' }
+    { name: 'keywords', content: 'formation,Code Lab,formations,angular,vue, html, css,linux,sécurité,javascript, java, informatique,djibouti, Djibouti, programmation, réseaux, cours, codelab, it+' }
   ]
 })
 </script>
