@@ -43,7 +43,7 @@
         <div class="row">
           <div class="col-lg-6 col-md-12">
             <div class="about-image">
-              <img src="../../../assets/img/1.png" alt="IT+Code Lab" />
+              <img src="../../../assets/img/1.png" alt="IT+ Code Lab" />
             </div>
           </div>
 

@@ -45,7 +45,7 @@
 					</div>
 
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/mysql.jpg" class="wow fadeInUp" alt="IT+Code Lab">
+						<img src="../../../../assets/img/courses/mysql.jpg" class="wow fadeInUp" alt="IT+ Code Lab">
 					</div>
 				</div>
 
@@ -53,7 +53,7 @@
 
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/mysql 2.jpg" class="wow fadeInUp" alt="IT+Code Lab">
+						<img src="../../../../assets/img/courses/mysql 2.jpg" class="wow fadeInUp" alt="IT+ Code Lab">
 					</div>
 
 					<div class="col-lg-6 services-details">
@@ -70,7 +70,7 @@
 								<li>Utiliser des triggers pour automatiser certaines actions ;</li>
 
 							</ul>
-							
+
 							<!--
 							<div class="services-details-accordion">
 								<VueFaqAccordion :items="myItems" />

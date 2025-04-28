@@ -51,7 +51,7 @@
 					</div>
 
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/linux1.jpeg" class="wow fadeInUp" alt="IT+Code Lab">
+						<img src="../../../../assets/img/courses/linux1.jpeg" class="wow fadeInUp" alt="IT+ Code Lab">
 					</div>
 				</div>
 
@@ -59,7 +59,7 @@
 
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/centos.jpeg" class="wow fadeInUp" alt="IT+Code Lab">
+						<img src="../../../../assets/img/courses/centos.jpeg" class="wow fadeInUp" alt="IT+ Code Lab">
 					</div>
 
 					<div class="col-lg-6 services-details">
@@ -83,7 +83,7 @@
 									quotas) ;</li>
 								<li>Gérer des fichiers : permissions et propriétés, recherche et liens ;</li>
 							</ul>
-							
+
 							<!--
 							<div class="services-details-accordion">
 								<VueFaqAccordion :items="myItems" />

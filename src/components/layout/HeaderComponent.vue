@@ -6,7 +6,7 @@
         <nav class="navbar navbar-expand-md navbar-light">
 
             <a class="navbar-brand" href="/">
-                <img src="../../assets/img/logo.svg" class="navbarbrand" :class="{ 'navbar-shrink': isShrunk }"  alt="IT+Code Lab" />
+                <img src="../../assets/img/logo.svg" class="navbarbrand" :class="{ 'navbar-shrink': isShrunk }"  alt="IT+ Code Lab" />
             </a>
 
           <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" id="collapseBtn"

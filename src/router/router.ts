@@ -45,7 +45,7 @@ const router = VueRouter.createRouter({
       path: '/',
       component: ITStartup,
       meta: {
-        title: 'ACCUEIL - IT+Code Lab',
+        title: 'ACCUEIL - IT+ Code Lab',
         description:
           'Bienvenue dans le meilleur centre de formation pratique en informatique à Djibouti. | Cours en Formations en informatique à Djibouti'
       }
@@ -55,7 +55,7 @@ const router = VueRouter.createRouter({
       path: '/cours-programmation/html-css',
       component: HtmlCss,
       meta: {
-        title: 'HTML - IT+Code Lab',
+        title: 'HTML - IT+ Code Lab',
         description:
           'Plongez dans les base de la programmation avec notre formation en HTML et CSS | Cours en Formations en informatique à Djibouti'
       }
@@ -64,7 +64,7 @@ const router = VueRouter.createRouter({
       path: '/cours-programmation',
       component: ServicesProgrammation,
       meta: {
-        title: 'PROGRAMMATION - IT+Code Lab',
+        title: 'PROGRAMMATION - IT+ Code Lab',
         description: 'Consultez la liste de nos formations en programmation | Cours en Formations en informatique à Djibouti'
       }
     },
@@ -72,7 +72,7 @@ const router = VueRouter.createRouter({
       path: '/cours-programmation/angular',
       component: AngularComponent,
       meta: {
-        title: 'ANGULAR - IT+Code Lab',
+        title: 'ANGULAR - IT+ Code Lab',
         description: 'Maitrisez un des meilleurs frameworks Javascript | Cours en Formations en informatique à Djibouti'
       }
     },
@@ -80,7 +80,7 @@ const router = VueRouter.createRouter({
       path: '/cours-programmation/vue',
       component: VueComponent,
       meta: {
-        title: 'VUE - IT+Code Lab',
+        title: 'VUE - IT+ Code Lab',
         description: 'Maitrisez un des meilleurs frameworks Javascript | Cours en Formations en informatique à Djibouti'
       }
     },
@@ -88,7 +88,7 @@ const router = VueRouter.createRouter({
       path: '/cours-programmation/javascript',
       component: JavascriptComponent,
       meta: {
-        title: 'JAVASCRIPT - IT+Code Lab',
+        title: 'JAVASCRIPT - IT+ Code Lab',
         description:
           'Apprenez les bases du Javascript et élargissez vos horizons! | Cours en Formations en informatique à Djibouti'
       }
@@ -97,7 +97,7 @@ const router = VueRouter.createRouter({
       path: '/cours-programmation/java',
       component: JavaComponent,
       meta: {
-        title: 'JAVA - IT+Code Lab',
+        title: 'JAVA - IT+ Code Lab',
         description:
           'Maitrisez un des languages de programmation les plus populaires | Cours en Formations en informatique à Djibouti'
       }
@@ -106,7 +106,7 @@ const router = VueRouter.createRouter({
       path: '/cours-programmation/node',
       component: NodeComponent,
       meta: {
-        title: 'NODE - IT+Code Lab',
+        title: 'NODE - IT+ Code Lab',
         description:
           'Plongez dans le mondes des backends et créez vos premieres applications backends | Cours en Formations en informatique à Djibouti'
       }
@@ -115,7 +115,7 @@ const router = VueRouter.createRouter({
       path: '/cours-programmation/mysql',
       component: MySQL,
       meta: {
-        title: 'MYSQL - IT+Code Lab',
+        title: 'MYSQL - IT+ Code Lab',
         description: 'Nos formations en base de données vont vous interesser! | Cours en Formations en informatique à Djibouti'
       }
     },
@@ -124,7 +124,7 @@ const router = VueRouter.createRouter({
       path: '/cours-reseaux-systemes',
       component: ServiceReseauxSystemes,
       meta: {
-        title: 'RESEAUX - IT+Code Lab',
+        title: 'RESEAUX - IT+ Code Lab',
         description: 'La liste de nos formations en réseaux informatiques | Cours en Formations en informatique à Djibouti'
       }
     },
@@ -132,7 +132,7 @@ const router = VueRouter.createRouter({
       path: '/cours-reseaux-systemes/linux',
       component: LinuxComponent,
       meta: {
-        title: 'Formation Linux - IT+Code Lab',
+        title: 'Formation Linux - IT+ Code Lab',
         description:
           "Maîtrisez l'administration Linux et découvrez les bases des systèmes open-source avec notre formation pratique. | Cours en Formations en informatique à Djibouti"
       }
@@ -141,7 +141,7 @@ const router = VueRouter.createRouter({
       path: '/cours-reseaux-systemes/fondamentaux-reseaux',
       component: FondamentauxReseaux,
       meta: {
-        title: 'Fondamentaux des Réseaux - IT+Code Lab',
+        title: 'Fondamentaux des Réseaux - IT+ Code Lab',
         description:
           'Apprenez les bases des réseaux informatiques : protocoles, infrastructures et configuration pour bien débuter. | Cours en Formations en informatique à Djibouti'
       }
@@ -150,7 +150,7 @@ const router = VueRouter.createRouter({
       path: '/cours-reseaux-systemes/reseaux-avances',
       component: ReseauxAvances,
       meta: {
-        title: 'Réseaux Avancés - IT+Code Lab',
+        title: 'Réseaux Avancés - IT+ Code Lab',
         description:
           'Approfondissez vos connaissances en réseaux informatiques et maîtrisez les architectures avancées. | Cours en Formations en informatique à Djibouti'
       }
@@ -159,7 +159,7 @@ const router = VueRouter.createRouter({
       path: '/cours-reseaux-systemes/gns3',
       component: GNS3,
       meta: {
-        title: 'GNS3 et Simulation Réseau - IT+Code Lab',
+        title: 'GNS3 et Simulation Réseau - IT+ Code Lab',
         description:
           'Utilisez GNS3 pour simuler et tester vos configurations réseau dans un environnement pratique. | Cours en Formations en informatique à Djibouti'
       }
@@ -168,7 +168,7 @@ const router = VueRouter.createRouter({
       path: '/cours-reseaux-systemes/securite-informatique',
       component: SecuriteInformatique,
       meta: {
-        title: 'Sécurité Informatique - IT+Code Lab',
+        title: 'Sécurité Informatique - IT+ Code Lab',
         description:
           'Développez vos compétences en cybersécurité et apprenez à protéger les systèmes informatiques contre les menaces. | Cours en Formations en informatique à Djibouti'
       }
@@ -178,7 +178,7 @@ const router = VueRouter.createRouter({
       component: InstallationWindows,
       meta: {
         title:
-          'Installation et Configuration Windows - IT+Code Lab',
+          'Installation et Configuration Windows - IT+ Code Lab',
         description:
           'Apprenez à installer, configurer et gérer les systèmes Windows pour une utilisation professionnelle. | Cours en Formations en informatique à Djibouti'
       }
@@ -187,7 +187,7 @@ const router = VueRouter.createRouter({
       path: '/cours-reseaux-systemes/admin-serveur',
       component: AdminWinServer,
       meta: {
-        title: 'Administration Windows Server - IT+Code Lab',
+        title: 'Administration Windows Server - IT+ Code Lab',
         description:
           "Maîtrisez l'administration des serveurs Windows et optimisez la gestion des infrastructures IT. | Cours en Formations en informatique à Djibouti"
       }
@@ -196,7 +196,7 @@ const router = VueRouter.createRouter({
       path: '/cours-reseaux-systemes/bureautique',
       component: BureautiqueComponent,
       meta: {
-        title: 'Formation Bureautique - IT+Code Lab',
+        title: 'Formation Bureautique - IT+ Code Lab',
         description:
           'Optimisez votre productivité avec nos formations en bureautique : Word, Excel, PowerPoint et plus encore. | Cours en Formations en informatique à Djibouti'
       }
@@ -206,7 +206,7 @@ const router = VueRouter.createRouter({
       path: '/not-found',
       component: NotFound,
       meta: {
-        title: 'IT+Code Lab',
+        title: 'IT+ Code Lab',
         description: 'OOPS 404 | Cours en Formations en informatique à Djibouti'
       }
     },
@@ -215,9 +215,9 @@ const router = VueRouter.createRouter({
       path: '/a-propos',
       component: Apropos,
       meta: {
-        title: 'À Propos - IT+Code Lab',
+        title: 'À Propos - IT+ Code Lab',
         description:
-          'Découvrez IT+Code Lab, le centre de formation de référence en informatique et technologies à Djibouti. | Cours en Formations en informatique à Djibouti'
+          'Découvrez IT+ Code Lab, le centre de formation de référence en informatique et technologies à Djibouti. | Cours en Formations en informatique à Djibouti'
       }
     },
 
@@ -226,16 +226,16 @@ const router = VueRouter.createRouter({
       path: '/contact',
       component: Contact,
       meta: {
-        title: 'À Propos - IT+Code Lab',
+        title: 'À Propos - IT+ Code Lab',
         description:
-          'Découvrez IT+Code Lab, le centre de formation de référence en informatique et technologies à Djibouti. | Cours en Formations en informatique à Djibouti'
+          'Découvrez IT+ Code Lab, le centre de formation de référence en informatique et technologies à Djibouti. | Cours en Formations en informatique à Djibouti'
       }
     },
     {
       path: '/enroll',
       component: EnrolFormation,
       meta: {
-        title: 'Inscription - IT+Code Lab',
+        title: 'Inscription - IT+ Code Lab',
         description:
           'Inscrivez vous à nos formations et cours disponibles. | Cours en Formations en informatique à Djibouti'
       }
@@ -245,7 +245,7 @@ const router = VueRouter.createRouter({
       path: '/new_course',
       component: NewCourse,
       meta: {
-        title: 'Nouvelle formation - IT+Code Lab'
+        title: 'Nouvelle formation - IT+ Code Lab'
 
       }
     },
@@ -254,16 +254,16 @@ const router = VueRouter.createRouter({
       path: '/login',
       component: LoginComponent,
       meta: {
-        title: 'Login - IT+Code Lab'
+        title: 'Login - IT+ Code Lab'
       }
     },
     {
       path: '/**',
       component: NotFound,
       meta: {
-        title: 'Contact - IT+Code Lab',
+        title: 'Contact - IT+ Code Lab',
         description:
-          'Contactez IT+Code Lab pour en savoir plus sur nos formations et nos services en informatique. | Cours en Formations en informatique à Djibouti'
+          'Contactez IT+ Code Lab pour en savoir plus sur nos formations et nos services en informatique. | Cours en Formations en informatique à Djibouti'
       }
     }
   ]

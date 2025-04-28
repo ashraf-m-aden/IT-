@@ -41,7 +41,7 @@
 					</div>
 
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/vue.jpg" class="wow fadeInUp" alt="IT+Code Lab">
+						<img src="../../../../assets/img/courses/vue.jpg" class="wow fadeInUp" alt="IT+ Code Lab">
 					</div>
 				</div>
 
@@ -49,7 +49,7 @@
 
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/vue2.jpg" class="wow fadeInUp" alt="IT+Code Lab">
+						<img src="../../../../assets/img/courses/vue2.jpg" class="wow fadeInUp" alt="IT+ Code Lab">
 					</div>
 
 					<div class="col-lg-6 services-details">
@@ -70,7 +70,7 @@
 								<li>gerer les etats des données;</li>
 								<li>et bien plus encore ;</li>
 							</ul>
-							
+
 							<!--
 							<div class="services-details-accordion">
 								<VueFaqAccordion :items="myItems" />

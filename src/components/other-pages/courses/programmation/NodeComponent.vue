@@ -51,7 +51,7 @@
 					</div>
 
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/nodejs.png" class="wow fadeInUp" alt="IT+Code Lab">
+						<img src="../../../../assets/img/courses/nodejs.png" class="wow fadeInUp" alt="IT+ Code Lab">
 					</div>
 				</div>
 
@@ -59,7 +59,7 @@
 
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/mean.jpg" class="wow fadeInUp" alt="IT+Code Lab">
+						<img src="../../../../assets/img/courses/mean.jpg" class="wow fadeInUp" alt="IT+ Code Lab">
 					</div>
 
 					<div class="col-lg-6 services-details">
@@ -77,7 +77,7 @@
 								<li>Recuprer des données de mongoDB grâce à Mongoose ;</li>
 								<li>utiliser les tokens JWT ;</li>
 							</ul>
-							
+
 							<!--
 							<div class="services-details-accordion">
 								<VueFaqAccordion :items="myItems" />

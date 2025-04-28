@@ -41,7 +41,7 @@
 					</div>
 
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/win11.jpeg" class="wow fadeInUp" alt="IT+Code Lab">
+						<img src="../../../../assets/img/courses/win11.jpeg" class="wow fadeInUp" alt="IT+ Code Lab">
 					</div>
 				</div>
 
@@ -49,7 +49,7 @@
 
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/win.jpeg" class="wow fadeInUp" alt="IT+Code Lab">
+						<img src="../../../../assets/img/courses/win.jpeg" class="wow fadeInUp" alt="IT+ Code Lab">
 					</div>
 
 					<div class="col-lg-6 services-details">
@@ -63,7 +63,7 @@
 									Maîtriser les systèmes d’exploitation Windows ;</li>
 
 							</ul>
-							
+
 							<!--
 							<div class="services-details-accordion">
 								<VueFaqAccordion :items="myItems" />

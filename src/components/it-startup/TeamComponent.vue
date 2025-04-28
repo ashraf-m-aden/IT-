@@ -16,7 +16,7 @@
                 <slide>
                     <div class="single-team">
                         <div class="team-image">
-                            <img src="../../../assets/img/team-image/1.jpg" alt="IT+Code Lab">
+                            <img src="../../../assets/img/team-image/1.jpg" alt="IT+ Code Lab">
                         </div>
 
                         <div class="team-content">
@@ -48,7 +48,7 @@
                 <slide>
                     <div class="single-team">
                         <div class="team-image">
-                            <img src="../../../assets/img/team-image/2.jpg" alt="IT+Code Lab">
+                            <img src="../../../assets/img/team-image/2.jpg" alt="IT+ Code Lab">
                         </div>
 
                         <div class="team-content">
@@ -80,7 +80,7 @@
                 <slide>
                     <div class="single-team">
                         <div class="team-image">
-                            <img src="../../../assets/img/team-image/3.jpg" alt="IT+Code Lab">
+                            <img src="../../../assets/img/team-image/3.jpg" alt="IT+ Code Lab">
                         </div>
 
                         <div class="team-content">
@@ -112,7 +112,7 @@
                 <slide>
                     <div class="single-team">
                         <div class="team-image">
-                            <img src="../../../assets/img/team-image/4.jpg" alt="IT+Code Lab">
+                            <img src="../../../assets/img/team-image/4.jpg" alt="IT+ Code Lab">
                         </div>
 
                         <div class="team-content">
@@ -144,7 +144,7 @@
                 <slide>
                     <div class="single-team">
                         <div class="team-image">
-                            <img src="../../../assets/img/team-image/5.jpg" alt="IT+Code Lab">
+                            <img src="../../../assets/img/team-image/5.jpg" alt="IT+ Code Lab">
                         </div>
 
                         <div class="team-content">
@@ -176,7 +176,7 @@
                 <slide>
                     <div class="single-team">
                         <div class="team-image">
-                            <img src="../../../assets/img/team-image/1.jpg" alt="IT+Code Lab">
+                            <img src="../../../assets/img/team-image/1.jpg" alt="IT+ Code Lab">
                         </div>
 
                         <div class="team-content">
@@ -208,7 +208,7 @@
                 <slide>
                     <div class="single-team">
                         <div class="team-image">
-                            <img src="../../../assets/img/team-image/2.jpg" alt="IT+Code Lab">
+                            <img src="../../../assets/img/team-image/2.jpg" alt="IT+ Code Lab">
                         </div>
 
                         <div class="team-content">
@@ -240,7 +240,7 @@
                 <slide>
                     <div class="single-team">
                         <div class="team-image">
-                            <img src="../../../assets/img/team-image/3.jpg" alt="IT+Code Lab">
+                            <img src="../../../assets/img/team-image/3.jpg" alt="IT+ Code Lab">
                         </div>
 
                         <div class="team-content">
@@ -272,7 +272,7 @@
                 <slide>
                     <div class="single-team">
                         <div class="team-image">
-                            <img src="../../../assets/img/team-image/4.jpg" alt="IT+Code Lab">
+                            <img src="../../../assets/img/team-image/4.jpg" alt="IT+ Code Lab">
                         </div>
 
                         <div class="team-content">
@@ -304,7 +304,7 @@
                 <slide>
                     <div class="single-team">
                         <div class="team-image">
-                            <img src="../../../assets/img/team-image/5.jpg" alt="IT+Code Lab">
+                            <img src="../../../assets/img/team-image/5.jpg" alt="IT+ Code Lab">
                         </div>
 
                         <div class="team-content">

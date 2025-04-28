@@ -51,7 +51,7 @@
 					</div>
 
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/office1.jpeg" class="wow fadeInUp" alt="IT+Code Lab">
+						<img src="../../../../assets/img/courses/office1.jpeg" class="wow fadeInUp" alt="IT+ Code Lab">
 					</div>
 				</div>
 
@@ -59,7 +59,7 @@
 
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/office2.jpeg" class="wow fadeInUp" alt="IT+Code Lab">
+						<img src="../../../../assets/img/courses/office2.jpeg" class="wow fadeInUp" alt="IT+ Code Lab">
 					</div>
 
 					<div class="col-lg-6 services-details">
@@ -79,7 +79,7 @@
 									;</li>
 
 							</ul>
-							
+
 							<!--
 							<div class="services-details-accordion">
 								<VueFaqAccordion :items="myItems" />

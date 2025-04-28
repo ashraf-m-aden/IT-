@@ -44,7 +44,7 @@
 					</div>
 
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/angular-2.jpg" class="wow fadeInUp" alt="IT+Code Lab">
+						<img src="../../../../assets/img/courses/angular-2.jpg" class="wow fadeInUp" alt="IT+ Code Lab">
 					</div>
 				</div>
 
@@ -52,7 +52,7 @@
 
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/original.jpg" class="wow fadeInUp" alt="IT+Code Lab">
+						<img src="../../../../assets/img/courses/original.jpg" class="wow fadeInUp" alt="IT+ Code Lab">
 					</div>
 
 					<div class="col-lg-6 services-details">

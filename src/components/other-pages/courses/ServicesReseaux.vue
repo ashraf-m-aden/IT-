@@ -48,7 +48,7 @@
             >
               <img
                 src="../../../assets/img/courses/fondamentaux.jpeg"
-                alt="IT+Code Lab"
+                alt="IT+ Code Lab"
               />
 
               <div class="content">
@@ -70,7 +70,7 @@
             >
               <img
                 src="../../../assets/img/courses/ccna.jpeg"
-                alt="IT+Code Lab"
+                alt="IT+ Code Lab"
               />
 
               <div class="content">
@@ -91,7 +91,7 @@
             >
               <img
                 src="../../../assets/img/courses/gns3.jpeg"
-                alt="IT+Code Lab"
+                alt="IT+ Code Lab"
               />
 
               <div class="content">
@@ -111,7 +111,7 @@
             >
               <img
                 src="../../../assets/img/courses/security.jpeg"
-                alt="IT+Code Lab"
+                alt="IT+ Code Lab"
               />
 
               <div class="content">
@@ -133,7 +133,7 @@
             >
               <img
                 src="../../../assets/img/courses/windows.jpeg"
-                alt="IT+Code Lab"
+                alt="IT+ Code Lab"
               />
 
               <div class="content">
@@ -159,7 +159,7 @@
             >
               <img
                 src="../../../assets/img/courses/winserverr.jpeg"
-                alt="IT+Code Lab"
+                alt="IT+ Code Lab"
               />
 
               <div class="content">
@@ -183,7 +183,7 @@
             >
               <img
                 src="../../../assets/img/courses/LINUX-LOGO.png"
-                alt="IT+Code Lab"
+                alt="IT+ Code Lab"
               />
 
               <div class="content">
@@ -203,7 +203,7 @@
             >
               <img
                 src="../../../assets/img/courses/Office_logos.jpg"
-                alt="IT+Code Lab"
+                alt="IT+ Code Lab"
               />
 
               <div class="content">

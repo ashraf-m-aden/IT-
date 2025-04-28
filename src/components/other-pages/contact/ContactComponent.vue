@@ -80,7 +80,7 @@
                     ></l-tile-layer>
                     <l-marker :lat-lng="[11.554622, 43.100724]">
                       <l-icon :icon-url="iconUrl" :icon-size="iconSize" />
-                      <l-popup> IT+Code Lab</l-popup>
+                      <l-popup> IT+ Code Lab</l-popup>
                     </l-marker>
                   </l-map>
                 </div>

@@ -50,7 +50,7 @@
 					</div>
 
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/winserver.jpeg" class="wow fadeInUp" alt="IT+Code Lab">
+						<img src="../../../../assets/img/courses/winserver.jpeg" class="wow fadeInUp" alt="IT+ Code Lab">
 					</div>
 				</div>
 
@@ -58,7 +58,7 @@
 
 				<div class="row align-items-center">
 					<div class="col-lg-6 services-details-image">
-						<img src="../../../../assets/img/courses/win server.jpeg" class="wow fadeInUp" alt="IT+Code Lab">
+						<img src="../../../../assets/img/courses/win server.jpeg" class="wow fadeInUp" alt="IT+ Code Lab">
 					</div>
 
 					<div class="col-lg-6 services-details">
@@ -83,7 +83,7 @@
 								<li>Gérer le stockage local, les services de fichiers et imprimantes sous Windows
 									serveur ;</li>
 							</ul>
-							
+
 							<!--
 							<div class="services-details-accordion">
 								<VueFaqAccordion :items="myItems" />
