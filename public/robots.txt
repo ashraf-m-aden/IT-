@@ -7,4 +7,4 @@ Allow: /contact
 Disallow: /login
 Disallow: /new_course
 Disallow: /not-found
-Sitemap: https://codelab.it-advanced-technology.com/sitemap.xml
+Sitemap: https://codelab.codes/sitemap.xml

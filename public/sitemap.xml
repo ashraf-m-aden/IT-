@@ -9,130 +9,130 @@
 
 
     <url>
-        <loc>https://codelab.it-advanced-technology.com/</loc>
+        <loc>https://codelab.codes/</loc>
         <lastmod>2025-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
     
     <url>
-        <loc>https://codelab.it-advanced-technology.com/a-propos</loc>
+        <loc>https://codelab.codes/a-propos</loc>
         <lastmod>2025-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
         
     <url>
-        <loc>https://codelab.it-advanced-technology.com/enroll</loc>
+        <loc>https://codelab.codes/enroll</loc>
         <lastmod>2025-03-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
         <url>
-        <loc>https://codelab.it-advanced-technology.com/cours-programmation/html-css</loc>
+        <loc>https://codelab.codes/cours-programmation/html-css</loc>
         <lastmod>2025-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
       <url>
-        <loc>https://codelab.it-advanced-technology.com/cours-programmation/angular</loc>
+        <loc>https://codelab.codes/cours-programmation/angular</loc>
         <lastmod>2025-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
       <url>
-        <loc>https://codelab.it-advanced-technology.com/cours-programmation/vue</loc>
+        <loc>https://codelab.codes/cours-programmation/vue</loc>
         <lastmod>2025-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
       <url>
-        <loc>https://codelab.it-advanced-technology.com/cours-programmation/javascript</loc>
+        <loc>https://codelab.codes/cours-programmation/javascript</loc>
         <lastmod>2025-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
       <url>
-        <loc>https://codelab.it-advanced-technology.com/cours-programmation/java</loc>
+        <loc>https://codelab.codes/cours-programmation/java</loc>
         <lastmod>2025-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
       <url>
-        <loc>https://codelab.it-advanced-technology.com/cours-programmation/node</loc>
+        <loc>https://codelab.codes/cours-programmation/node</loc>
         <lastmod>2025-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
       <url>
-        <loc>https://codelab.it-advanced-technology.com/cours-programmation/mysql</loc>
+        <loc>https://codelab.codes/cours-programmation/mysql</loc>
         <lastmod>2025-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
       <url>
-        <loc>https://codelab.it-advanced-technology.com/cours-programmation</loc>
+        <loc>https://codelab.codes/cours-programmation</loc>
         <lastmod>2025-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
       <url>
-        <loc>https://codelab.it-advanced-technology.com/cours-reseaux-systemes/linux</loc>
+        <loc>https://codelab.codes/cours-reseaux-systemes/linux</loc>
         <lastmod>2025-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
       <url>
-        <loc>https://codelab.it-advanced-technology.com/cours-reseaux-systemes/fondamentaux-reseaux</loc>
+        <loc>https://codelab.codes/cours-reseaux-systemes/fondamentaux-reseaux</loc>
         <lastmod>2025-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
       <url>
-        <loc>https://codelab.it-advanced-technology.com/cours-reseaux-systemes/reseaux-avances</loc>
+        <loc>https://codelab.codes/cours-reseaux-systemes/reseaux-avances</loc>
         <lastmod>2025-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
       <url>
-        <loc>https://codelab.it-advanced-technology.com/cours-reseaux-systemes/gns3</loc>
+        <loc>https://codelab.codes/cours-reseaux-systemes/gns3</loc>
         <lastmod>2025-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
       <url>
-        <loc>https://codelab.it-advanced-technology.com/cours-reseaux-systemes/securite</loc>
+        <loc>https://codelab.codes/cours-reseaux-systemes/securite</loc>
         <lastmod>2025-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
       <url>
-        <loc>https://codelab.it-advanced-technology.com/cours-reseaux-systemes/installation-windows</loc>
+        <loc>https://codelab.codes/cours-reseaux-systemes/installation-windows</loc>
         <lastmod>2025-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
       <url>
-        <loc>https://codelab.it-advanced-technology.com/cours-reseaux-systemes/admin-serveur</loc>
+        <loc>https://codelab.codes/cours-reseaux-systemes/admin-serveur</loc>
         <lastmod>2025-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
       <url>
-        <loc>https://codelab.it-advanced-technology.com/cours-reseaux-systemes/bureautique</loc>
+        <loc>https://codelab.codes/cours-reseaux-systemes/bureautique</loc>
         <lastmod>2025-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
           <url>
-        <loc>https://codelab.it-advanced-technology.com/cours-reseaux-systemes</loc>
+        <loc>https://codelab.codes/cours-reseaux-systemes</loc>
         <lastmod>2025-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
           <url>
-        <loc>https://codelab.it-advanced-technology.com/contact</loc>
+        <loc>https://codelab.codes/contact</loc>
         <lastmod>2025-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
